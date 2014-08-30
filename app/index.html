@@ -26,6 +26,7 @@
         <!-- bower:js -->
         <script src="../bower_components/zepto/zepto.js"></script>
         <script src="../bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+        <script src="../bower_components/fastclick/lib/fastclick.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:js({app,.tmp}) scripts/main.js -->
@@ -35,7 +36,7 @@
     <body>
         <div id="grid">
         </div>
-        <div id="main">
+        <main role="main">
             <header>
                 <a href="/" class="logo image">ACPM</a>
                 <nav>
@@ -58,8 +59,10 @@
                     </h1>
                 </nav>
             </header>
-            <main>
+            <section>
                 <p>
+                    <time>
+                    </time>
                     I’m currently working on a game called
                     <a class="project" href="/vadventure">Vertex Adventure</a>.
                     It’s built with <a class="project" href="/grid">Grid</a>, a
@@ -77,21 +80,21 @@
                 <p>
                     <a class="call-to-action" href="/about">Learn more about me</a>
                 </p>
-            </main>
-            <footer class="clear">
-                <div id="contact">
-                    <strong>Contact</strong>
-                    <a href="skype:mcwattersandrew?chat">Skype</a>
-                    <a href="mailto:me@andrewmcwatters.com">Email</a>
-                    <a href="https://steamcommunity.com/id/andrewmcwatters">Steam</a>
-                    <a href="https://www.facebook.com/mcwattersandrew">Facebook</a>
-                </div>
-                <div id="copyright">
-                    <strong>&copy; 2014 Andrew Charles Parker McWatters</strong>
-                    All trademarks are property of their respective owners in
-                    the US and other countries.
-                </div>
-            </footer>
-        </div>
+            </section>
+        </main>
+        <footer class="clear">
+            <div id="contact">
+                <strong>Contact</strong>
+                <a href="skype:mcwattersandrew?chat">Skype</a>
+                <a href="mailto:me@andrewmcwatters.com">Email</a>
+                <a href="https://steamcommunity.com/id/andrewmcwatters">Steam</a>
+                <a href="https://www.facebook.com/mcwattersandrew">Facebook</a>
+            </div>
+            <div id="copyright">
+                <strong>&copy; 2014 Andrew Charles Parker McWatters</strong>
+                All trademarks are property of their respective owners in
+                the US and other countries.
+            </div>
+        </footer>
     </body>
 </html>

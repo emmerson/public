@@ -26,6 +26,7 @@
         <!-- bower:js -->
         <script src="../bower_components/zepto/zepto.js"></script>
         <script src="../bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+        <script src="../bower_components/fastclick/lib/fastclick.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:js({app,.tmp}) scripts/main.js -->
@@ -35,7 +36,7 @@
     <body>
         <div id="grid">
         </div>
-        <div id="main">
+        <main role="main">
             <header>
                 <a href="/" class="logo image">ACPM</a>
                 <nav>
@@ -55,25 +56,25 @@
                     </ol>
                 </nav>
             </header>
-            <main>
+            <section>
                 <p>
                     That page doesn't exist.
                 </p>
-            </main>
-            <footer class="clear">
-                <div id="contact">
-                    <strong>Contact</strong>
-                    <a href="skype:mcwattersandrew?chat">Skype</a>
-                    <a href="mailto:me@andrewmcwatters.com">Email</a>
-                    <a href="https://steamcommunity.com/id/andrewmcwatters">Steam</a>
-                    <a href="https://www.facebook.com/mcwattersandrew">Facebook</a>
-                </div>
-                <div id="copyright">
-                    <strong>&copy; 2014 Andrew Charles Parker McWatters</strong>
-                    All trademarks are property of their respective owners in
-                    the US and other countries.
-                </div>
-            </footer>
+            </section>
         </div>
+        <footer class="clear">
+            <div id="contact">
+                <strong>Contact</strong>
+                <a href="skype:mcwattersandrew?chat">Skype</a>
+                <a href="mailto:me@andrewmcwatters.com">Email</a>
+                <a href="https://steamcommunity.com/id/andrewmcwatters">Steam</a>
+                <a href="https://www.facebook.com/mcwattersandrew">Facebook</a>
+            </div>
+            <div id="copyright">
+                <strong>&copy; 2014 Andrew Charles Parker McWatters</strong>
+                All trademarks are property of their respective owners in
+                the US and other countries.
+            </div>
+        </footer>
     </body>
 </html>

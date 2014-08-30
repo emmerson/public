@@ -1,10 +1,19 @@
 @media (max-width: 1035px) {
+	main p:first-of-type {
+		margin-top: calc(132px + 36px);
+	}
+
 	main p {
 		font-size: 24px;
+		margin-bottom: 36px;
 	}
 
 	main p a.call-to-action {
 		font-size: 18px;
+	}
+
+	header nav ol li {
+		margin-right: 18px;
 	}
 
 	#contact a {
