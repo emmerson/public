@@ -125,7 +125,7 @@ main {
 }
 
 main p:first-of-type {
-	margin-top: 0;
+	margin-top: calc(132px + 72px);
 }
 
 main p {
@@ -142,7 +142,6 @@ main p {
 main p a.project {
 	font-style: italic;
 	font-weight: 300;
-	/* transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1); */
 }
 
 main p a.project:hover {
@@ -170,7 +169,7 @@ main p a.call-to-action:hover {
 }
 
 main p:last-of-type {
-	margin-bottom: 0;
+	margin-bottom: calc(132px + 18px);
 }
 
 footer {
@@ -191,6 +190,7 @@ footer {
 }
 
 footer strong {
+	color: rgba(204, 216, 219, 0.14);
 	display: block;
 	font-size: 12px;
 	font-weight: 600;
@@ -211,5 +211,8 @@ footer strong {
 
 #copyright {
 	float: right;
+	position: absolute;
+	right: 0;
 	text-align: right;
+	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }

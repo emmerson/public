@@ -6,4 +6,24 @@
 	main p a.call-to-action {
 		font-size: 18px;
 	}
+
+	#contact a {
+		margin-right: 4.5px;
+	}
+}
+
+@media (min-width: 865px) and (max-width: 1035px) {
+	main p {
+		font-size: 24px;
+	}
+
+	main p a.call-to-action {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 865px) {
+	#copyright {
+		color: rgba(0, 0, 0, 0);
+	}
 }
