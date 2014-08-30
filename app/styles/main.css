@@ -1,0 +1,35 @@
+*::selection {
+	background: rgba(7, 7, 7, 1);
+	color: rgba(240, 246, 248, 1);
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-attachment: fixed;
+	background-color: rgba(31, 35, 36, 1);
+	background-image: url(../images/background.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: rgba(204, 216, 219, 1);
+	font: 14px/18px "Proxima Nova", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	text-rendering: optimizeLegibility;
+}
+
+#grid {
+	background-attachment: fixed;
+	background-image: url(../images/grid.png);
+				   /* url(../images/grid_point.png); */
+	background-position: center top;
+	/* display: none; */
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+}
