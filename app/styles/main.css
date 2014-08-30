@@ -24,12 +24,28 @@ body {
 
 #grid {
 	background-attachment: fixed;
-	background-image: url(../images/grid.png);
-				   /* url(../images/grid_point.png); */
+	/* background-image: url(../images/grid.png); */
+	background-image: url(../images/grid_point.png);
 	background-position: center top;
 	/* display: none; */
 	height: 100%;
 	position: fixed;
 	width: 100%;
 	z-index: -1;
+}
+
+#main {
+	margin: 72px;
+}
+
+.image {
+	text-indent: -9007199254740991px;
+}
+
+header .logo {
+	background-image: url(../images/logo.svg);
+	display: block;
+	height: 49px;
+	margin-bottom: 24px;
+	width: 187px;
 }
