@@ -16,13 +16,10 @@
 
     andrewmcwatters = (function () {
         function wasReferredFromHost() {
-            var referrer = document.referrer
-                          .replace(location.protocol + '//', '');
-            if (referrer.indexOf('www.andrewmcwatters.com') !== -1) {
-                return true;
-            }
-
-            return false;
+            var referrer  = document.createElement('a');
+            referrer.href = document.referrer;
+            var location  = document.location;
+            return location.hostname === referrer.hostname;
         }
 
         function initAnimations() {
@@ -35,6 +32,7 @@
 
             if (wasReferredFromHost()) {
                 selectors.shift();
+                selectors.pop();
             }
 
             var $elements = [];
@@ -49,7 +47,8 @@
             $elements.reverse();
 
             TweenMax.staggerTo($elements, 0.8, {
-                opacity: 1
+                opacity: 1,
+                delay: 0.2
             }, 0.1);
         }
 
@@ -63,6 +62,7 @@
             // Flicker the grid out when everything finishes loading.
             var $grid = $('#grid');
             $grid.css('display', 'block');
+            $grid.css('opacity', 1);
             $(window).one('load', function() {
                 TweenMax.to($grid, 2, {
                     opacity: 0,
