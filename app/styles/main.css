@@ -37,10 +37,11 @@ body {
 	height: 100%;
 	position: fixed;
 	width: 100%;
-	z-index: -1;
+	z-index: -2;
 }
 
 #main {
+	height: calc(100% - 2 * 72px);
 	padding: 72px;
 }
 
@@ -49,6 +50,11 @@ body {
 	overflow: hidden;
 	text-indent: 100%;
 	white-space: nowrap;
+}
+
+header {
+	position: relative;
+	z-index: 2;
 }
 
 header .logo {
@@ -65,6 +71,7 @@ header nav {
 }
 
 header nav ol {
+	height: 35px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -72,6 +79,7 @@ header nav ol {
 
 header nav ol li {
 	display: inline-block;
+	height: 17px;
 	padding-top: 18px;
 	position: relative;
 	margin-right: 36px;
@@ -79,7 +87,7 @@ header nav ol li {
 }
 
 header nav ol li.active {
-	border-top: 1px solid rgba(114, 102, 73, 1);
+	border-top: 1px solid rgba(107, 94, 62, 1);
 	opacity: 1;
 }
 
@@ -89,10 +97,117 @@ header nav ol li.active a {
 
 a {
 	color: inherit;
-	font-size: 14px;
 	text-decoration: none;
 }
 
 header nav a {
+	font-size: 14px;
+	font-weight: 300;
 	opacity: 0.42;
+}
+
+main {
+	align-content: center;
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	height: calc(100% - 2 * 72px);
+	position: absolute;
+	top: 72px;
+	width: calc(100% - 2 * 72px);
+}
+
+main p:first-of-type {
+	margin-top: 0;
+}
+
+main p {
+	font-size: 36px;
+	font-weight: 100;
+	line-height: normal;
+	margin-bottom: 53px;
+	margin-top: 0;
+	max-width: 1317px;
+	width: 100%;
+}
+
+main p a.project {
+	font-style: italic;
+	font-weight: 300;
+	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+main p a.project:hover {
+	color: rgba(125, 114, 64, 1);
+}
+
+main p strong {
+	display: block;
+	font-weight: 300;
+}
+
+main p a.call-to-action {
+	border: 2px solid rgba(204, 216, 219, 1);
+	display: inline-block;
+	font-size: 24px;
+	padding: 18px;
+	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+main p a.call-to-action:hover {
+	background-color: rgba(125, 114, 64, 1);
+	border-color: rgba(125, 114, 64, 1);
+	color: rgba(31, 35, 36, 1);
+}
+
+main p:last-of-type {
+	margin-bottom: 0;
+}
+
+footer {
+	border-top: 1px solid rgba(204, 216, 219, 0.07);
+	bottom: 72px;
+	color: rgba(204, 216, 219, 0.14);
+	font-weight: 200;
+	padding-top: 18px;
+	position: absolute;
+	width: calc(100% - 2 * 72px);
+	z-index: 2;
+}
+
+.clear:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+footer strong {
+	display: block;
+	font-weight: 400;
+}
+
+#contact {
+	float: left;
+}
+
+#contact a {
+	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#contact a:hover {
+	color: rgba(204, 216, 219, 1);
+}
+
+#contact a:after {
+	color: rgba(204, 216, 219, 0.14);
+	content: ' |';
+}
+
+#contact a:last-child:after {
+	content: none;
+}
+
+#copyright {
+	float: right;
+	text-align: right;
 }
