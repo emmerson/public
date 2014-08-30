@@ -78,6 +78,7 @@ header nav ol {
 }
 
 header nav ol li {
+	border-top: 1px solid rgba(0, 0, 0, 0);
 	display: inline-block;
 	height: 17px;
 	padding-top: 18px;
