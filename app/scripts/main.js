@@ -16,6 +16,10 @@
 
     andrewmcwatters = (function () {
         function wasReferredFromHost() {
+            if (document.referrer === '') {
+                return false;
+            }
+
             var referrer  = document.createElement('a');
             referrer.href = document.referrer;
             var location  = document.location;
@@ -52,14 +56,7 @@
             }, 0.1);
         }
 
-        function registerAnimations() {
-            // Don't animate anything else if we came from another part
-            // of the site.
-            if (wasReferredFromHost()) {
-                return;
-            }
-
-            // Flicker the grid out when everything finishes loading.
+        function flickerOutGrid() {
             var $grid = $('#grid');
             $grid.css('display', 'block');
             $grid.css('opacity', 1);
@@ -72,9 +69,30 @@
                         template: Quint.easeOut,
                         taper: 'out',
                         clamp: true
-                    })
+                    }),
+                    onComplete: fadeInGridPoints
                 });
             });
+        }
+
+        function fadeInGridPoints() {
+            var $grid = $('#grid');
+            $grid.addClass('points');
+            TweenMax.to($grid, 2, {
+                opacity: 1,
+                ease: Quint.easeOut
+            });
+        }
+
+        function registerAnimations() {
+            // Don't animate anything else if we came from another part
+            // of the site.
+            if (wasReferredFromHost()) {
+                return;
+            }
+
+            // Flicker the grid out when everything finishes loading.
+            flickerOutGrid();
         }
 
         function registerEventListeners() {
@@ -102,9 +120,6 @@
 
     window.andrewmcwatters = andrewmcwatters;
 
-    // Register animations to fire on load.
-    andrewmcwatters.registerAnimations();
-
     $(function() {
         FastClick.attach(document.body);
 
@@ -117,6 +132,8 @@
         if (am.init) {
             am.init();
         } else {
+            // Register animations to fire on load.
+            am.registerAnimations();
             am.initAnimations();
         }
     });
