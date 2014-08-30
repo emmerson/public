@@ -7,6 +7,7 @@
  */
 (function ($, window, document, undefined) {
     'use strict';
+
     var TweenMax        = window.TweenMax,
         RoughEase       = window.RoughEase,
         Quint           = window.Quint,
@@ -17,7 +18,7 @@
         function wasReferredFromHost() {
             var referrer = document.referrer
                           .replace(location.protocol + '//', '');
-            if (referrer.indexOf('andrewmcwatters.com') !== -1) {
+            if (referrer.indexOf('www.andrewmcwatters.com') !== -1) {
                 return true;
             }
 
@@ -50,7 +51,9 @@
             TweenMax.staggerTo($elements, 0.8, {
                 opacity: 1
             }, 0.1);
+        }
 
+        function registerAnimations() {
             // Don't animate anything else if we came from another part
             // of the site.
             if (wasReferredFromHost()) {
@@ -92,11 +95,15 @@
         return {
             wasReferredFromHost:    wasReferredFromHost,
             initAnimations:         initAnimations,
+            registerAnimations:     registerAnimations,
             registerEventListeners: registerEventListeners
         };
     })();
 
     window.andrewmcwatters = andrewmcwatters;
+
+    // Register animations to fire on load.
+    andrewmcwatters.registerAnimations();
 
     $(function() {
         FastClick.attach(document.body);

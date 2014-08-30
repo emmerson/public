@@ -33,7 +33,7 @@ body {
 	background-image: url(../images/grid.png);
 	/* background-image: url(../images/grid_point.png); */
 	background-position: center top;
-	/* display: none; */
+	display: none;
 	height: 100%;
 	position: fixed;
 	width: 100%;
