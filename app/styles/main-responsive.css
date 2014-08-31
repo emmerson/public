@@ -1,4 +1,12 @@
 @media (max-width: 1035px) {
+	header .metric {
+		margin-right: 18px;
+	}
+
+	header nav ol li {
+		margin-right: 18px;
+	}
+
 	main p:first-of-type {
 		margin-top: calc(132px + 36px);
 	}
@@ -10,10 +18,6 @@
 
 	main p a.call-to-action {
 		font-size: 18px;
-	}
-
-	header nav ol li {
-		margin-right: 18px;
 	}
 
 	#contact a {
