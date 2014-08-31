@@ -16,45 +16,17 @@
         FastClick       = window.FastClick;
 
     andrewmcwatters = (function () {
-        function initAnimations() {
-            // Fade in the core elements, one after another, quickly.
-            var selectors = [
-                'header',
-                'section',
-                'footer'
-            ];
-
-            if (page.wasReferredToByHost()) {
-                selectors.shift();
-                selectors.pop();
-            }
-
-            var $elements = [];
-
-            for (var i = selectors.length - 1; i >= 0; i--) {
-                var $element = $(selectors[i]);
-                $element.css('display', '');
-                $element.css('opacity', 0);
-                $elements.push($element);
-            }
-
-            $elements.reverse();
-
-            TweenMax.staggerTo($elements, 0.8, {
-                opacity: 1,
-                delay: 0.2
-            }, 0.1);
-        }
-
         function scrollSmoke() {
             var $smoke = $('#smoke');
             $smoke.css('display', 'block');
             $smoke.css('opacity', 0);
-            TweenMax.to($smoke, 2, {
-                opacity: 1
-            });
-            TweenMax.to($smoke, 60 * 15, {
-                backgroundPosition: '100% 0'
+            $(window).one('load', function() {
+                TweenMax.to($smoke, 2, {
+                    opacity: 1
+                });
+                TweenMax.to($smoke, 60 * 15, {
+                    backgroundPosition: '100% 0'
+                });
             });
         }
 
@@ -106,9 +78,39 @@
             flickerOutGrid();
         }
 
+        function initAnimations() {
+            // Fade in the core elements, one after another, quickly.
+            var selectors = [
+                'header',
+                'section',
+                'footer'
+            ];
+
+            if (page.wasReferredToByHost()) {
+                selectors.shift();
+                selectors.pop();
+            }
+
+            var $elements = [];
+
+            for (var i = selectors.length - 1; i >= 0; i--) {
+                var $element = $(selectors[i]);
+                $element.css('display', '');
+                $element.css('opacity', 0);
+                $elements.push($element);
+            }
+
+            $elements.reverse();
+
+            TweenMax.staggerTo($elements, 0.8, {
+                opacity: 1,
+                delay: 0.2
+            }, 0.1);
+        }
+
         return {
-            initAnimations:      initAnimations,
-            registerAnimations:  registerAnimations
+            registerAnimations:  registerAnimations,
+            initAnimations:      initAnimations
         };
     })();
 
