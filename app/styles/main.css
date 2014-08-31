@@ -1,255 +1,255 @@
 *::selection {
-	background: rgba(7, 7, 7, 1);
-	color: rgba(240, 246, 248, 1);
+  background: rgba(7, 7, 7, 1);
+  color: rgba(240, 246, 248, 1);
 }
 
 html, body {
-	height: 100%;
+  height: 100%;
 }
 
 body {
-	background-attachment: fixed;
-	background-color: rgba(31, 35, 36, 1);
-	background-image: url(../images/background.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: rgba(204, 216, 219, 1);
-	font: 14px/18px "Proxima Nova",
-					"Lucida Grande",
-					"Lucida Sans Unicode",
-					 Helvetica,
-					 Arial,
-					 Verdana,
-					 sans-serif;
-	margin: 0;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	text-rendering: optimizeLegibility;
+  background-attachment: fixed;
+  background-color: rgba(31, 35, 36, 1);
+  background-image: url(../images/background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(204, 216, 219, 1);
+  font: 14px/18px "Proxima Nova",
+                  "Lucida Grande",
+                  "Lucida Sans Unicode",
+                   Helvetica,
+                   Arial,
+                   Verdana,
+                   sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
 }
 
 #grid,
 #smoke {
-	background-attachment: fixed;
-	display: none;
-	height: 100%;
-	position: fixed;
-	width: 100%;
-	z-index: -2;
+  background-attachment: fixed;
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: -2;
 }
 
 #grid {
-	background-image: url(../images/grid.png);
-	background-position: center top;
+  background-image: url(../images/grid.png);
+  background-position: center top;
 }
 
 .points {
-	background-image: url(../images/grid_point.png) !important;
+  background-image: url(../images/grid_point.png) !important;
 }
 
 #smoke {
-	background-image: url(../images/smoke.png);
-	background-position: left top;
-	background-size: auto 100%;
+  background-image: url(../images/smoke.png);
+  background-position: left top;
+  background-size: auto 100%;
 }
 
 main {
-	height: calc(100% - 2 * 72px);
-	padding: 72px;
+  height: calc(100% - 2 * 72px);
+  padding: 72px;
 }
 
 .image {
-	color: rgba(0, 0, 0, 0);
-	overflow: hidden;
-	text-indent: 100%;
-	white-space: nowrap;
+  color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
 }
 
 header {
-	position: relative;
-	z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 header .logo {
-	/* background-image: url(../images/logo.svg); */
-	display: block;
-	float: left;
-	height: 36px;
-	margin-bottom: 24px;
-	width: 143px;
+  /* background-image: url(../images/logo.svg); */
+  display: block;
+  float: left;
+  height: 36px;
+  margin-bottom: 24px;
+  width: 143px;
 }
 
 header .metrics {
-	float: right;
+  float: right;
 }
 
 header .metric {
-	display: inline-block;
-	margin-right: 36px;
-	text-align: right;
-	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  display: inline-block;
+  margin-right: 36px;
+  text-align: right;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 header .metric:last-of-type {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 header .metric .value {
-	font-family: "FF Din Pro";
-	font-size: 18px;
-	font-weight: 300;
+  font-family: "FF Din Pro";
+  font-size: 18px;
+  font-weight: 300;
 }
 
 header nav {
-	border-top: 1px solid rgba(204, 216, 219, 0.07);
-	font-size: 0;
+  border-top: 1px solid rgba(204, 216, 219, 0.07);
+  font-size: 0;
 }
 
 header nav ol {
-	height: 35px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  height: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ol li {
-	border-top: 1px solid rgba(0, 0, 0, 0);
-	display: inline-block;
-	height: 17px;
-	padding-top: 18px;
-	position: relative;
-	margin-right: 36px;
-	top: -1px;
-	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-top: 1px solid rgba(0, 0, 0, 0);
+  display: inline-block;
+  height: 17px;
+  padding-top: 18px;
+  position: relative;
+  margin-right: 36px;
+  top: -1px;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 header nav ol li.active {
-	border-top: 1px solid rgba(107, 94, 62, 1);
-	opacity: 1;
+  border-top: 1px solid rgba(107, 94, 62, 1);
+  opacity: 1;
 }
 
 header nav ol li.active a {
-	opacity: 1;
+  opacity: 1;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 header nav a {
-	font-size: 14px;
-	font-weight: 300;
-	opacity: 0.42;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.42;
 }
 
 header h1 {
-	font-size: 18px;
-	font-weight: 400;
-	margin: 18px 0 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 18px 0 0 0;
 }
 
 section {
-	align-content: flex-start;
-	align-items: center;
-	display: flex;
-	flex-flow: row wrap;
-	height: calc(100% - 2 * 72px);
-	position: absolute;
-	top: 72px;
-	width: calc(100% - 2 * 72px);
+  align-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  height: calc(100% - 2 * 72px);
+  position: absolute;
+  top: 72px;
+  width: calc(100% - 2 * 72px);
 }
 
 section p:first-of-type {
-	margin-top: calc(132px + 36px);
+  margin-top: calc(132px + 36px);
 }
 
 section p {
-	font-size: 36px;
-	font-weight: 100;
-	line-height: normal;
-	margin-bottom: 53px;
-	margin-top: 0;
-	max-width: 1317px;
-	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
-	width: 100%;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: normal;
+  margin-bottom: 53px;
+  margin-top: 0;
+  max-width: 1317px;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  width: 100%;
 }
 
 section p a.project {
-	font-style: italic;
-	font-weight: 300;
+  font-style: italic;
+  font-weight: 300;
 }
 
 section p a.project:hover {
-	color: rgba(125, 114, 64, 1);
-	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  color: rgba(125, 114, 64, 1);
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 section p strong {
-	display: block;
-	font-weight: 300;
+  display: block;
+  font-weight: 300;
 }
 
 section p a.call-to-action {
-	border: 2px solid rgba(204, 216, 219, 1);
-	display: inline-block;
-	font-size: 24px;
-	padding: 18px;
-	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  border: 2px solid rgba(204, 216, 219, 1);
+  display: inline-block;
+  font-size: 24px;
+  padding: 18px;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 section p a.call-to-action:hover {
-	background-color: rgba(125, 114, 64, 1);
-	border-color: rgba(125, 114, 64, 1);
-	color: rgba(31, 35, 36, 1);
+  background-color: rgba(125, 114, 64, 1);
+  border-color: rgba(125, 114, 64, 1);
+  color: rgba(31, 35, 36, 1);
 }
 
 section p:last-of-type {
-	margin-bottom: calc(132px + 18px);
+  margin-bottom: calc(132px + 18px);
 }
 
 footer {
-	border-top: 1px solid rgba(204, 216, 219, 0.07);
-	bottom: 72px;
-	color: rgba(204, 216, 219, 0.14);
-	font-weight: 200;
-	left: 72px;
-	margin: 0 auto;
-	padding-top: 18px;
-	position: absolute;
-	width: calc(100% - 2 * 72px);
+  border-top: 1px solid rgba(204, 216, 219, 0.07);
+  bottom: 72px;
+  color: rgba(204, 216, 219, 0.14);
+  font-weight: 200;
+  left: 72px;
+  margin: 0 auto;
+  padding-top: 18px;
+  position: absolute;
+  width: calc(100% - 2 * 72px);
 }
 
 .clear:after {
-	clear: both;
-	content: "";
-	display: table;
+  clear: both;
+  content: "";
+  display: table;
 }
 
 footer strong {
-	color: rgba(204, 216, 219, 0.14);
-	display: block;
-	font-size: 12px;
-	font-weight: 600;
+  color: rgba(204, 216, 219, 0.14);
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 #contact {
-	float: left;
+  float: left;
 }
 
 #contact a {
-	margin-right: 9px;
-	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  margin-right: 9px;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 #contact a:hover {
-	color: rgba(204, 216, 219, 1);
+  color: rgba(204, 216, 219, 1);
 }
 
 #copyright {
-	float: right;
-	position: absolute;
-	right: 0;
-	text-align: right;
-	transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  float: right;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
