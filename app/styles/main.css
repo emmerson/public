@@ -28,10 +28,9 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-#grid {
+#grid,
+#smoke {
 	background-attachment: fixed;
-	background-image: url(../images/grid.png);
-	background-position: center top;
 	display: none;
 	height: 100%;
 	position: fixed;
@@ -39,8 +38,19 @@ body {
 	z-index: -2;
 }
 
+#grid {
+	background-image: url(../images/grid.png);
+	background-position: center top;
+}
+
 .points {
 	background-image: url(../images/grid_point.png) !important;
+}
+
+#smoke {
+	background-image: url(../images/smoke.png);
+	background-position: left top;
+	background-size: auto 100%;
 }
 
 main {

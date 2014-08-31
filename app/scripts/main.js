@@ -56,6 +56,24 @@
             }, 0.1);
         }
 
+        function scrollSmoke() {
+            var $smoke = $('#smoke');
+            $smoke.css('display', 'block');
+            $smoke.css('opacity', 0);
+            TweenMax.to($smoke, 2, {
+                opacity: 1
+            });
+            TweenMax.to($smoke, 60 * 15, {
+                backgroundPosition: '100% 0'
+            });
+        }
+
+        function showGridPoints() {
+            var $grid = $('#grid');
+            $grid.addClass('points');
+            $grid.css('display', 'block');
+        }
+
         function flickerOutGrid() {
             var $grid = $('#grid');
             $grid.css('display', 'block');
@@ -85,9 +103,12 @@
         }
 
         function registerAnimations() {
+            scrollSmoke();
+
             // Don't animate anything else if we came from another part
             // of the site.
             if (wasReferredFromHost()) {
+                showGridPoints();
                 return;
             }
 
