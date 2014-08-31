@@ -48,10 +48,6 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
-      sass: {
-        files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['sass:server', 'autoprefixer']
-      },
       styles: {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'autoprefixer']
@@ -149,32 +145,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Compiles Sass to CSS and generates necessary files if requested
-    sass: {
-      options: {
-        sourcemap: true,
-        loadPath: 'bower_components'
-      },
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.app %>/styles',
-          src: ['*.{scss,sass}'],
-          dest: '.tmp/styles',
-          ext: '.css'
-        }]
-      },
-      server: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.app %>/styles',
-          src: ['*.{scss,sass}'],
-          dest: '.tmp/styles',
-          ext: '.css'
-        }]
-      }
-    },
-
     // Add vendor prefixed styles
     autoprefixer: {
       options: {
@@ -195,10 +165,6 @@ module.exports = function (grunt) {
       app: {
         ignorePath: /^\/|\.\.\//,
         src: ['<%= config.app %>/index.html']
-      },
-      sass: {
-        src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
-        ignorePath: /(\.\.\/){1,2}bower_components\//
       }
     },
 
@@ -338,14 +304,12 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
-        'sass:server',
         'copy:styles'
       ],
       test: [
         'copy:styles'
       ],
       dist: [
-        'sass',
         'copy:styles',
         'imagemin',
         'svgmin'
