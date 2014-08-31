@@ -1,42 +1,42 @@
 @media (max-width: 1035px) {
-	header .metric {
-		margin-right: 18px;
-	}
+  header .metric {
+    margin-right: 18px;
+  }
 
-	header nav ol li {
-		margin-right: 18px;
-	}
+  header nav ol li {
+    margin-right: 18px;
+  }
 
-	main p:first-of-type {
-		margin-top: calc(132px + 36px);
-	}
+  main p:first-of-type {
+    margin-top: calc(132px + 36px);
+  }
 
-	main p {
-		font-size: 24px;
-		margin-bottom: 36px;
-	}
+  main p {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
 
-	main p a.call-to-action {
-		font-size: 18px;
-	}
+  main p a.call-to-action {
+    font-size: 18px;
+  }
 
-	#contact a {
-		margin-right: 4.5px;
-	}
+  #contact a {
+    margin-right: 4.5px;
+  }
 }
 
 @media (min-width: 865px) and (max-width: 1035px) {
-	main p {
-		font-size: 24px;
-	}
+  main p {
+    font-size: 24px;
+  }
 
-	main p a.call-to-action {
-		font-size: 18px;
-	}
+  main p a.call-to-action {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 865px) {
-	#copyright {
-		color: rgba(0, 0, 0, 0);
-	}
+  #copyright {
+    color: rgba(0, 0, 0, 0);
+  }
 }
