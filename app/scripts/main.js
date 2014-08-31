@@ -8,24 +8,14 @@
 (function ($, window, document, undefined) {
     'use strict';
 
-    var TweenMax        = window.TweenMax,
+    var page            = window.page,
+        TweenMax        = window.TweenMax,
         RoughEase       = window.RoughEase,
         Quint           = window.Quint,
         andrewmcwatters = window.andrewmcwatters,
         FastClick       = window.FastClick;
 
     andrewmcwatters = (function () {
-        function wasReferredFromHost() {
-            if (document.referrer === '') {
-                return false;
-            }
-
-            var referrer  = document.createElement('a');
-            referrer.href = document.referrer;
-            var location  = document.location;
-            return location.hostname === referrer.hostname;
-        }
-
         function initAnimations() {
             // Fade in the core elements, one after another, quickly.
             var selectors = [
@@ -34,7 +24,7 @@
                 'footer'
             ];
 
-            if (wasReferredFromHost()) {
+            if (page.wasReferredToByHost()) {
                 selectors.shift();
                 selectors.pop();
             }
@@ -107,7 +97,7 @@
 
             // Don't animate anything else if we came from another part
             // of the site.
-            if (wasReferredFromHost()) {
+            if (page.wasReferredToByHost()) {
                 showGridPoints();
                 return;
             }
@@ -116,26 +106,9 @@
             flickerOutGrid();
         }
 
-        function registerEventListeners() {
-            var listeners = document.eventListeners;
-            for (var event in listeners) {
-                if (listeners.hasOwnProperty(event)) {
-                    for (var selector in listeners[event]) {
-                        if (selector === 'window') {
-                            $(window).on(event, listeners[event].window);
-                        } else {
-                            $(selector).on(event, listeners[event][selector]);
-                        }
-                    }
-                }
-            }
-        }
-
         return {
-            wasReferredFromHost:    wasReferredFromHost,
-            initAnimations:         initAnimations,
-            registerAnimations:     registerAnimations,
-            registerEventListeners: registerEventListeners
+            initAnimations:      initAnimations,
+            registerAnimations:  registerAnimations
         };
     })();
 
@@ -148,8 +121,6 @@
         TweenMax.defaultOverwrite = 'all';
 
         var am = andrewmcwatters;
-        am.registerEventListeners();
-
         if (am.init) {
             am.init();
         } else {
@@ -158,4 +129,4 @@
             am.initAnimations();
         }
     });
-})(Zepto, window, document);
+})(Zepto || jQuery, window, document);
