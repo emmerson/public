@@ -7,16 +7,20 @@
     margin-right: 18px;
   }
 
-  main p:first-of-type {
-    margin-top: calc(132px + 36px);
+  section p:first-of-type {
+    margin-top: 36px;
   }
 
-  main p {
+  section p {
     font-size: 24px;
     margin-bottom: 36px;
   }
 
-  main p a.call-to-action {
+  section p:last-of-type {
+    margin-bottom: calc(36px + 55px);
+  }
+
+  section p a.call-to-action {
     font-size: 18px;
   }
 
@@ -26,17 +30,53 @@
 }
 
 @media (min-width: 865px) and (max-width: 1035px) {
-  main p {
+  section p {
     font-size: 24px;
   }
 
-  main p a.call-to-action {
+  section p a.call-to-action {
     font-size: 18px;
   }
 }
 
 @media (max-width: 865px) {
+  header .metric {
+    color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+  }
+
   #copyright {
     color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 568px) {
+  main {
+    padding: 36px;
+    margin: 0 auto -91px;
+    min-height: calc(100% - 2 * 36px);
+  }
+
+  header .metrics {
+    display: none;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+
+  section p a.call-to-action {
+    font-size: 14px;
+    padding: 9px;
+  }
+
+  footer {
+    margin: 0 36px 36px;
+  }
+
+  #copyright strong {
+    color: rgba(0, 0, 0, 0);
+    pointer-events: none;
   }
 }

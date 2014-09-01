@@ -54,8 +54,11 @@ body {
 }
 
 main {
-  height: calc(100% - 2 * 72px);
   padding: 72px;
+  position: relative;
+  margin: 0 auto -127px;
+  min-height: calc(100% - 2 * 72px);
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .image {
@@ -154,14 +157,10 @@ section {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
-  height: calc(100% - 2 * 72px);
-  position: absolute;
-  top: 72px;
-  width: calc(100% - 2 * 72px);
 }
 
 section p:first-of-type {
-  margin-top: calc(132px + 36px);
+  margin-top: 72px;
 }
 
 section p {
@@ -190,6 +189,10 @@ section p strong {
   font-weight: 300;
 }
 
+section p:last-of-type {
+  margin-bottom: calc(72px + 55px);
+}
+
 section p a.call-to-action {
   border: 2px solid rgba(204, 216, 219, 1);
   display: inline-block;
@@ -204,20 +207,14 @@ section p a.call-to-action:hover {
   color: rgba(31, 35, 36, 1);
 }
 
-section p:last-of-type {
-  margin-bottom: calc(132px + 18px);
-}
-
 footer {
   border-top: 1px solid rgba(204, 216, 219, 0.07);
-  bottom: 72px;
   color: rgba(204, 216, 219, 0.14);
   font-weight: 200;
-  left: 72px;
-  margin: 0 auto;
+  margin: 0 72px 72px;
   padding-top: 18px;
-  position: absolute;
-  width: calc(100% - 2 * 72px);
+  position: relative;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .clear:after {
