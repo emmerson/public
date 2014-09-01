@@ -54,6 +54,7 @@ body {
 }
 
 main {
+  display: block;
   padding: 72px;
   position: relative;
   margin: 0 auto -127px;
