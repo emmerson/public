@@ -4,6 +4,7 @@
   "dependencies": {
     "zepto": "~1.1.4",
     "gsap": "~1.13.2",
-    "fastclick": "~1.0.3"
+    "fastclick": "~1.0.3",
+    "query-string": "~1.0.0"
   }
 }
