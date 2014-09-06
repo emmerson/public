@@ -28,6 +28,24 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+#fork-me {
+  height: 30px;
+  overflow: hidden;
+  position: absolute;
+  right: -77px;
+  top: -20px;
+  transform: rotate(45deg);
+  transform-origin: left top;
+  width: 189px;
+  z-index: 9007199254740991;
+}
+
+#fork-me img {
+  margin-top: -34px;
+  margin-left: 19px;
+  transform: rotate(-45deg);
+}
+
 #grid,
 #smoke {
   background-attachment: fixed;
