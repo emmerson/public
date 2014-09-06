@@ -1,4 +1,9 @@
 @media (max-width: 1035px) {
+  header .logo {
+    transform: scale(0.66);
+    transform-origin: left center;
+  }
+
   header .metric {
     margin-right: 18px;
   }
@@ -41,6 +46,7 @@
 
   section p a.call-to-action {
     font-size: 18px;
+    padding: 12px;
   }
 }
 
