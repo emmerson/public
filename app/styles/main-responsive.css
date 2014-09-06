@@ -22,6 +22,11 @@
 
   section p a.call-to-action {
     font-size: 18px;
+    width: 164.813px;
+  }
+
+  section p a.call-to-action:hover {
+    width: 189.313px;
   }
 
   #contact a {
@@ -69,6 +74,11 @@
   section p a.call-to-action {
     font-size: 14px;
     padding: 9px;
+    width: 128.188px;
+  }
+
+  section p a.call-to-action:hover {
+    width: 148.578px;
   }
 
   footer {

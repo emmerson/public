@@ -205,14 +205,38 @@ section p a.call-to-action {
   border: 2px solid rgba(204, 216, 219, 1);
   display: inline-block;
   font-size: 24px;
+  overflow: hidden;
   padding: 18px;
   transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  white-space: nowrap;
+  width: 219.750px;
 }
 
 section p a.call-to-action:hover {
   background-color: rgba(125, 114, 64, 1);
   border-color: rgba(125, 114, 64, 1);
   color: rgba(31, 35, 36, 1);
+  width: 250.406px;
+}
+
+section p a.call-to-action::after {
+  content: '>';
+  display: inline-block;
+  font-family: "FF Din",
+               "Proxima Nova",
+               "Lucida Grande",
+               "Lucida Sans Unicode",
+                Helvetica,
+                Arial,
+                Verdana,
+                sans-serif;
+  margin-left: 6px;
+  opacity: 0;
+  transition: opacity 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+section p a.call-to-action:hover::after {
+  opacity: 1;
 }
 
 footer {
