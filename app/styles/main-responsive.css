@@ -26,6 +26,7 @@
 
   section p a.call-to-action {
     font-size: 18px;
+    padding: 12px;
     width: 164.813px;
   }
 
@@ -35,17 +36,6 @@
 
   #contact a {
     margin-right: 4.5px;
-  }
-}
-
-@media (min-width: 865px) and (max-width: 1035px) {
-  section p {
-    font-size: 24px;
-  }
-
-  section p a.call-to-action {
-    font-size: 18px;
-    padding: 12px;
   }
 }
 

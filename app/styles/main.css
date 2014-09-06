@@ -105,6 +105,8 @@ header .logo {
 
 header .metrics {
   float: right;
+  position: absolute;
+  right: 0;
 }
 
 header .metric {
