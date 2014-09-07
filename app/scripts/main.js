@@ -16,6 +16,21 @@
     var FastClick       = window.FastClick;
 
     andrewmcwatters = (function () {
+        function fadeInFooter() {
+            if (!page.wasReferredToByHost()) {
+                return;
+            }
+
+            var $footer = $('footer');
+            $footer.css('opacity', 0);
+            TweenMax.to($footer, 0.4, {
+                opacity: 1,
+                onComplete: function() {
+                    $footer.css('opacity', '');
+                }
+            });
+        }
+
         function scrollSmoke() {
             var $smoke = $('#smoke');
             $smoke.css('display', 'block');
@@ -34,6 +49,15 @@
             var $grid = $('#grid');
             $grid.addClass('points');
             $grid.css('display', 'block');
+        }
+
+        function fadeInGridPoints() {
+            var $grid = $('#grid');
+            $grid.addClass('points');
+            TweenMax.to($grid, 2, {
+                opacity: 1,
+                ease: Quint.easeOut
+            });
         }
 
         function flickerOutGrid() {
@@ -55,26 +79,16 @@
             });
         }
 
-        function fadeInGridPoints() {
-            var $grid = $('#grid');
-            $grid.addClass('points');
-            TweenMax.to($grid, 2, {
-                opacity: 1,
-                ease: Quint.easeOut
-            });
-        }
-
         function registerAnimations() {
+            $('footer').on('transclude', fadeInFooter);
+
             scrollSmoke();
 
-            // Don't animate anything else if we came from another part
-            // of the site.
             if (page.wasReferredToByHost()) {
                 showGridPoints();
                 return;
             }
 
-            // Flicker the grid out when everything finishes loading.
             flickerOutGrid();
         }
 
@@ -103,7 +117,8 @@
             $elements.reverse();
 
             TweenMax.staggerTo($elements, 0.8, {
-                opacity: 1
+                opacity: 1,
+                delay: 0.2
             }, 0.1);
         }
 
@@ -122,8 +137,8 @@
         TweenMax.defaultOverwrite = 'all';
 
         var am = andrewmcwatters;
-        if (am.init) {
-            am.init();
+        if (am.load) {
+            am.load();
         } else {
             // Register animations to fire on load.
             am.registerAnimations();

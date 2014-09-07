@@ -288,7 +288,6 @@ footer {
   margin: 0 72px 72px;
   padding-top: 18px;
   position: relative;
-  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .clear:after {
