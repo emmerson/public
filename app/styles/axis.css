@@ -4,3 +4,49 @@ header .logo {
   margin-bottom: 23px;
   width: 119px;
 }
+
+section {
+  perspective: 1035px;
+}
+
+#margin-top {
+  margin-bottom: 0;
+}
+
+#margin-bottom {
+  margin-top: 0;
+}
+
+#verify-info {
+  transform-origin: 50% 50% -44px;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg);
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#verify-info.show-message {
+  transform: rotateX(90deg);
+}
+
+#verify,
+#verify-invalid {
+  display: none;
+}
+
+#verify {
+  transform: rotateX(0deg);
+}
+
+#verify-info p {
+  backface-visibility: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#verify small {
+  opacity: 0.42;
+}
+
+#verify-message {
+  transform: rotateX(-90deg);
+}

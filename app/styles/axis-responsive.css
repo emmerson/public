@@ -1,0 +1,11 @@
+@media (max-width: 1035px) {
+  #verify-info {
+    transform-origin: 50% 50% -29px;
+  }
+}
+
+@media (max-width: 568px) {
+  #verify-info {
+    transform-origin: 50% 50% -20px;
+  }
+}

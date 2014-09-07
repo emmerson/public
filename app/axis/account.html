@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="styles/main-responsive.css">
     <link rel="stylesheet" href="styles/main-animation.css">
     <link rel="stylesheet" href="styles/axis.css">
+    <link rel="stylesheet" href="styles/axis-responsive.css">
     <!-- endbuild -->
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -27,8 +28,10 @@
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/query-string/query-string.js"></script>
     <script src="bower_components/page.js/index.js"></script>
+    <script src="bower_components/blast-text/jquery.blast.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+    <script>window.app = page;</script>
     <!-- build:js({app,.tmp}) scripts/axis.js -->
     <script src="scripts/page.js"></script>
     <script src="scripts/ht.js"></script>
@@ -62,6 +65,21 @@
         </nav>
       </header>
       <section>
+        <p id="margin-top">
+        </p>
+        <p id="verify-invalid">
+          Invalid verification code.
+        </p>
+        <div id="verify-info">
+          <p id="verify">
+            Verifying account... <span id="verify-status"></span><br>
+            <small>Verification code: <span id="verification-code"></span></small>
+          </p>
+          <p id="verify-message">
+          </p>
+        </div>
+        <p id="margin-bottom">
+        </p>
       </section>
     </main>
     <footer class="clear" data-transclude="partials/footer.html">

@@ -277,6 +277,10 @@ section p a.call-to-action:hover::after {
   opacity: 1;
 }
 
+section p small {
+  font-size: 18px;
+}
+
 footer {
   border-top: 1px solid rgba(204, 216, 219, 0.07);
   color: rgba(100, 105, 107, 1);

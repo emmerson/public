@@ -38,6 +38,10 @@
     width: 189.313px;
   }
 
+  section p small {
+    font-size: 14px;
+  }
+
   #contact a {
     margin-right: 4.5px;
   }
@@ -74,6 +78,10 @@
     font-size: 14px;
     padding: 9px;
     width: 128.188px;
+  }
+
+  section p small {
+    font-size: 12px;
   }
 
   section p a.call-to-action:hover {
