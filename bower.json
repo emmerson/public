@@ -8,5 +8,13 @@
     "query-string": "~1.0.0",
     "page.js": "visionmedia/page.js#~1.3.7",
     "blast-text": "~1.1.1"
+  },
+  "overrides": {
+    "page.js": {
+      "main": "index.js"
+    },
+    "blast-text": {
+      "main": "jquery.blast.js"
+    }
   }
 }
