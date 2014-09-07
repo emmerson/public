@@ -97,7 +97,7 @@
                     $('#verify-status').text('OK');
 
                     setTimeout(function() {
-                        showVerificationMessage('Welcome to Axis, ' + data.username);
+                        showVerificationMessage('Welcome to Axis, ' + data.username + '.');
                     }, 1000 * 0.6);
                 },
                 error: function(xhr, type) {
