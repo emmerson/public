@@ -23,7 +23,7 @@
 
             var $footer = $('footer');
             $footer.css('opacity', 0);
-            TweenMax.to($footer, 0.4, {
+            TweenMax.to($footer, 0.2, {
                 opacity: 1,
                 onComplete: function() {
                     $footer.css('opacity', '');
