@@ -8,12 +8,12 @@
 (function ($, window, document, undefined) {
     'use strict';
 
-    var page            = window.page,
-        TweenMax        = window.TweenMax,
-        RoughEase       = window.RoughEase,
-        Quint           = window.Quint,
-        andrewmcwatters = window.andrewmcwatters,
-        FastClick       = window.FastClick;
+    var page            = window.page;
+    var TweenMax        = window.TweenMax;
+    var RoughEase       = window.RoughEase;
+    var Quint           = window.Quint;
+    var andrewmcwatters = window.andrewmcwatters;
+    var FastClick       = window.FastClick;
 
     andrewmcwatters = (function () {
         function scrollSmoke() {
