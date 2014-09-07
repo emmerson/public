@@ -3,6 +3,10 @@
     transform: scale(0.66);
   }
 
+  header .main.logo {
+    transform: scale(0.86);
+  }
+
   header .metric {
     margin-right: 18px;
   }
