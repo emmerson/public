@@ -1,4 +1,6 @@
 header .logo {
   /* background-image: url(../images/logo_axis.svg); */
+  height: 37px;
+  margin-bottom: 35px;
   width: 119px;
 }
