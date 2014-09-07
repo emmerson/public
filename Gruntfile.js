@@ -164,12 +164,7 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         ignorePath: /^\/|\.\.\//,
-        src: [
-          '<%= config.app %>/404.html',
-          '<%= config.app %>/index.html',
-          '<%= config.app %>/axis/index.html',
-          '<%= config.app %>/axis/account.html'
-        ]
+        src: ['<%= config.app %>/index.html']
       }
     },
 
@@ -196,10 +191,10 @@ module.exports = function (grunt) {
         dest: '<%= config.dist %>'
       },
       html: [
-        // '<%= config.app %>/404.html',
+        '<%= config.app %>/404.html',
         '<%= config.app %>/index.html',
-        // '<%= config.app %>/axis/index.html',
-        // '<%= config.app %>/axis/account.html'
+        '<%= config.app %>/axis/index.html',
+        '<%= config.app %>/axis/account.html'
       ]
     },
 
