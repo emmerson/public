@@ -158,7 +158,13 @@ header nav ol li {
 }
 
 header nav ol li.active {
-  border-top: 1px solid rgba(107, 94, 62, 1);
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-name: nav-pulse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* border-top: 1px solid rgba(107, 94, 62, 1); */
+  border-top: 1px solid rgba(125, 114, 64, 1);
   opacity: 1;
 }
 
@@ -269,8 +275,8 @@ section p a.call-to-action:hover::after {
 
 footer {
   border-top: 1px solid rgba(204, 216, 219, 0.07);
-  color: rgba(204, 216, 219, 0.14);
-  font-weight: 200;
+  color: rgba(100, 105, 107, 1);
+  font-weight: 300;
   margin: 0 72px 72px;
   padding-top: 18px;
   position: relative;
@@ -284,7 +290,6 @@ footer {
 }
 
 footer strong {
-  color: rgba(204, 216, 219, 0.14);
   display: block;
   font-size: 12px;
   font-weight: 600;

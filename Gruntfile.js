@@ -193,7 +193,7 @@ module.exports = function (grunt) {
       html: [
         '<%= config.app %>/404.html',
         '<%= config.app %>/index.html',
-        '<%= config.app %>/axis/index.html'
+        '<%= config.app %>/axis/index.html',
         '<%= config.app %>/axis/account.html'
       ]
     },

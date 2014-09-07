@@ -1,0 +1,9 @@
+@keyframes nav-pulse {
+	from {
+		border-color: rgba(125, 114, 64, 1);
+	}
+
+	to {
+		border-color: rgba(125, 114, 64, 0.42);
+	}
+}
