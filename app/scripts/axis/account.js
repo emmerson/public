@@ -42,6 +42,7 @@
             return;
         }
 
+        // TODO: Fix character assignment mismatch due to timing error.
         var character = characterAtProgress(TweenMax.progress());
         $character.text(character);
     }
