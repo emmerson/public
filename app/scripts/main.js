@@ -31,19 +31,19 @@
             });
         }
 
-        function scrollSmoke() {
-            var $smoke = $('#smoke');
-            $smoke.css('display', 'block');
-            $smoke.css('opacity', 0);
-            $(window).one('load', function() {
-                TweenMax.to($smoke, 2, {
-                    opacity: 1
-                });
-                TweenMax.to($smoke, 60 * 15, {
-                    backgroundPosition: '100% 0'
-                });
-            });
-        }
+        // function scrollSmoke() {
+        //     var $smoke = $('#smoke');
+        //     $smoke.css('display', 'block');
+        //     $smoke.css('opacity', 0);
+        //     $(window).one('load', function() {
+        //         TweenMax.to($smoke, 2, {
+        //             opacity: 1
+        //         });
+        //         TweenMax.to($smoke, 60 * 15, {
+        //             backgroundPosition: '100% 0'
+        //         });
+        //     });
+        // }
 
         function showGridPoints() {
             var $grid = $('#grid');
@@ -82,7 +82,7 @@
         function registerAnimations() {
             $('footer').on('transclude', fadeInFooter);
 
-            scrollSmoke();
+            // scrollSmoke();
 
             if (page.wasReferredToByHost()) {
                 showGridPoints();
