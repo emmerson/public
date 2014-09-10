@@ -42,9 +42,13 @@
             return;
         }
 
-        // TODO: Fix character assignment mismatch due to timing error.
         var character = characterAtProgress(TweenMax.progress());
-        $character.text(character);
+        if (hexCharacters.indexOf(character) >
+            hexCharacters.indexOf($character.data('character'))) {
+            $character.text($character.data('character'));
+        } else {
+            $character.text(character);
+        }
     }
 
     function animateVerificationCode() {
@@ -79,7 +83,6 @@
                 return;
             }
 
-            // Set verification code in view
             var $verificationCode = $('#verification-code');
             $verificationCode.text(verificationCode);
             var $verify = $('#verify');
