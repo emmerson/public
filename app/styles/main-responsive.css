@@ -29,13 +29,13 @@
   }
 
   section p a.call-to-action {
-    font-size: 18px;
-    padding: 12px;
-    width: 164.813px;
+    font-size: 24px;
+    padding: 14px;
+    width: 219.750px;
   }
 
   section p a.call-to-action:hover {
-    width: 189.313px;
+    width: 250.391px;
   }
 
   section p small {
