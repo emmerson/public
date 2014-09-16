@@ -167,6 +167,7 @@ module.exports = function (grunt) {
         src: [
           '<%= config.app %>/404.html',
           '<%= config.app %>/index.html',
+          '<%= config.app %>/planimeter.html',
           // '<%= config.app %>/axis/index.html',
           // '<%= config.app %>/axis/account.html'
         ]
@@ -198,6 +199,7 @@ module.exports = function (grunt) {
       html: [
         '<%= config.app %>/404.html',
         '<%= config.app %>/index.html',
+        '<%= config.app %>/planimeter.html',
         '<%= config.app %>/axis/index.html',
         '<%= config.app %>/axis/account.html'
       ]
