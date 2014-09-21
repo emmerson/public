@@ -37,15 +37,15 @@
     <script src="scripts/ht.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
-    <script src="//maps.googleapis.com/maps/api/js"></script>
+    <script src="//maps.googleapis.com/maps/api/js?libraries=weather"></script>
     <!-- build:js({app,.tmp}) scripts/planimeter.js -->
     <script src="scripts/planimeter.js"></script>
     <!-- endbuild -->
   </head>
   <body>
-    <div id="grid">
-    </div>
     <div id="map">
+    </div>
+    <div id="grid">
     </div>
     <main role="main">
       <header>
@@ -61,6 +61,11 @@
           <small>Game &amp; Engine Development</small><br>
           <small>UI Design</small>
         </p>
+        <div id="team">
+            <div class="member" data-latlng="33.6054149,-112.125051">
+                Andrew McWatters
+            </div>
+        </div>
       </section>
     </main>
     <footer class="clear" data-transclude="partials/footer.html">

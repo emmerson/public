@@ -54,7 +54,15 @@
                   mapOptions);
         map.mapTypes.set('Planimeter', styledMap);
         map.setMapTypeId('Planimeter');
+
+        if (google.maps.weather) {
+            var cloudLayer = new google.maps.weather.CloudLayer();
+            cloudLayer.setMap(map);
+        }
+
         resize();
+
+        initializeTeam();
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 
@@ -71,4 +79,6 @@
     }
     google.maps.event.addDomListener(window, 'resize', resize);
 
+    function initializeTeam() {
+    }
 })(Zepto || jQuery, window, document);
