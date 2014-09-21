@@ -5,3 +5,20 @@ header .logo {
   margin-bottom: 28px;
   width: 244px;
 }
+
+#map {
+  background-attachment: fixed;
+  height: 100%;
+  position: fixed !important;
+  width: 100%;
+  z-index: -2;
+}
+
+img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"] {
+  display: none;
+}
+
+.gmnoscreen,
+.gmnoprint {
+  display: none;
+}
