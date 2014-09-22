@@ -32,10 +32,11 @@ img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"] {
   color: rgba(100, 105, 107, 1);
   font-weight: 600;
   line-height: 12px;
-  position: absolute;
-  margin-left: calc(6px + 4.5px);
-  /* margin-top: 6px; */
+  margin-left: calc(-4px - 2px);
+  margin-top: calc(-4px - 2px);
   min-width: 147px;
+  position: absolute;
+  text-indent: calc(8px + 2px + 4.5px);
 }
 
 .member::before {
@@ -44,9 +45,9 @@ img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"] {
   content: '';
   display: block;
   height: 8px;
-  left: calc(-6px + -6px + -4.5px);
+  /* left: calc(-4px - 2px); */
   position: absolute;
-  /* top: -12px; */
+  /* top: calc(-4px - 2px); */
   width: 8px;
 }
 
