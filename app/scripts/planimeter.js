@@ -80,5 +80,8 @@
     google.maps.event.addDomListener(window, 'resize', resize);
 
     function initializeTeam() {
+        $('#team .member').each(function(index, item) {
+            $(map).append(item);
+        });
     }
 })(Zepto || jQuery, window, document);
