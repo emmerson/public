@@ -8,10 +8,12 @@
 (function ($, window, document, undefined) {
     'use strict';
 
-    var google = window.google;
-    var largeCenter  = new google.maps.LatLng(27, 0);
-    var mediumCenter = new google.maps.LatLng(7, 0);
+    var google       = window.google;
+    var largeCenter  = new google.maps.LatLng(14, 41.25);
+    var mediumCenter = new google.maps.LatLng(7, 7);
     var map;
+    var DOMOverlay   = window.DOMOverlay;
+    var overlay;
 
     var styles = [
       {
@@ -55,6 +57,8 @@
         map.mapTypes.set('Planimeter', styledMap);
         map.setMapTypeId('Planimeter');
 
+        overlay = new DOMOverlay();
+
         if (google.maps.weather) {
             var cloudLayer = new google.maps.weather.CloudLayer();
             cloudLayer.setMap(map);
@@ -81,7 +85,8 @@
 
     function initializeTeam() {
         $('#team .member').each(function(index, item) {
-            $(map).append(item);
+            overlay.add(item);
         });
+        overlay.setMap(map);
     }
 })(Zepto || jQuery, window, document);
