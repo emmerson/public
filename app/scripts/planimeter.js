@@ -8,11 +8,10 @@
 (function ($, window, document, undefined) {
     'use strict';
 
-    var google       = window.google;
-    var largeCenter  = new google.maps.LatLng(14, 41.25);
-    var mediumCenter = new google.maps.LatLng(7, 7);
+    var google     = window.google;
+    var center     = new google.maps.LatLng(7, 21);
     var map;
-    var DOMOverlay   = window.DOMOverlay;
+    var DOMOverlay = window.DOMOverlay;
     var overlay;
 
     var styles = [
@@ -47,7 +46,7 @@
         });
         var mapOptions = {
             backgroundColor: 'transparent',
-            center: largeCenter,
+            center: center,
             disableDefaultUI: true,
             mapTypeId: google.maps.MapTypeId.TERRAIN,
             zoom: 3
@@ -73,20 +72,56 @@
     function resize() {
         requestAnimationFrame(function() {
             if (window.matchMedia('(max-width: 1035px)').matches) {
-                map.panTo(mediumCenter);
+                map.panTo(center);
                 map.setZoom(2);
             } else {
-                map.panTo(largeCenter);
+                map.panTo(center);
                 map.setZoom(3);
             }
         });
     }
     google.maps.event.addDomListener(window, 'resize', resize);
 
+    function setDropPinActive($member) {
+        requestAnimationFrame(function() {
+            $('#map .member').removeClass('active');
+            requestAnimationFrame(function() {
+                var latlng = $member.data('latlng');
+                $('#map .member[data-latlng=\"' + latlng + '\"]').addClass('active');
+            });
+        });
+    }
+
+    function setLiActive($member) {
+        requestAnimationFrame(function() {
+            $('#team-list .member').removeClass('active');
+            requestAnimationFrame(function() {
+                $member.addClass('active');
+                setDropPinActive($member);
+            });
+        });
+    }
+
+    function panToMember(e) {
+        var $member = $(e.target);
+        if ($member.hasClass('active')) {
+            return;
+        }
+
+        setLiActive($member);
+
+        var latlng = $member.data('latlng').split(',');
+        map.panTo(new google.maps.LatLng(+latlng[0], +latlng[1]));
+    }
+
     function initializeTeam() {
         $('#team .member').each(function(index, item) {
             overlay.add(item);
         });
         overlay.setMap(map);
+
+        $('#team-list .member').each(function(index, item) {
+            $(item).on('click', panToMember);
+        });
     }
 })(Zepto || jQuery, window, document);

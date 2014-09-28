@@ -28,8 +28,9 @@ img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"] {
   opacity: 0.03;
 }
 
-.member {
+#map .member {
   color: rgba(100, 105, 107, 1);
+  font-size: 0;
   font-weight: 600;
   line-height: 12px;
   margin-left: calc(-4px - 2px);
@@ -39,9 +40,10 @@ img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"] {
   text-indent: calc(8px + 2px + 4.5px);
 }
 
-.member::before {
+#map .member::before {
   border-radius: 100%;
-  border: 2px solid rgba(100, 105, 107, 1);
+  /* border: 2px solid rgba(100, 105, 107, 1); */
+  border: 2px solid rgba(204, 216, 219, 1);
   content: '';
   display: block;
   height: 8px;
@@ -51,13 +53,65 @@ img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"] {
   width: 8px;
 }
 
-.member label {
+#map .member label {
   display: block;
   font-weight: 300;
-  font-size: 11px;
+  /* font-size: 11px; */
+  font-size: 0;
   line-height: 18px;
 }
 
+#team-list {
+  list-style: none;
+  margin-top: 0;
+  margin-left: calc(-8px - 4px - 9px);
+  margin-bottom: 53px;
+  padding-left: calc(8px + 4px + 9px);
+  width: 100%;
+}
+
+#team-list li {
+  /* color: rgba(100, 105, 107, 1); */
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 12px;
+  margin-bottom: 18px;
+  width: 178px;
+}
+
+#team-list li::before {
+  border-radius: 100%;
+  /* border: 2px solid rgba(100, 105, 107, 1); */
+  border: 2px solid rgba(204, 216, 219, 1);
+  content: '';
+  display: block;
+  height: 8px;
+  /* left: calc(-4px - 2px); */
+  margin-left: calc(-8px - 4px - 9px);
+  position: absolute;
+  /* top: calc(-4px - 2px); */
+  width: 8px;
+}
+
+#map .member.active::before,
+#team-list li.active::before {
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-name: nav-pulse;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#team-list label {
+  display: block;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 24px;
+}
+
+#team-list,
 .gm-style {
   font-family: "FF Din",
                "Proxima Nova",
