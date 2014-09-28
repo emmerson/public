@@ -111,7 +111,8 @@
         setLiActive($member);
 
         var latlng = $member.data('latlng').split(',');
-        map.panTo(new google.maps.LatLng(+latlng[0], +latlng[1]));
+        center = new google.maps.LatLng(+latlng[0], +latlng[1]);
+        map.panTo(center);
     }
 
     function initializeTeam() {
