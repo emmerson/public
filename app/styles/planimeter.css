@@ -71,7 +71,6 @@ img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"] {
 }
 
 #team-list li {
-  /* color: rgba(100, 105, 107, 1); */
   cursor: pointer;
   display: block;
   font-size: 18px;
@@ -79,6 +78,10 @@ img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"] {
   line-height: 12px;
   margin-bottom: 18px;
   width: 178px;
+}
+
+#team-list li.active {
+  color: rgba(100, 105, 107, 1);
 }
 
 #team-list li::before {

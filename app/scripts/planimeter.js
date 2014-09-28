@@ -9,7 +9,7 @@
     'use strict';
 
     var google     = window.google;
-    var center     = new google.maps.LatLng(7, 21);
+    var center     = new google.maps.LatLng(33.6054149, -112.125051);
     var map;
     var DOMOverlay = window.DOMOverlay;
     var overlay;
@@ -73,10 +73,10 @@
         requestAnimationFrame(function() {
             if (window.matchMedia('(max-width: 1035px)').matches) {
                 map.panTo(center);
-                map.setZoom(2);
+                map.setZoom(3);
             } else {
                 map.panTo(center);
-                map.setZoom(3);
+                map.setZoom(4);
             }
         });
     }
