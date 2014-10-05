@@ -20,3 +20,8 @@ header .logo {
 .right {
   width: 50%;
 }
+
+.left {
+  width: calc(50% - 18px);
+  padding-right: 18px;
+}
