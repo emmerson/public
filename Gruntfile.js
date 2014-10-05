@@ -201,7 +201,8 @@ module.exports = function (grunt) {
         '<%= config.app %>/index.html',
         '<%= config.app %>/planimeter.html',
         '<%= config.app %>/axis/index.html',
-        '<%= config.app %>/axis/account.html'
+        '<%= config.app %>/axis/account.html',
+        '<%= config.app %>/grid/index.html'
       ]
     },
 
