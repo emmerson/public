@@ -205,12 +205,18 @@ section {
   flex-flow: row wrap;
 }
 
+section h1 {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: normal;
+}
+
 section p:first-of-type {
   margin-top: 72px;
 }
 
 section p {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 100;
   line-height: normal;
   margin-bottom: 53px;
@@ -218,6 +224,10 @@ section p {
   max-width: 1317px;
   transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
   width: 100%;
+}
+
+section p.hero {
+  font-size: 36px;
 }
 
 section p a.project {

@@ -19,8 +19,12 @@
     margin-top: 36px;
   }
 
-  section p {
+  section p.hero {
     font-size: 28px;
+  }
+
+  section p {
+    font-size: 18px;
     margin-bottom: 36px;
   }
 
@@ -70,8 +74,16 @@
     display: none;
   }
 
-  section p {
+  section h1 {
+    font-size: 24px;
+  }
+
+  section p.hero {
     font-size: 16px;
+  }
+
+  section p {
+    font-size: 12px;
   }
 
   section p a.call-to-action {
