@@ -9,6 +9,10 @@ body {
   display: none !important;
 }
 
+#main {
+  overflow: hidden;
+}
+
 header .logo {
   /* background-image: url(../images/logo_grid.svg); */
   height: 37px;
