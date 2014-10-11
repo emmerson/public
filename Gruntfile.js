@@ -1,5 +1,5 @@
-// Generated on 2014-08-31 using
-// generator-webapp 0.5.0
+// Generated on 2014-10-11 using
+// generator-webapp 0.5.1
 'use strict';
 
 // # Globbing
@@ -209,7 +209,11 @@ module.exports = function (grunt) {
     // Performs rewrites based on rev and the useminPrepare configuration
     usemin: {
       options: {
-        assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
+        assetsDirs: [
+          '<%= config.dist %>',
+          '<%= config.dist %>/images',
+          '<%= config.dist %>/styles'
+        ]
       },
       html: ['<%= config.dist %>/{,*/}*.html'],
       css: ['<%= config.dist %>/styles/{,*/}*.css']
