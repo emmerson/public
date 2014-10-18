@@ -23,9 +23,17 @@ body {
                    Verdana,
                    sans-serif;
   margin: 0;
-  overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
+}
+
+#fork-me-container {
+  height: 149px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 149px;
 }
 
 #fork-me {
