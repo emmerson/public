@@ -90,6 +90,7 @@
 
             animateVerificationCode();
 
+            /* jshint camelcase: false */
             $.ajax({
                 type: 'POST',
                 url: URL_WEBAPI_BASE + '/verify',
