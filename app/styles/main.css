@@ -206,6 +206,24 @@ header h1 {
   margin: 18px 0 0 0;
 }
 
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+code {
+  background-color: rgba(189, 159, 134, 0.07);
+  border-radius: 4px;
+  color: rgba(100, 105, 107, 1);
+  font-size: 11px;
+  padding: 2px 4px;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+a code:hover {
+  color: rgba(125, 114, 64, 1);
+}
+
 section {
   align-content: flex-start;
   align-items: center;
@@ -258,6 +276,7 @@ section p strong {
   font-weight: 300;
 }
 
+aside p:last-of-type,
 section p:last-of-type {
   margin-bottom: calc(72px + 55px);
 }

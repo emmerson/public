@@ -29,6 +29,7 @@
     margin-bottom: 36px;
   }
 
+  aside p:last-of-type,
   section p:last-of-type {
     margin-bottom: calc(36px + 55px);
   }
