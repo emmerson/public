@@ -25,7 +25,7 @@
         $('*[data-markdown]').on('transclude', function(e) {
             var $target = $(e.target);
             requestAnimationFrame(function() {
-                marked($target.text(), function(err, content) {
+                marked($target.html(), function(err, content) {
                     if (err) {
                         console.error(err);
                         return;

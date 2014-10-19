@@ -299,6 +299,10 @@ section p small {
   font-size: 18px;
 }
 
+article h1 {
+  font-size: 36px;
+}
+
 footer {
   border-top: 1px solid rgba(204, 216, 219, 0.07);
   color: rgba(100, 105, 107, 1);
