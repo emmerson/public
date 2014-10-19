@@ -219,8 +219,14 @@ section h1 {
   line-height: normal;
 }
 
+aside p:first-of-type,
 section p:first-of-type {
   margin-top: 72px;
+}
+
+aside p,
+section p {
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 section p {
@@ -230,7 +236,6 @@ section p {
   margin-bottom: 53px;
   margin-top: 0;
   max-width: 1317px;
-  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
   width: 100%;
 }
 
@@ -265,16 +270,15 @@ section p a.call-to-action {
   padding: 18px;
   transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
   white-space: nowrap;
-  width: 219.750px;
 }
 
 section p a.call-to-action:hover {
   background-color: rgba(125, 114, 64, 1);
   border-color: rgba(125, 114, 64, 1);
   color: rgba(31, 35, 36, 1);
-  width: 250.406px;
 }
 
+/*
 section p a.call-to-action::after {
   content: '>';
   display: inline-block;
@@ -287,13 +291,9 @@ section p a.call-to-action::after {
                 Verdana,
                 sans-serif;
   margin-left: 6px;
-  opacity: 0;
   transition: opacity 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-
-section p a.call-to-action:hover::after {
-  opacity: 1;
-}
+*/
 
 section p small {
   font-size: 18px;

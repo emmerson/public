@@ -29,3 +29,13 @@ header .logo {
   width: calc(50% - 18px);
   padding-right: 18px;
 }
+
+section h1 a.love:hover {
+  color: rgba(127, 198, 219, 1);
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+aside {
+  float: left;
+  width: 224px;
+}

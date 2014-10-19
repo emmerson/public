@@ -76,13 +76,16 @@
             flickerOutGrid();
         }
 
+        var selectors = [
+            'header',
+            'section',
+            'footer'
+        ];
+
+        // Fade in the core elements, one after another, quickly.
         function initAnimations() {
-            // Fade in the core elements, one after another, quickly.
-            var selectors = [
-                'header',
-                'section',
-                'footer'
-            ];
+            /* jshint validthis: true */
+            var selectors = this.selectors;
 
             if (page.wasReferredToByHost()) {
                 selectors.shift();
@@ -108,7 +111,8 @@
 
         return {
             registerAnimations:  registerAnimations,
-            initAnimations:      initAnimations
+            initAnimations:      initAnimations,
+            selectors:           selectors
         };
     })();
 

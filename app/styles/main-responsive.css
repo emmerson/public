@@ -15,6 +15,7 @@
     margin-right: 18px;
   }
 
+  aside p:first-of-type,
   section p:first-of-type {
     margin-top: 36px;
   }
@@ -35,11 +36,6 @@
   section p a.call-to-action {
     font-size: 24px;
     padding: 14px;
-    width: 219.750px;
-  }
-
-  section p a.call-to-action:hover {
-    width: 250.391px;
   }
 
   section p small {
@@ -89,15 +85,10 @@
   section p a.call-to-action {
     font-size: 14px;
     padding: 9px;
-    width: 128.188px;
   }
 
   section p small {
     font-size: 12px;
-  }
-
-  section p a.call-to-action:hover {
-    width: 148.578px;
   }
 
   footer {
