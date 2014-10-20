@@ -13,7 +13,7 @@
     var location    = window.location;
     var marked      = window.marked;
     var am          = window.andrewmcwatters;
-    // var TweenMax    = window.TweenMax;
+    var TweenMax    = window.TweenMax;
 
     page.base('/grid');
     page('*', function(ctx, next) {
@@ -21,8 +21,40 @@
         next();
     });
 
+    function addHomeListener() {
+        $('nav li:nth-child(2)').on('click', function(e) {
+            e.preventDefault();
+            setArticle('Home');
+        });
+    }
+
+    function fadeInArticle() {
+        var $article = $('article');
+        $article.css('display', '');
+        $article.css('opacity', 0);
+        TweenMax.staggerTo($article, 0.8, {
+            opacity: 1,
+            delay: 0.2
+        }, 0.1);
+    }
+
+    function addMarkdownAnchorListener(target) {
+        $(target).find('a').on('click', function(e) {
+            var $target = $(e.target);
+            var anchor  = $target.parent()[0];
+            var article = queryString.parse(anchor.search).title;
+
+            if (article) {
+                e.preventDefault();
+                setArticle(article);
+            }
+        });
+    }
+
     function addMarkdownListener() {
         $('*[data-markdown]').on('transclude', function(e) {
+            e.preventDefault();
+
             var $target = $(e.target);
             requestAnimationFrame(function() {
                 marked($target.html(), function(err, content) {
@@ -32,6 +64,8 @@
                     }
 
                     $target.html(content);
+                    addMarkdownAnchorListener($target);
+                    fadeInArticle();
                 });
             });
         });
@@ -61,6 +95,7 @@
     ];
 
     $(function() {
+        addHomeListener();
         addMarkdownListener();
     });
 })(Zepto || jQuery, window, document);
