@@ -15,9 +15,15 @@
     margin-right: 18px;
   }
 
-  aside p:first-of-type,
-  section p:first-of-type {
+  aside p:first-child,
+  section h1:first-child,
+  section p:first-child {
     margin-top: 36px;
+  }
+
+  section h1,
+  section p {
+    margin-bottom: 36px;
   }
 
   section p.hero {
@@ -26,11 +32,10 @@
 
   section p {
     font-size: 24px;
-    margin-bottom: 36px;
   }
 
-  aside p:last-of-type,
-  section p:last-of-type {
+  aside p:last-child,
+  section p:last-child {
     margin-bottom: calc(36px + 55px);
   }
 

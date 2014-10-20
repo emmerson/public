@@ -231,20 +231,23 @@ section {
   flex-flow: row wrap;
 }
 
-section h1 {
-  font-size: 48px;
-  font-weight: 300;
-  line-height: normal;
-}
-
-aside p:first-of-type,
-section p:first-of-type {
+aside p:first-child,
+section h1:first-child,
+section p:first-child {
   margin-top: 72px;
 }
 
 aside p,
+section h1,
 section p {
   transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+section h1 {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 36px;
 }
 
 section p {
@@ -276,8 +279,8 @@ section p strong {
   font-weight: 300;
 }
 
-aside p:last-of-type,
-section p:last-of-type {
+aside p:last-child,
+section p:last-child {
   margin-bottom: calc(72px + 55px);
 }
 
