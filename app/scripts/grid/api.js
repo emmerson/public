@@ -31,9 +31,7 @@
                         return;
                     }
 
-                    requestAnimationFrame(function() {
-                        $target.html(content);
-                    });
+                    $target.html(content);
                 });
             });
         });
