@@ -17,72 +17,19 @@
 
     page.base('/grid');
     page('*', function(ctx, next) {
-        ctx.query = queryString.parse(location.search);
-        next();
+        setTimeout(function() {
+            ctx.query = queryString.parse(location.search);
+            next();
+        }, 0);
     });
-
-    function addHomeListener() {
-        $('nav li:nth-child(2)').on('click', function(e) {
-            e.preventDefault();
-            setArticle('Home');
-        });
-    }
-
-    function fadeInArticle() {
-        var $article = $('article');
-        $article.css('display', '');
-        $article.css('opacity', 0);
-        TweenMax.staggerTo($article, 0.8, {
-            opacity: 1,
-            delay: 0.2
-        }, 0.1);
-    }
-
-    function addMarkdownAnchorListener(target) {
-        $(target).find('a').on('click', function(e) {
-            var $target = $(e.target);
-            var anchor  = $target.parent()[0];
-            var article = queryString.parse(anchor.search).title;
-
-            if (article) {
-                e.preventDefault();
-                setArticle(article);
-            }
-        });
-    }
-
-    function addMarkdownListener() {
-        $('*[data-markdown]').on('transclude', function(e) {
-            e.preventDefault();
-
-            var $target = $(e.target);
-            requestAnimationFrame(function() {
-                marked($target.html(), function(err, content) {
-                    if (err) {
-                        console.error(err);
-                        return;
-                    }
-
-                    $target.html(content);
-                    addMarkdownAnchorListener($target);
-                    fadeInArticle();
-                });
-            });
-        });
-    }
-
-    function setArticle(title) {
-        var article  = 'article';
-        var $article = $(article);
-        $article.data('transclude', 'grid/docs/' + title + '.md');
-        document.transcludeSelector(article);
-    }
 
     page('/api(?:.html)?', function(ctx) {
         var title = ctx.query.title || 'Home';
 
         requestAnimationFrame(function() {
-            setArticle(title);
+            var $article = $('article');
+            $article.data('transclude', 'grid/docs/' + title + '.md');
+            document.transcludeSelector('article');
         });
     });
     page();
@@ -94,8 +41,29 @@
         'footer'
     ];
 
+    function showMarkdown($target) {
+        $target.html(marked($target.html()));
+        $target.css('display', '');
+        $target.css('opacity', 0);
+        TweenMax.staggerTo($target, 0.8, {
+            opacity: 1,
+            delay: 0.2
+        }, 0.1);
+    }
+
     $(function() {
-        addHomeListener();
-        addMarkdownListener();
+        $('*[data-markdown]').on('transclude', function(e) {
+            e.preventDefault();
+
+            requestAnimationFrame(function() {
+                showMarkdown($(e.target));
+            });
+        });
+
+        $(document).on('ajaxError', function(e, xhr, options, error) {
+            var $article = $('article');
+            $article.html(error);
+            showMarkdown($article);
+        });
     });
 })(Zepto || jQuery, window, document);
