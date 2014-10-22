@@ -17,8 +17,10 @@
 
     page.base('/axis');
     page('*', function(ctx, next) {
-        ctx.query = queryString.parse(location.search);
-        next();
+        setTimeout(function() {
+            ctx.query = queryString.parse(location.search);
+            next();
+        }, 0);
     });
 
     var hexCharacters = [
