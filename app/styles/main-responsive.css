@@ -34,7 +34,7 @@
     font-size: 24px;
   }
 
-  aside p:last-child,
+  aside,
   section p:last-child {
     margin-bottom: calc(36px + 55px);
   }
