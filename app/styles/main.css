@@ -206,7 +206,7 @@ header h1 {
   margin: 18px 0 0 0;
 }
 
-aside ul {
+ul {
   list-style: none;
   padding: 0;
 }
@@ -279,7 +279,7 @@ section p strong {
   font-weight: 300;
 }
 
-aside p:last-child,
+aside,
 section p:last-child {
   margin-bottom: calc(72px + 55px);
 }
