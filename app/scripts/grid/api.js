@@ -16,7 +16,7 @@
     var TweenMax    = window.TweenMax;
 
     page.base('/grid');
-    page('*', function(ctx, next) {
+    page(function(ctx, next) {
         setTimeout(function() {
             ctx.query = queryString.parse(location.search);
             next();
@@ -41,8 +41,19 @@
         'footer'
     ];
 
+    function setArticleAnchors($target) {
+        $target.find('a').each(function(index, item) {
+            var href = $(item).attr('href');
+            if (href.indexOf('/') === -1) {
+                $(item).attr('href', 'grid/api?title=' + href);
+            }
+        });
+    }
+
     function showMarkdown($target) {
         $target.html(marked($target.html()));
+        setArticleAnchors($target);
+
         $target.css('display', '');
         $target.css('opacity', 0);
         TweenMax.staggerTo($target, 0.8, {
