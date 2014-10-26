@@ -1,7 +1,7 @@
 convar
 ======
 
-A console command
+A console variable
 
 Class Members
 -------------
