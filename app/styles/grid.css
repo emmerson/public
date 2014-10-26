@@ -49,3 +49,16 @@ article p > a:hover {
   color: rgba(125, 114, 64, 1);
   transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
+
+.client,
+.server {
+  font-size: 11px;
+}
+
+.client {
+  color: rgba(168, 168, 123, 1);
+}
+
+.server {
+  color: rgba(123, 158, 168, 1);
+}

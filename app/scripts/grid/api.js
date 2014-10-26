@@ -50,9 +50,21 @@
         });
     }
 
+    function applyUniverseClasses($target) {
+        $target.find('td').each(function(index, item) {
+            var text = $(item).text();
+            if (text === 'Client') {
+                $(item).addClass('client');
+            } else if (text === 'Server') {
+                $(item).addClass('server');
+            }
+        });
+    }
+
     function showMarkdown($target) {
         $target.html(marked($target.html()));
         setArticleAnchors($target);
+        applyUniverseClasses($target);
 
         $target.css('display', '');
         $target.css('opacity', 0);
