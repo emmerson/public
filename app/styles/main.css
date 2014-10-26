@@ -325,6 +325,10 @@ article h1 {
   font-size: 36px;
 }
 
+article h2 {
+  font-weight: 600;
+}
+
 table {
   border-spacing: 0;
 }
