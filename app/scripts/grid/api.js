@@ -16,7 +16,7 @@
     var TweenMax    = window.TweenMax;
 
     page.base('/grid');
-    page(function(ctx, next) {
+    page('*', function(ctx, next) {
         setTimeout(function() {
             ctx.query = queryString.parse(location.search);
             next();
