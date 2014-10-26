@@ -35,7 +35,7 @@
   }
 
   aside,
-  section p:last-child {
+  section {
     margin-bottom: calc(36px + 55px);
   }
 

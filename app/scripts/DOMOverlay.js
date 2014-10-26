@@ -30,7 +30,7 @@ DOMOverlay.prototype.onAdd = function() {
     }
 
     var panes = this.getPanes();
-    for (var i = this.elements_.length - 1; i >= 0; i--) {
+    for (var i = 0; i < this.elements_.length; i++) {
         panes.overlayLayer.appendChild(this.elements_[i]);
     }
 };
@@ -42,7 +42,7 @@ DOMOverlay.prototype.draw = function() {
 
     var overlayProjection = this.getProjection();
 
-    for (var i = this.elements_.length - 1; i >= 0; i--) {
+    for (var i = 0; i < this.elements_.length; i++) {
         var element = this.elements_[i];
         var latlng  = element.dataset.latlng.split(',');
             latlng  = new google.maps.LatLng(+latlng[0], +latlng[1]);
@@ -53,7 +53,7 @@ DOMOverlay.prototype.draw = function() {
 };
 
 DOMOverlay.prototype.onRemove = function() {
-    for (var i = this.elements_.length - 1; i >= 0; i--) {
+    for (var i = 0; i < this.elements_.length; i++) {
         this.elements_[i].parentNode.removeChild(this.elements_[i]);
     }
     this.elements_ = null;

@@ -280,7 +280,7 @@ section p strong {
 }
 
 aside,
-section p:last-child {
+section {
   margin-bottom: calc(72px + 55px);
 }
 
