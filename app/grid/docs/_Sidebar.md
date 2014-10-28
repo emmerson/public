@@ -13,6 +13,7 @@
 * [`regionlayer`](regionlayer)
 * [`regiontileset`](regiontileset)
 * [`scheme`](scheme)
+* [`sprite`](sprite)
 * [`typelenvalues`](typelenvalues)
 * [`vector`](vector)
 
