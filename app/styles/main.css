@@ -134,7 +134,8 @@ header .metric:last-of-type {
 }
 
 header .metric .value,
-.project span {
+.project span,
+h2.hero {
   font-family: "FF Din",
                "Proxima Nova",
                "Lucida Grande",
@@ -210,31 +211,6 @@ header h1 {
   margin: 18px 0 0 0;
 }
 
-h1,
-h2,
-h3 {
-  width: 100%;
-}
-
-h1.hero,
-h2.hero,
-h3.hero {
-  font-weight: 500;
-  margin: 0;
-}
-
-h2.hero {
-  font-size: 72px;
-}
-
-h2.hero:last-of-type {
-  margin-bottom: 36px;
-}
-
-h2.hero:last-of-type + p {
-  margin-bottom: 0;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -275,12 +251,38 @@ section h1:first-child,
   margin-top: 72px;
 }
 
+h2.hero,
+h3.hero {
+  margin: 0;
+  width: 100%;
+}
+
+h3.hero {
+  font-weight: 600;
+  margin-bottom: 29px;
+}
+
+h2.hero {
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 93%;
+}
+
+h2.hero:last-of-type {
+  margin-bottom: 53px;
+}
+
+h2.hero:last-of-type + p {
+  margin-bottom: 0;
+}
+
 section p:first-child {
   margin-top: 32px;
 }
 
 aside p,
 section h1,
+h2.hero,
 section p {
   transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
