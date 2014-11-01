@@ -169,6 +169,7 @@ module.exports = function (grunt) {
           '<%= config.app %>/404.html',
           '<%= config.app %>/index.html',
           '<%= config.app %>/planimeter.html',
+          '<%= config.app %>/wiwo.html',
           // '<%= config.app %>/axis/index.html',
           // '<%= config.app %>/axis/account.html'
         ]
