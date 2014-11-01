@@ -92,7 +92,7 @@ img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"] {
   display: block;
   height: 8px;
   /* left: calc(-4px - 2px); */
-  margin-left: calc(-8px - 4px - 9px);
+  margin-left: calc(-8px - 4px - 12px);
   position: absolute;
   /* top: calc(-4px - 2px); */
   width: 8px;

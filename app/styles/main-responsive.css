@@ -59,13 +59,19 @@
     pointer-events: none;
   }
 
+  section.fullscreen {
+    position: relative;
+    margin: 0;
+    margin-bottom: 55px;
+  }
+
   #copyright {
     color: rgba(0, 0, 0, 0);
     pointer-events: none;
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 667px) {
   main {
     padding: 36px;
     margin: 0 auto -91px;

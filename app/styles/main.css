@@ -133,7 +133,8 @@ header .metric:last-of-type {
   margin-right: 0;
 }
 
-header .metric .value {
+header .metric .value,
+.project span {
   font-family: "FF Din",
                "Proxima Nova",
                "Lucida Grande",
@@ -142,8 +143,11 @@ header .metric .value {
                 Arial,
                 Verdana,
                 sans-serif;
-  font-size: 18px;
   font-weight: 300;
+}
+
+header .metric .value {
+  font-size: 18px;
 }
 
 header nav {
@@ -206,6 +210,31 @@ header h1 {
   margin: 18px 0 0 0;
 }
 
+h1,
+h2,
+h3 {
+  width: 100%;
+}
+
+h1.hero,
+h2.hero,
+h3.hero {
+  font-weight: 500;
+  margin: 0;
+}
+
+h2.hero {
+  font-size: 72px;
+}
+
+h2.hero:last-of-type {
+  margin-bottom: 36px;
+}
+
+h2.hero:last-of-type + p {
+  margin-bottom: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -231,10 +260,23 @@ section {
   flex-flow: row wrap;
 }
 
+section.fullscreen {
+  align-content: center;
+  height: calc(100% - 2 * 72px - 132px - 55px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 204px 72px 127px;
+}
+
 aside p:first-child,
 section h1:first-child,
-section p:first-child {
+/* section p:first-child */ {
   margin-top: 72px;
+}
+
+section p:first-child {
+  margin-top: 32px;
 }
 
 aside p,
