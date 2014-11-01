@@ -1,3 +1,6 @@
+// bower:scss
+// endbower
+
 *::selection {
   background: rgba(7, 7, 7, 1);
   color: rgba(240, 246, 248, 1);
@@ -13,7 +16,7 @@ body {
   background-image: url(../images/background.png);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   color: rgba(204, 216, 219, 1);
   font: 14px/18px "Proxima Nova",
                   "Lucida Grande",
