@@ -1,0 +1,50 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+// Core variables
+@import "variables.scss";
+
+
+// Body reset
+
+html {
+  font-size: 18px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-attachment: $body-bg-attachment;
+  background-color: $body-bg-color;
+  background-image: $body-bg-image;
+  background-position: $body-bg-position;
+  background-repeat: $body-bg-repeat;
+  margin: 0;
+  text-rendering: $text-rendering;
+}
+
+#grid {
+  background-image: $grid-bg-image;
+  background-repeat: $grid-bg-repeat;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#grid.points {
+  background-image: $grid-points-bg-image;
+}
+
+main,
+footer {
+  margin: $main-margin;
+}
+
+main {
+  min-height: calc(100% - 2 * #{$main-margin});
+}
