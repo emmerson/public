@@ -1,0 +1,60 @@
+//
+// Header
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+header {
+  #logo {
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    height: 36px;
+    margin-bottom: 24px;
+    text-indent: -9999px;
+    width: 143px;
+  }
+
+  ol {
+    border-top: 1px solid rgba($white, .07);
+    font-size: 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    height: 17px;
+    margin-right: 36px;
+    margin-top: -1px;
+    padding-top: 18px;
+
+    &.active {
+      border-top: 1px solid $gold;
+
+      a {
+        color: $white;
+      }
+    }
+
+  }
+
+  a {
+    color: rgba($white, .42);
+    font-size: 14px;
+
+    a.active {
+      color: $white;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  h1 {
+    font-size: $font-size-base;
+    font-weight: 200;
+  }
+}

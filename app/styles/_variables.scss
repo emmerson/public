@@ -10,7 +10,7 @@
 $white-base:             rgba(204, 216, 219, 1);
 $white:                  $white-base;
 
-$gold-base:              rgba(125, 114,  64, 1);
+$gold-base:              rgba(125, 114, 64, 1);
 $gold:                   $gold-base;
 
 
@@ -45,12 +45,18 @@ $grid-bg-repeat:        repeat;
 //** Margin for `<main>`
 $main-margin:           72px;
 
+//** Height for `<body>`
+$body-height:            calc(100% - #{$main-margin});
+
 //** Global textual link color.
 $link-color:            $white;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      $gold;
 //** Link hover decoration.
 $link-hover-decoration: none;
+
+//** Height for `<footer>`
+$footer-height:         40px;
 
 
 //== Typography
@@ -64,3 +70,10 @@ $font-size-base:          18px;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.45; // 27/18
+
+
+//== Easing Functions
+//
+//## Transitions for animations.
+
+$ease-out-quint-slow:     all 600ms cubic-bezier(.23, 1, .32, 1);

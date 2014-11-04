@@ -2,16 +2,16 @@
 // endbower
 
 // Core variables
-@import "variables.scss";
+@import 'variables';
 
 // Dependencies
-@import "font-stack.scss";
+@import 'font-stack';
 
 // Core CSS
-@import "scaffolding.scss";
+@import 'scaffolding';
 
 // Components
-@import "header.scss";
-@import "github-ribbons.scss";
-@import "section.scss";
-@import "footer.scss";
+@import 'header';
+@import 'github-ribbons';
+@import 'section';
+@import 'footer';

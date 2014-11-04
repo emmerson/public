@@ -2,27 +2,26 @@
 // Scaffolding
 // --------------------------------------------------
 
-// Core variables
-@import "variables.scss";
-
 
 // Body reset
 
 html {
   font-size: 18px;
+  height: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-  font-family: $font-family-base;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-  color: $text-color;
   background-attachment: $body-bg-attachment;
   background-color: $body-bg-color;
   background-image: $body-bg-image;
   background-position: $body-bg-position;
   background-repeat: $body-bg-repeat;
+  color: $text-color;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  height: $body-height;
+  line-height: $line-height-base;
   margin: 0;
   text-rendering: $text-rendering;
 }
@@ -34,10 +33,11 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-}
+  z-index: -1;
 
-#grid.points {
-  background-image: $grid-points-bg-image;
+  &.points {
+    background-image: $grid-points-bg-image;
+  }
 }
 
 main,
@@ -46,5 +46,22 @@ footer {
 }
 
 main {
-  min-height: calc(100% - 2 * #{$main-margin});
+  margin: $main-margin;
+  margin-bottom: (-2 * $main-margin + $footer-height - 8px);
+  min-height: $body-height;
+}
+
+
+// Links
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: $ease-out-quint-slow;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
 }
