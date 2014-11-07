@@ -1,0 +1,75 @@
+//
+// Section
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+section {
+  display: flex;
+  flex-direction: column;
+
+  &.fullscreen {
+    height: 100%;
+    justify-content: center;
+    margin: $main-margin 0 0;
+
+    @media (min-width: $screen-md-min) {
+      box-sizing: border-box;
+      height: $viewport-height !important;
+      left: 0;
+      margin: $main-margin !important;
+      padding-bottom: $footer-height;
+      padding-top: $header-height;
+      position: absolute;
+      top: 0;
+      width: $viewport-width;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    @media (max-device-width: $screen-xs-min) {
+      margin: $main-margin / 2 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  h1 {
+    margin: 0;
+    margin-bottom: 36px;
+
+    span.large-block {
+      line-height: 79px;
+    }
+
+    + p {
+      margin: 0;
+    }
+  }
+
+  &::after {
+    content: ' ';
+    display: table;
+    height: $section-after;
+  }
+}
+
+.call-to-action {
+  border: 2px solid $white;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 100;
+  padding: 18px;
+
+  &:hover {
+    background-color: $gold;
+    border-color: $gold;
+    color: $black;
+  }
+}

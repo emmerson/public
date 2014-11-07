@@ -43,12 +43,25 @@ body {
 main,
 footer {
   margin: $main-margin;
+
+  @media (max-device-width: $screen-xs-min) {
+    margin: $main-margin / 2 !important;
+  }
 }
 
 main {
-  margin: $main-margin;
-  margin-bottom: (-2 * $main-margin + $footer-height - 8px);
-  min-height: $body-height;
+  margin-bottom: $main-margin-bottom;
+  min-height: $main-height;
+}
+
+footer {
+  margin-bottom: 0;
+  padding-bottom: $main-margin;
+
+  @media (max-device-width: $screen-xs-min) {
+    margin-bottom: 0 !important;
+    padding-bottom: $main-margin / 2 !important;
+  }
 }
 
 

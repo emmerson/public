@@ -1,0 +1,120 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Black, white and gold colors for use across public.
+
+$white-base:             rgba(204, 216, 219, 1) !default;
+$white:                  $white-base !default;
+
+$gold-base:              rgba(125, 114, 64, 1) !default;
+$gold:                   $gold-base !default;
+
+$black-base:             rgba(31, 35, 36, 1) !default;
+$black:                  $black-base !default;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background attachment for `<body>`.
+$body-bg-attachment:    fixed !default;
+//** Background color for `<body>`.
+$body-bg-color:         $black !default;
+//** Background image for `<body>`.
+$body-bg-image:         url(../images/background.png) !default;
+//** Background position for `<body>`.
+$body-bg-position:      center center !default;
+//** Background repeat for `<body>`.
+$body-bg-repeat:        no-repeat !default;
+//** Global text color on `<body>`.
+$text-color:            $white !default;
+//** Global text rendering on `<body>`.
+$text-rendering:        optimizeLegibility !default;
+
+//** Background attachment for `#grid`.
+$grid-bg-attachment:    fixed !default;
+//** Background image for `#grid`.
+$grid-bg-image:         url(../images/grid.png) !default;
+//** Background image for `#grid.points`.
+$grid-points-bg-image:  url(../images/grid_point.png) !default;
+//** Background repeat for `grid`.
+$grid-bg-repeat:        repeat !default;
+
+//** Margin for `<main>`
+$main-margin:           72px !default;
+//** Margin for `<main>`
+$main-height:           calc(100% - #{$main-margin}) !default;
+
+//** Height for `<body>`
+$body-height:           $main-height;
+
+//** Height for `<html>`
+$viewport-height:       calc(100% - 2 * #{$main-margin}) !default;
+//** Width for `<html>`
+$viewport-width:        $viewport-height !default;
+
+//** Global textual link color.
+$link-color:            $white !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      $gold !default;
+//** Link hover decoration.
+$link-hover-decoration: none !default;
+
+//** Height for `<header>`
+$header-height:         137px !default;
+
+//** Height for `<footer>`
+$footer-height:         40px !default;
+
+//** Margin bottom for `<main>`
+$main-margin-bottom:    calc(-#{$footer-height} - #{$main-margin});
+
+//** Height for `<section>::after`
+$section-after:         calc(#{$footer-height} + #{$main-margin});
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Proxima Nova", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          18px !default;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.45 !default; // 27/18
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs-min:              480px !default;
+
+// Small screen / tablet
+$screen-sm-min:              768px !default;
+
+// Medium screen / desktop
+$screen-md-min:              992px !default;
+
+// Large screen / wide desktop
+$screen-lg-min:              1200px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+//== Easing Functions
+//
+//## Transitions for animations.
+
+$ease-out-quint-slow:        all 600ms cubic-bezier(.23, 1, .32, 1);

@@ -2,16 +2,33 @@
 // endbower
 
 // Core variables
-@import 'variables';
+@import 'public/variables';
 
 // Dependencies
-@import 'font-stack';
+@import 'public/font-stack';
 
 // Core CSS
-@import 'scaffolding';
+@import 'public/scaffolding';
 
 // Components
-@import 'header';
-@import 'github-ribbons';
-@import 'section';
-@import 'footer';
+@import 'public/header';
+@import 'public/github-ribbons';
+@import 'public/section';
+@import 'public/footer';
+
+h1 {
+  font-weight: 200;
+
+  .eyebrow,
+  .large-block {
+    display: block;
+  }
+
+  .eyebrow {
+    font-size: 36px;
+  }
+
+  .large-block {
+    font-size: 72px;
+  }
+}
