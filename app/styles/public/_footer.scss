@@ -7,9 +7,10 @@
 // -------------------------
 
 footer {
-  color: rgba($white, .14);
+  color: rgba($white, .27);
   font-size: 14px;
   position: relative;
+  // transition: $ease-out-quint-slow;
   z-index: 1;
 
   h3 {
@@ -19,10 +20,18 @@ footer {
   }
 
   a {
-    color: rgba($white, .14);
+    color: rgba($white, .27);
     display: inline-block;
     font-weight: 300;
     margin-right: 9px;
+
+    @media (min-width: $screen-lg-min) {
+      margin-right: 18px;
+    }
+
+    &:hover {
+      color: $gold;
+    }
   }
 
   #contact {
@@ -31,10 +40,14 @@ footer {
 
   #copyright {
     float: right;
+    position: absolute;
+    right: 0;
     text-align: right;
 
     @media (max-width: $screen-sm-max) {
-      display: none;
+      color: rgba(0, 0, 0, 0);
+      pointer-events: none;
+      transition: $ease-out-quint-slow;
     }
   }
 

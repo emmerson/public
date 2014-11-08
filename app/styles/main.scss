@@ -22,13 +22,44 @@ h1 {
   .eyebrow,
   .large-block {
     display: block;
+    transition: $ease-out-quint-slow;
   }
 
   .eyebrow {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .large-block {
-    font-size: 72px;
+    font-size: 64px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    .eyebrow {
+      font-size: 36px;
+    }
+
+    .large-block {
+      font-size: 72px;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    .eyebrow {
+      font-size: 30px;
+    }
+
+    .large-block {
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    .eyebrow {
+      font-size: 24px;
+    }
+
+    .large-block {
+      font-size: 48px;
+    }
   }
 }

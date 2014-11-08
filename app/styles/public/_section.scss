@@ -31,7 +31,7 @@ section {
       }
     }
 
-    @media (max-device-width: $screen-xs-min) {
+    @media (max-width: $screen-xs-min) {
       margin: $main-margin / 2 0;
 
       &::after {
@@ -46,6 +46,10 @@ section {
 
     span.large-block {
       line-height: 79px;
+
+      @media (max-width: $screen-xs-max) {
+        line-height: 53px;
+      }
     }
 
     + p {

@@ -200,7 +200,9 @@ module.exports = function (grunt) {
           '<%= config.app %>/planimeter.html',
           '<%= config.app %>/wiwo.html',
           // '<%= config.app %>/axis/index.html',
-          // '<%= config.app %>/axis/account.html'
+          // '<%= config.app %>/axis/account.html',
+          // '<%= config.app %>/grid/index.html',
+          // '<%= config.app %>/grid/api.html'
         ]
       },
       sass: {
