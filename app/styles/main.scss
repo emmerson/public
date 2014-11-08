@@ -16,50 +16,66 @@
 @import 'public/section';
 @import 'public/footer';
 
-h1 {
-  font-weight: 200;
+.main {
+  h1 {
+    font-weight: 200;
+    margin: 0;
+    margin-bottom: 36px;
 
-  .eyebrow,
-  .large-block {
-    display: block;
-    transition: $ease-out-quint-slow;
-  }
+    span.large-block {
+      line-height: 79px;
 
-  .eyebrow {
-    font-size: 32px;
-  }
+      @media (max-width: $screen-xs-max) {
+        line-height: 53px;
+      }
+    }
 
-  .large-block {
-    font-size: 64px;
-  }
+    + p {
+      margin: 0;
+    }
 
-  @media (min-width: $screen-lg-min) {
+    .eyebrow,
+    .large-block {
+      display: block;
+      transition: $ease-out-quint-slow;
+    }
+
     .eyebrow {
-      font-size: 36px;
+      font-size: 32px;
     }
 
     .large-block {
-      font-size: 72px;
-    }
-  }
-
-  @media (max-width: $screen-sm-max) {
-    .eyebrow {
-      font-size: 30px;
+      font-size: 64px;
     }
 
-    .large-block {
-      font-size: 60px;
-    }
-  }
+    @media (min-width: $screen-lg-min) {
+      .eyebrow {
+        font-size: 36px;
+      }
 
-  @media (max-width: $screen-xs-max) {
-    .eyebrow {
-      font-size: 24px;
+      .large-block {
+        font-size: 72px;
+      }
     }
 
-    .large-block {
-      font-size: 48px;
+    @media (max-width: $screen-sm-max) {
+      .eyebrow {
+        font-size: 30px;
+      }
+
+      .large-block {
+        font-size: 60px;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      .eyebrow {
+        display: none;
+      }
+
+      .large-block {
+        font-size: 36px;
+      }
     }
   }
 }

@@ -45,7 +45,7 @@ footer {
   margin: $main-margin;
 
   @media (max-width: $screen-xs-min) {
-    margin: $main-margin / 2 !important;
+    margin: $main-xs-margin !important;
   }
 }
 
@@ -53,6 +53,11 @@ main {
   margin-bottom: $main-margin-bottom;
   min-height: $main-height;
   transition: $ease-out-quint-slow;
+
+  @media (max-width: $screen-xs-min) {
+    margin-bottom: $main-xs-margin-bottom !important;
+    min-height: $main-xs-height;
+  }
 }
 
 footer {
@@ -61,7 +66,7 @@ footer {
 
   @media (max-width: $screen-xs-min) {
     margin-bottom: 0 !important;
-    padding-bottom: $main-margin / 2 !important;
+    padding-bottom: $main-xs-margin !important;
   }
 }
 
