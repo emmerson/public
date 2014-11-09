@@ -1,4 +1,12 @@
+//
+// What I'm Working On
+// --------------------------------------------------
+
+
 @import 'public/variables';
+
+// Base styles
+// -------------------------
 
 .wiwo {
   width: 100%;
@@ -6,6 +14,36 @@
   @media (min-width: $screen-lg-min) {
     max-width: 1414.16171px;
   }
+
+  // Rows
+  // -------------------------
+
+  .row {
+    &:first-of-type {
+      margin-top: 2 * $main-margin;
+
+      @media (max-width: (1035px - 1)) {
+        .project-tile {
+          border-bottom: 0 !important;
+        }
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 2 * $main-margin - $main-margin / 2;
+
+      @media (max-width: $screen-xs-min) {
+        margin-bottom: -$main-margin / 2;
+      }
+
+      .project-tile {
+        border-bottom: 1px solid rgba($white, .07);
+      }
+    }
+  }
+
+  // Heading
+  // -------------------------
 
   .intro-heading {
     float: left;
@@ -29,29 +67,8 @@
     font-weight: 100;
   }
 
-  .row {
-    &:first-of-type {
-      margin-top: 2 * $main-margin;
-
-      @media (max-width: (1035px - 1)) {
-        .project-tile {
-          border-bottom: 0 !important;
-        }
-      }
-    }
-
-    &:last-of-type {
-      margin-bottom: 2 * $main-margin - $main-margin / 2;
-
-      @media (max-width: $screen-xs-max) {
-        margin-bottom: -$main-margin / 2;
-      }
-
-      .project-tile {
-        border-bottom: 1px solid rgba($white, .07);
-      }
-    }
-  }
+  // Projects
+  // -------------------------
 
   .project-tile {
     border: 1px solid rgba($white, .07);
