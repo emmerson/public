@@ -51,6 +51,11 @@ footer {
       color: rgba(0, 0, 0, 0);
       pointer-events: none;
       transition: $ease-out-quint-slow;
+
+      a {
+        color: rgba(0, 0, 0, 0);
+        pointer-events: none;
+      }
     }
   }
 
