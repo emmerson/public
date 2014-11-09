@@ -23,11 +23,6 @@ footer {
     color: rgba($white, .27);
     display: inline-block;
     font-weight: 300;
-    margin-right: 9px;
-
-    @media (min-width: $screen-lg-min) {
-      margin-right: 18px;
-    }
 
     &:hover {
       color: $gold;
@@ -36,6 +31,14 @@ footer {
 
   #contact {
     float: left;
+
+    a {
+      margin-right: 9px;
+
+      @media (min-width: $screen-lg-min) {
+        margin-right: 18px;
+      }
+    }
   }
 
   #colophon {
