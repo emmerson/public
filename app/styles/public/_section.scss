@@ -28,6 +28,12 @@ section {
       width: $viewport-xs-width;
     }
   }
+
+  &:after {
+    content: '';
+    display: table;
+    height: $footer-height;
+  }
 }
 
 .call-to-action {

@@ -1,14 +1,23 @@
 @import 'public/variables';
 
 .wiwo {
+  width: 100%;
+
+  @media (min-width: $screen-lg-min) {
+    max-width: 1414.16171px;
+  }
+
   .intro-heading {
     float: left;
-    width: 582px;
+    margin-top: 2 * $main-margin;
+    transition: $ease-out-quint-slow;
+    width: 66.666666%;
   }
 
   h1 {
     font-size: 36px;
     margin-bottom: 24px;
+    margin-top: 0;
 
     + p {
       margin-top: 0;
@@ -20,23 +29,31 @@
     font-weight: 100;
   }
 
-  .row {
-    margin-top: 2 * $main-margin;
-  }
-
   .row:last-of-type {
     margin-bottom: 2 * $main-margin;
   }
 
   div.project {
+    box-sizing: border-box;
     display: inline-block;
     float: left;
-    width: 291px;
+    min-height: 363px;
+    min-width: 291.333333px;
+    padding-right: $main-margin / 2;
+    transition: $ease-out-quint-slow;
+    width: 33.333333%;
   }
 
   .callout-headline {
     font-size: 14px;
     font-weight: 500;
+    margin-bottom: 24px;
+    margin-top: 2 * $main-margin;
+  }
+
+  .callout-copy {
+    margin-bottom: 0;
+    margin-top: 24px;
   }
 
   .when,

@@ -31,6 +31,8 @@ $body-bg-image:         url(../images/background.png) !default;
 $body-bg-position:      center center !default;
 //** Background repeat for `<body>`.
 $body-bg-repeat:        no-repeat !default;
+//** Background size for `<body>`.
+$body-bg-size:          cover !default;
 //** Global text color on `<body>`.
 $text-color:            $white !default;
 //** Global text rendering on `<body>`.
@@ -77,7 +79,7 @@ $link-hover-decoration: none !default;
 $header-height:         137px !default;
 
 //** Height for `<footer>`
-$footer-height:         40px !default;
+$footer-height:         35px !default;
 
 //** Margin bottom for `<main>`
 $main-margin-bottom:    calc(-#{$footer-height} - #{$main-margin});
