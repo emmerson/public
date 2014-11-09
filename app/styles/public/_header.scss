@@ -30,8 +30,9 @@ header {
     display: inline-block;
     height: 17px;
     margin-right: 24px;
-    margin-top: -1px;
     padding-top: 18px;
+    position: relative;
+    top: 1px;
     transition: $ease-out-quint-slow;
 
     &.active {
