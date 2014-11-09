@@ -43,6 +43,10 @@
     &:last-of-type {
       margin-bottom: 2 * $main-margin;
 
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: -36px;
+      }
+
       div.project {
         border-bottom: 1px solid rgba($white, .07);
       }
@@ -110,7 +114,6 @@
   .when {
     font-size: 12px;
     font-weight: 500;
-    margin-bottom: 9px;
   }
 
   .what {
