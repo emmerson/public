@@ -34,26 +34,26 @@
       margin-top: 2 * $main-margin;
 
       @media (max-width: (1035px - 1)) {
-        div.project {
+        .project-tile {
           border-bottom: 0 !important;
         }
       }
     }
 
     &:last-of-type {
-      margin-bottom: 2 * $main-margin;
+      margin-bottom: 2 * $main-margin - $main-margin / 2;
 
       @media (max-width: $screen-xs-max) {
-        margin-bottom: -36px;
+        margin-bottom: -$main-margin / 2;
       }
 
-      div.project {
+      .project-tile {
         border-bottom: 1px solid rgba($white, .07);
       }
     }
   }
 
-  div.project {
+  .project-tile {
     border: 1px solid rgba($white, .07);
     border-bottom: 0;
     border-right: 0;
@@ -70,6 +70,7 @@
 
     &:hover {
       background-color: rgba($black, .97);
+      color: $white;
 
       .callout-headline {
         color: $gold;
