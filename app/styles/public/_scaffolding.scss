@@ -30,7 +30,7 @@ body {
   background-image: $grid-bg-image;
   background-repeat: $grid-bg-repeat;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: -1;
@@ -83,13 +83,4 @@ a {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
   }
-}
-
-
-// Abbreviations
-
-abbr {
-  font-size: smaller;
-  font-variant: small-caps;
-  text-decoration: uppercase;
 }

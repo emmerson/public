@@ -97,6 +97,12 @@ $font-size-base:          18px !default;
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.45 !default; // 27/18
 
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    inherit !default;
+$headings-font-weight:    200 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
 
 //== Media queries breakpoints
 //
@@ -125,3 +131,5 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 //## Transitions for animations.
 
 $ease-out-quint-slow:        all 600ms cubic-bezier(.23, 1, .32, 1);
+
+

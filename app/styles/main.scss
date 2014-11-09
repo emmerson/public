@@ -9,6 +9,7 @@
 
 // Core CSS
 @import 'public/scaffolding';
+@import 'public/type';
 
 // Components
 @import 'public/header';
@@ -18,7 +19,6 @@
 
 .main {
   h1 {
-    font-weight: 200;
     margin: 0;
     margin-bottom: 36px;
 
