@@ -1,14 +1,12 @@
 //
-// What I'm Working On
+// Catalog
 // --------------------------------------------------
 
-
-@import 'public/variables';
 
 // Base styles
 // -------------------------
 
-.wiwo {
+.catalog {
   width: 100%;
 
   @media (min-width: $screen-lg-min) {
@@ -46,16 +44,29 @@
   // -------------------------
 
   .intro-heading {
+    box-sizing: border-box;
     float: left;
     margin-bottom: 2 * $main-margin;
+    padding-right: $main-margin / 2;
     transition: $ease-out-quint-slow;
     width: 66.666666%;
   }
 
   h1 {
     font-size: 36px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     margin-top: 0;
+
+    .eyebrow {
+      display: block;
+      font-size: 18px;
+      font-weight: 200;
+      margin-bottom: 4.5px;
+    }
+
+    .small-block {
+      font-weight: 300;
+    }
 
     + p {
       margin-top: 0;
@@ -65,6 +76,7 @@
   p.intro {
     font-size: 24px;
     font-weight: 100;
+    margin-bottom: 0;
   }
 
   // Projects
@@ -135,6 +147,12 @@
   .when {
     font-size: 12px;
     font-weight: 500;
+  }
+
+  .who {
+    + .what {
+      font-size: 14px;
+    }
   }
 
   .what {
