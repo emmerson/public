@@ -32,7 +32,7 @@ header {
     margin-right: 24px;
     padding-top: 18px;
     position: relative;
-    top: 1px;
+    top: -1px;
     transition: $ease-out-quint-slow;
 
     &.active {
