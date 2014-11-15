@@ -1,4 +1,4 @@
-// Generated on 2014-11-02 using
+// Generated on 2014-11-15 using
 // generator-webapp 0.5.1
 'use strict';
 
@@ -63,8 +63,7 @@ module.exports = function (grunt) {
         files: [
           '<%= config.app %>/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
-          '<%= config.app %>/images/{,*/}*',
-          '<%= config.app %>/grid/docs/*.md',
+          '<%= config.app %>/images/{,*/}*'
         ]
       }
     },
@@ -73,7 +72,7 @@ module.exports = function (grunt) {
     connect: {
       options: {
         port: 9000,
-        open: 'http://localhost:<%= connect.options.port %>',
+        open: true,
         livereload: 35729,
         // Change this to '0.0.0.0' to access the server from outside
         hostname: 'localhost'
@@ -194,16 +193,7 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         ignorePath: /^\/|\.\.\//,
-        src: [
-          '<%= config.app %>/404.html',
-          '<%= config.app %>/index.html',
-          '<%= config.app %>/planimeter.html',
-          '<%= config.app %>/wiwo.html',
-          // '<%= config.app %>/axis/index.html',
-          // '<%= config.app %>/axis/account.html',
-          // '<%= config.app %>/grid/index.html',
-          // '<%= config.app %>/grid/api.html'
-        ]
+        src: ['<%= config.app %>/index.html']
       },
       sass: {
         src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
@@ -233,16 +223,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: [
-        '<%= config.app %>/404.html',
-        '<%= config.app %>/index.html',
-        '<%= config.app %>/planimeter.html',
-        '<%= config.app %>/wiwo.html',
-        '<%= config.app %>/axis/index.html',
-        '<%= config.app %>/axis/account.html',
-        '<%= config.app %>/grid/index.html',
-        '<%= config.app %>/grid/api.html'
-      ]
+      html: '<%= config.app %>/index.html'
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -341,9 +322,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*',
-            '{,*/}*.pdf',
-            'grid/docs/*.md'
+            'styles/fonts/{,*/}*.*'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
@@ -433,7 +412,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:jshint',
-    // 'test',
+    'test',
     'build'
   ]);
 };
