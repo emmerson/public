@@ -34,6 +34,12 @@ header {
       color: rgba($white, .42);
       font-weight: 300;
     }
+
+    &.active {
+      border-top: 1px solid $gold;
+      position: relative;
+      top: -1px;
+    }
   }
 
   h2 {
