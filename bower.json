@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "zepto": "~1.1.4",
-    "site": "~0.1.0",
+    "site": "andrewmcwatters/site.js#~0.2.0",
     "page": "visionmedia/page.js#~1.4.1",
     "query-string": "~1.0.0"
   }
