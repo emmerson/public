@@ -2,6 +2,6 @@
   "name": "public",
   "private": true,
   "dependencies": {
-    "site": "*"
+    "site": "~0.1.0"
   }
 }
