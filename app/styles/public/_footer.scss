@@ -10,7 +10,13 @@ footer {
   color: rgba($white, .14);
   font-weight: 300;
   margin: 72px;
+
+  @media (max-width: $screen-xs-max) {
+    margin: 36px;
+  }
+
   margin-top: 0;
+  transition: margin 600ms cubic-bezier(.23, 1, .32, 1);
 
   h6 {
     font-size: $font-size-base;

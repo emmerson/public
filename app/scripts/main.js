@@ -17,11 +17,11 @@
   var TweenMax    = window.TweenMax;
   var Quint       = window.Quint;
   var async       = window.async;
-  var page        = window.page;
-  var queryString = window.queryString;
   var location    = window.location;
   var site        = window.site;
   var RoughEase   = window.RoughEase;
+  var page        = window.page;
+  var queryString = window.queryString;
 
   $(function() {
     /**

@@ -37,7 +37,13 @@ body {
 main {
   flex: 1;
   margin: 72px;
+
+  @media (max-width: $screen-xs-max) {
+    margin: 36px;
+  }
+
   opacity: 0;
+  transition: margin 600ms cubic-bezier(.23, 1, .32, 1);
 }
 
 
