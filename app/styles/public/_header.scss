@@ -32,6 +32,14 @@ header {
 
     a {
       color: rgba($white, .42);
+      font-weight: 300;
     }
+  }
+
+  h2 {
+    font-size: $font-size-large;
+    font-weight: 200;
+    margin: 0;
+    margin-top: 18px;
   }
 }
