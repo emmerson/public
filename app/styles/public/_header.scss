@@ -35,6 +35,7 @@ header {
     border-top: 1px solid rgba(0, 0, 0, 0);
     display: inline-block;
     margin-right: 18px;
+    overflow: hidden;
     padding-top: 18px;
     position: relative;
     top: -1px;
@@ -42,6 +43,7 @@ header {
     a {
       color: rgba($white, .42);
       font-weight: 300;
+      position: relative;
     }
 
   }
@@ -59,5 +61,6 @@ header {
     font-weight: 200;
     margin: 0;
     margin-top: 18px;
+    perspective: 1035px;
   }
 }

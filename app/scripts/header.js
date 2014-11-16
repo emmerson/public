@@ -14,7 +14,9 @@
    */
 
   var page     = window.page;
+  var site     = window.site;
   var location = window.location;
+  var TweenMax = window.TweenMax;
 
   $(function() {
     /**
@@ -38,6 +40,11 @@
 
       // jshint validthis: true
       $(el).find('nav a').each(findActive(this));
+
+      if (!site.referredByOrigin()) {
+        fadeInDownNavLinks();
+        rotateInDownNavTitle();
+      }
     }
 
     /**
@@ -76,6 +83,29 @@
 
     function setTitle(title) {
       $('#nav-title').text(title);
+    }
+
+    /**
+     * Fade in down nav links.
+     */
+
+    function fadeInDownNavLinks() {
+      var $links   = $('header li a');
+      var position = $links.position();
+      var top      = -position.top + -$links.height() - 2;
+      TweenMax.staggerFromTo($links, 0.2, {top: top}, {top: 0}, 0.04);
+    }
+
+    /**
+     * Rotate in down nav title.
+     */
+
+    function rotateInDownNavTitle() {
+      var $title = $('header h2');
+      $title.css('transform-origin', '50% 50% ' + $title.height() / 2 + 'px');
+      TweenMax
+        .fromTo($title, 0.4, {rotationX: -90}, {rotationX: 0})
+        .delay(0.4);
     }
   });
 })(Zepto || jQuery, window, document);
