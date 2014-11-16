@@ -7,7 +7,20 @@
 // -------------------------
 
 footer {
+  color: rgba($white, .14);
+  font-weight: 300;
   margin: 72px;
+  margin-top: 0;
+
+  h6 {
+    font-size: $font-size-base;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  a {
+    color: rgba($white, .14);
+  }
 }
 
 #contact {
