@@ -39,10 +39,10 @@
     $('main').css('opacity', 0);
 
     /**
-     * Empty async event callback.
+     * Async hide callback.
      */
 
-    var done = function(cb) { return function(e) { 
+    var hide = function(cb) { return function(e) { 
       $(e.target).css('opacity', 0);
       cb(null);
     }; };
@@ -61,8 +61,8 @@
      */
 
     async.parallel([
-      function(cb) { $('header').on('transclude', done(cb)); },
-      function(cb) { $('footer').on('transclude', done(cb)); }
+      function(cb) { $('header').on('transclude', hide(cb)); },
+      function(cb) { $('footer').on('transclude', hide(cb)); }
     ], ontransclude);
 
     /**
@@ -118,10 +118,10 @@
     }
 
     /**
-     * Configure flicker.
+     * Configure flicker ease out.
      */
 
-    var flicker = RoughEase.ease.config({
+    var flickerEaseOut = RoughEase.ease.config({
       strength: 16,
       points: 80,
       template: Quint.easeOut,
@@ -136,7 +136,7 @@
     function flickerOutGrid() {
       TweenMax.to('#grid', 2, {
         opacity: 0,
-        ease: flicker,
+        ease: flickerEaseOut,
         onComplete: fadeInGridPoints
       });
     }
