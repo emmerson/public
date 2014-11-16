@@ -40,8 +40,8 @@
      */
     function findActive(ctx) {
       return function() {
-        var href     = $(this).attr('href');
         var pathname = ctx.pathname;
+        var href     = $(this).attr('href');
         if (location.hostname === 'localhost' && pathname !== '/') {
           href += '.html';
         }
