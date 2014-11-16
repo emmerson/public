@@ -16,12 +16,14 @@
   var page        = window.page;
   var queryString = window.queryString;
   var location    = window.location;
+  var site        = window.site;
   var RoughEase   = window.RoughEase;
 
   $(function() {
     /**
      * Instantiate FastClick.
      */
+
     FastClick.attach(document.body);
 
     /**
@@ -72,12 +74,18 @@
         rewriteHrefs();
       }
 
+      if (site.referredByOrigin()) {
+        showGridPoints();
+        return;
+      }
+
       flickerOutGrid();
     });
 
     /**
      * Retrieve the file extension from `href`.
      */
+
     function extension(href) {
       var a = href.split('.');
       if (a.length === 1 || (a[0] === '' && a.length === 2)) {
@@ -89,6 +97,7 @@
     /**
      * Rewrite hrefs on localhost.
      */
+
     function rewriteHrefs() {
       $('a').each(function() {
         if (this.hostname === 'localhost' && this.pathname !== '/') {
@@ -98,6 +107,14 @@
           }
         }
       });
+    }
+
+    /**
+     * Show grid points.
+     */
+
+    function showGridPoints() {
+      $('#grid').addClass('points');
     }
 
     /**
