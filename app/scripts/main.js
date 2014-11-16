@@ -91,7 +91,7 @@
      */
     function rewriteHrefs() {
       $('a').each(function() {
-        if (this.hostname === 'localhost') {
+        if (this.hostname === 'localhost' && this.pathname !== '/') {
           var ext = extension(this.href);
           if (ext === '') {
             this.href += '.html';
