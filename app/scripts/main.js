@@ -9,6 +9,7 @@
 ;(function ($, window, document, undefined) {
   'use strict';
 
+  var FastClick   = window.FastClick;
   var TweenMax    = window.TweenMax;
   var Quint       = window.Quint;
   var async       = window.async;
@@ -67,8 +68,20 @@
      */
 
     $(window).one('load', function() {
+      if (location.hostname === 'localhost') {
+        rewriteHrefs();
+      }
+
       flickerOutGrid();
     });
+
+    function rewriteHrefs() {
+      $('a').each(function() {
+        if (this.hostname === 'localhost') {
+          // TODO: Rewrite hrefs.
+        }
+      });
+    }
 
     /**
      * Configure flicker.
