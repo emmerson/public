@@ -64,10 +64,10 @@
     ], ontransclude);
 
     /**
-     * Handle "load" event.
+     * Handle "transcludeload" event.
      */
 
-    $(window).one('load', function() {
+    $(window).one('transcludeload', function() {
       if (location.hostname === 'localhost') {
         rewriteHrefs();
       }
@@ -75,10 +75,27 @@
       flickerOutGrid();
     });
 
+    /**
+     * Retrieve the file extension from `href`.
+     */
+    function extension(href) {
+      var a = href.split('.');
+      if (a.length === 1 || (a[0] === '' && a.length === 2)) {
+        return '';
+      }
+      return a.pop();
+    }
+
+    /**
+     * Rewrite hrefs on localhost.
+     */
     function rewriteHrefs() {
       $('a').each(function() {
         if (this.hostname === 'localhost') {
-          // TODO: Rewrite hrefs.
+          var ext = extension(this.href);
+          if (ext === '') {
+            this.href += '.html';
+          }
         }
       });
     }
