@@ -1,0 +1,45 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Black, white, and gold colors for use across public.
+
+$black:                  rgba(31, 35, 36, 1) !default; // #1f2324
+
+$white:                  rgba(204, 216, 219, 1) !default; // #ccd8db
+
+$gold:                   rgba(107, 94, 62, 1) !default; // #6b5e3e
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               $black !default;
+//** Background image for `<body>`.
+$body-bg-image:         url(../images/background.png) !default;
+//** Background position for `<body>`.
+$body-bg-position:      center center !default;
+//** Global text color on `<body>`.
+$text-color:            $white !default;
+
+//** Global textual link color.
+$link-color:            $white !default;
+//** Link hover color.
+$link-hover-color:      $gold !default;
+
+
+//== Typography
+//
+//## Font and more.
+
+$font-family-sans-serif:  'Proxima Nova', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          14px !default;
+
+
