@@ -26,9 +26,12 @@ header {
   }
 
   li {
+    border-top: 1px solid rgba(0, 0, 0, 0);
     display: inline-block;
     margin-right: 18px;
     padding-top: 18px;
+    position: relative;
+    top: -1px;
 
     a {
       color: rgba($white, .42);
@@ -37,8 +40,6 @@ header {
 
     &.active {
       border-top: 1px solid $gold;
-      position: relative;
-      top: -1px;
     }
   }
 

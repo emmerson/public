@@ -22,6 +22,17 @@ body {
   min-height: 100vh;
 }
 
+#grid {
+  background-image: $grid-bg-image;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+
+  &.points {
+    background-image: $grid-points-bg-image;
+  }
+}
+
 main {
   flex: 1;
   margin: 72px;
