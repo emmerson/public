@@ -9,7 +9,8 @@
 ;(function ($, window, document, undefined) {
   'use strict';
 
-  var page = window.page;
+  var page     = window.page;
+  var location = window.location;
 
   $(function() {
     /**
@@ -39,7 +40,13 @@
      */
     function findActive(ctx) {
       return function() {
-        if ($(this).attr('href') === ctx.pathname) {
+        var href     = $(this).attr('href');
+        var pathname = ctx.pathname;
+        if (location.hostname === 'localhost' && pathname !== '/') {
+          href += '.html';
+        }
+
+        if (href === pathname) {
           setActive(this);
         }
       };
