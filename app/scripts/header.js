@@ -9,6 +9,10 @@
 ;(function ($, window, document, undefined) {
   'use strict';
 
+  /**
+   * Module dependencies.
+   */
+
   var page     = window.page;
   var location = window.location;
 
@@ -16,6 +20,7 @@
     /**
      * Header middleware.
      */
+
     page(function(ctx, next) {
       $('header').on('transclude', $.proxy(ontransclude, ctx));
       next();
@@ -24,6 +29,7 @@
     /**
      * Handle "transclude" events.
      */
+
     function ontransclude(e) {
       var el = e.target;
       if (!el) {
@@ -38,6 +44,7 @@
      * Check if this route matches `href`, if so
      * populate `#nav-title`.
      */
+
     function findActive(ctx) {
       return function() {
         var pathname = ctx.pathname;
@@ -55,6 +62,7 @@
     /**
      * Set active nav link.
      */
+
     function setActive(link) {
       var el = $(link).parent();
       el.addClass('active');
@@ -65,6 +73,7 @@
     /**
      * Set nav title.
      */
+
     function setTitle(title) {
       $('#nav-title').text(title);
     }

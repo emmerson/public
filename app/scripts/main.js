@@ -9,6 +9,10 @@
 ;(function ($, window, document, undefined) {
   'use strict';
 
+  /**
+   * Module dependencies.
+   */
+
   var FastClick   = window.FastClick;
   var TweenMax    = window.TweenMax;
   var Quint       = window.Quint;
