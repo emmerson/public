@@ -57,7 +57,7 @@
 
     function ontransclude() {
       var targets = ['header', 'main', 'footer'];
-      TweenMax.staggerFromTo(targets, 0.2, {opacity: 0}, {opacity: 1}, 0.02);
+      TweenMax.staggerFromTo(targets, 0.6, {opacity: 0}, {opacity: 1}, 0.2);
     }
 
     /**

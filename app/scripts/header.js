@@ -42,6 +42,7 @@
       $(el).find('nav a').each(findActive(this));
 
       if (!site.referredByOrigin()) {
+        extendHr();
         fadeInDownNavLinks();
         rotateInDownNavTitle();
       }
@@ -83,6 +84,14 @@
 
     function setTitle(title) {
       $('#nav-title').text(title);
+    }
+
+    /**
+     * Extend horizontal rule.
+     */
+
+    function extendHr() {
+      TweenMax.fromTo('header hr', 1, {width: '0%'}, {width: '100%'});
     }
 
     /**

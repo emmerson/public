@@ -60,3 +60,13 @@ a {
     text-decoration: none;
   }
 }
+
+
+// Horizontal rules
+
+hr {
+  margin-top:    0;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 1px solid $hr-border;
+}
