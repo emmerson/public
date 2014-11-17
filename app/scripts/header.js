@@ -63,6 +63,7 @@
 
         if (href === pathname) {
           setActive(this);
+          return false;
         }
       };
     }
