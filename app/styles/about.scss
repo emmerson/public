@@ -1,0 +1,32 @@
+//
+// About
+// --------------------------------------------------
+
+
+#about {
+  align-items: center;
+
+  h1 {
+    font-weight: 300;
+    margin: 0;
+
+    + p {
+      margin: 0;
+      margin-top: 36px;
+    }
+  }
+
+  .eyebrow,
+  .large-block {
+    display: block;
+  }
+
+  .eyebrow {
+    font-size: 36px;
+  }
+
+  .large-block {
+    font-size: 72px;
+    font-weight: 100;
+  }
+}
