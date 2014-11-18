@@ -15,7 +15,6 @@
 
   var page     = window.page;
   var site     = window.site;
-  var location = window.location;
   var TweenMax = window.TweenMax;
 
   $(function() {
