@@ -14,7 +14,6 @@
    */
 
   var page = window.page;
-  var site = window.site;
 
   $(function() {
     /**
@@ -47,13 +46,7 @@
 
     function findActive(ctx) {
       return function() {
-        var pathname = ctx.pathname;
-        var href     = $(this).attr('href');
-        if (site.privatelyHosted() && pathname !== '/') {
-          href += '.html';
-        }
-
-        if (href === pathname) {
+        if ($(this).attr('href') === ctx.pathname) {
           setActive(this);
           return false;
         }
