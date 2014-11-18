@@ -57,7 +57,7 @@
       return function() {
         var pathname = ctx.pathname;
         var href     = $(this).attr('href');
-        if (location.hostname === 'localhost' && pathname !== '/') {
+        if (site.privatelyHosted() && pathname !== '/') {
           href += '.html';
         }
 

@@ -74,7 +74,7 @@
      */
 
     $(window).one('transcludeload', function() {
-      if (location.hostname === 'localhost') {
+      if (site.privatelyHosted()) {
         rewriteHrefs();
       }
 
@@ -99,12 +99,12 @@
     }
 
     /**
-     * Rewrite hrefs on localhost.
+     * Rewrite hrefs when privately hosted.
      */
 
     function rewriteHrefs() {
       $('a').each(function() {
-        if (this.hostname === 'localhost' && this.pathname !== '/') {
+        if (this.pathname !== '/') {
           var ext = extension(this.href);
           if (ext === '') {
             this.href += '.html';
