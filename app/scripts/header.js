@@ -61,7 +61,7 @@
       var el = $(link).parent();
       el.addClass('active');
 
-      setTitle($(link).data('title'));
+      setTitle($(link).attr('title'));
     }
 
     /**
