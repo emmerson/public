@@ -4,12 +4,8 @@
   "dependencies": {
     "zepto": "~1.1.4",
     "fastclick": "~1.0.3",
+    "transclude": "andrewmcwatters/transclude.js#~1.0.0",
     "page": "visionmedia/page.js#~1.4.1",
     "query-string": "~1.0.0"
-  },
-  "overrides": {
-    "async": {
-      "main": "lib/async.js"
-    }
   }
 }
