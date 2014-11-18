@@ -22,12 +22,13 @@
 
 header {
   margin: 72px;
+  margin-bottom: 0;
 
   @media (max-width: $screen-xs-max) {
     margin: 36px;
+    margin-bottom: 0;
   }
 
-  margin-bottom: 0;
   transition: margin 600ms cubic-bezier(.23, 1, .32, 1);
 
   hr {
@@ -44,10 +45,16 @@ header {
     border-top: 1px solid rgba(0, 0, 0, 0);
     display: inline-block;
     margin-right: 18px;
+
+    @media (min-width: $screen-lg-min) {
+      margin-right: 24px;
+    }
+
     overflow: hidden;
     padding-top: 18px;
     position: relative;
     top: -1px;
+    transition: margin-right 600ms cubic-bezier(.23, 1, .32, 1);
 
     a {
       color: rgba($white, .42);

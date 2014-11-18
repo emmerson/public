@@ -19,3 +19,10 @@
     color: $black;
   }
 }
+
+@media (max-width: $screen-xs-max) {
+  .call-to-action {
+    font-size: 18px;
+    padding: 14px;
+  }
+}

@@ -3,8 +3,13 @@
 // --------------------------------------------------
 
 
+// Core variables and mixins
+@import 'public/variables';
+
+
 #about {
   align-items: center;
+  max-width: 738px;
 
   h1 {
     font-weight: 300;
@@ -19,14 +24,49 @@
   .eyebrow,
   .large-block {
     display: block;
+    transition: font-size 600ms cubic-bezier(.23, 1, .32, 1);
   }
 
   .eyebrow {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .large-block {
-    font-size: 72px;
+    font-size: 64px;
     font-weight: 100;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  #about {
+    h1 + p {
+      margin-top: 18px;
+    }
+
+    .eyebrow {
+      font-size: 24px;
+    }
+
+    .large-block {
+      font-size: 30px;
+    }
+
+    .what {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  #about {
+    max-width: 830px;
+
+    .eyebrow {
+      font-size: 36px;
+    }
+
+    .large-block {
+      font-size: 72px;
+    }
   }
 }
