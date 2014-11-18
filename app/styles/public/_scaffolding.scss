@@ -23,6 +23,7 @@ body {
 main {
   display: flex;
   flex: 1;
+  font-size: $font-size-large;
   margin: 72px;
 
   @media (max-width: $screen-xs-max) {
