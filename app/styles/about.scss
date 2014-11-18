@@ -9,7 +9,6 @@
 
 #about {
   align-items: center;
-  max-width: 738px;
 
   h1 {
     font-weight: 300;
@@ -50,17 +49,11 @@
     .large-block {
       font-size: 30px;
     }
-
-    .what {
-      display: block;
-    }
   }
 }
 
 @media (min-width: $screen-lg-min) {
   #about {
-    max-width: 830px;
-
     .eyebrow {
       font-size: 36px;
     }
