@@ -14,13 +14,9 @@
    */
 
   var FastClick   = window.FastClick;
-  var TweenMax    = window.TweenMax;
-  var Quint       = window.Quint;
-  var async       = window.async;
-  var location    = window.location;
   var site        = window.site;
-  var RoughEase   = window.RoughEase;
   var page        = window.page;
+  var location    = window.location;
   var queryString = window.queryString;
 
   $(function() {
@@ -31,59 +27,15 @@
     FastClick.attach(document.body);
 
     /**
-     * Default ease.
-     */
-
-    TweenMax.defaultEase = Quint.easeOut;
-
-    /**
-     * Hide main.
-     */
-
-    $('main').css('opacity', 0);
-
-    /**
-     * Async hide callback.
-     */
-
-    var hide = function(cb) { return function(e) { 
-      $(e.target).css('opacity', 0);
-      cb(null);
-    }; };
-
-    /**
-     * Handle "transclude" events.
-     */
-
-    function ontransclude() {
-      var targets = ['header', 'main', 'footer'];
-      TweenMax.staggerFromTo(targets, 0.6, {opacity: 0}, {opacity: 1}, 0.2);
-    }
-
-    /**
-     * Wait for partials to transclude.
-     */
-
-    async.parallel([
-      function(cb) { $('header').on('transclude', hide(cb)); },
-      function(cb) { $('footer').on('transclude', hide(cb)); }
-    ], ontransclude);
-
-    /**
      * Handle "transcludeload" event.
      */
 
     $(window).one('transcludeload', function() {
-      if (site.privatelyHosted()) {
-        rewriteHrefs();
-      }
-
-      if (site.referredByOrigin()) {
-        showGridPoints();
+      if (!site.privatelyHosted()) {
         return;
       }
 
-      flickerOutGrid();
+      rewriteHrefs();
     });
 
     /**
@@ -111,47 +63,6 @@
           }
         }
       });
-    }
-
-    /**
-     * Show grid points.
-     */
-
-    function showGridPoints() {
-      $('#grid').addClass('points');
-    }
-
-    /**
-     * Configure flicker ease out.
-     */
-
-    var flickerEaseOut = RoughEase.ease.config({
-      strength: 16,
-      points: 80,
-      template: Quint.easeOut,
-      taper: 'out',
-      clamp: true
-    });
-
-    /**
-     * Flicker out grid.
-     */
-
-    function flickerOutGrid() {
-      TweenMax.to('#grid', 2, {
-        opacity: 0,
-        ease: flickerEaseOut,
-        onComplete: fadeInGridPoints
-      });
-    }
-
-    /**
-     * Fade in grid points.
-     */
-
-    function fadeInGridPoints() {
-      $('#grid').addClass('points');
-      TweenMax.to('#grid', 2, {opacity: 1});
     }
 
     /**
