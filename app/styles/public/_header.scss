@@ -6,13 +6,17 @@
 // Base styles
 // -------------------------
 
+#logo-container {
+  height: 36px;
+  margin-bottom: 36px;
+}
+
 #logo {
-  display: block;
+  display: inline-block;
   font-size: 0;
 
   img {
     height: 36px;
-    margin-bottom: 36px;
   }
 }
 
