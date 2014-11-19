@@ -5,6 +5,11 @@
 
 // Body reset
 
+::selection {
+  background-color: rgba($gold, .99);
+  color: $black;
+} 
+
 html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
