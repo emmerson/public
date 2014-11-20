@@ -21,15 +21,15 @@
      */
 
     page(function(ctx, next) {
-      $('header').on('transclude', $.proxy(ontransclude, ctx));
+      $('header').on('include', $.proxy(oninclude, ctx));
       next();
     });
 
     /**
-     * Handle "transclude" events.
+     * Handle "include" events.
      */
 
-    function ontransclude(e) {
+    function oninclude(e) {
       var el = e.target;
       if (!el) {
         return;

@@ -21,7 +21,7 @@
     <!-- bower:js -->
     <script src="bower_components/zepto/zepto.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
-    <script src="bower_components/transclude/transclude.js"></script>
+    <script src="bower_components/include/include.js"></script>
     <script src="bower_components/page/page.js"></script>
     <script src="bower_components/query-string/query-string.js"></script>
     <!-- endbower -->
@@ -32,7 +32,7 @@
     <!-- endbuild -->
   </head>
   <body>
-    <header data-transclude="/partials/header.html">
+    <header data-include="/partials/header.html">
     </header>
     <main id="about">
       <section>
@@ -47,7 +47,7 @@
         </p>
       </section>
     </main>
-    <footer data-transclude="/partials/footer.html">
+    <footer data-include="/partials/footer.html">
     </footer>
   </body>
 </html>
