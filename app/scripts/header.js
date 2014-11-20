@@ -21,7 +21,7 @@
      */
 
     page(function(ctx, next) {
-      $('header').on('include', $.proxy(oninclude, ctx));
+      $('header').on('include', $.proxy(onheaderinclude, ctx));
       next();
     });
 
@@ -29,13 +29,9 @@
      * Handle "include" events.
      */
 
-    function oninclude(e) {
-      var el = e.target;
-      if (!el) {
-        return;
-      }
-
+    function onheaderinclude(e) {
       // jshint validthis: true
+      var el = e.target;
       $(el).find('nav a').each(findActive(this));
     }
 
