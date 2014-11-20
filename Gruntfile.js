@@ -296,9 +296,6 @@ module.exports = function (grunt) {
             'styles/fonts/{,*/}*.*',
             '{,*/}*.pdf'
           ]
-        }, {
-          src: 'node_modules/apache-server-configs/dist/.htaccess',
-          dest: '<%= config.dist %>/.htaccess'
         }]
       },
       styles: {
