@@ -17,8 +17,7 @@
   "strict": true,
   "trailing": true,
   "smarttabs": true,
-  "jquery": true,
   "globals": {
-    "Zepto": true
+    "angular": false
   }
 }
