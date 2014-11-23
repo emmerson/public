@@ -1,0 +1,77 @@
+//
+// Header
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+#logo-container {
+  height: 36px;
+  margin-bottom: 36px;
+}
+
+#logo {
+  display: inline-block;
+  font-size: 0;
+
+  img {
+    height: 36px;
+  }
+}
+
+header {
+  margin: 72px;
+  margin-bottom: 0;
+
+  @media (max-width: $screen-xs-max) {
+    margin: 36px;
+    margin-bottom: 0;
+  }
+
+  transition: margin 600ms cubic-bezier(.23, 1, .32, 1);
+
+  nav {
+    margin-top: -1px;
+  }
+
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    display: inline-block;
+    margin-right: 18px;
+
+    @media (min-width: $screen-lg-min) {
+      margin-right: 24px;
+    }
+
+    padding-top: 18px;
+    transition: margin-right 600ms cubic-bezier(.23, 1, .32, 1);
+
+    a {
+      color: rgba($white, .42);
+      font-weight: 300;
+    }
+
+  }
+
+  .active {
+    border-top: 1px solid $gold;
+
+    a {
+      color: $white;
+    }
+  }
+
+  h2 {
+    font-size: $font-size-large;
+    font-weight: 200;
+    margin: 0;
+    margin-top: 18px;
+  }
+}

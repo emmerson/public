@@ -1,0 +1,28 @@
+//
+// Call to Action
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.call-to-action {
+  border: 2px solid $white;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 100;
+  padding: 18px;
+
+  &:hover {
+    background-color: $gold;
+    border-color: $gold;
+    color: $black;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .call-to-action {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
