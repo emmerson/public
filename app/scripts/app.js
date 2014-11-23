@@ -30,4 +30,18 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .config(function ($provide) {
+    $provide.decorator('$controller', function ($location, $delegate) {
+      return function(constructor, locals, later, indent) {
+        var routeName = $location.path();
+        if (routeName === '/') {
+       // routeName = 'main';
+          routeName = 'about';
+        }
+
+        locals.$scope.routeName = routeName;
+        return $delegate(constructor, locals, later, indent);
+      };
+    });
   });
