@@ -15,7 +15,11 @@ html {
 }
 
 body {
-  background-color: $body-bg;
+  background-attachment: $body-bg-attachment;
+  background-color: $body-bg-color;
+  background-image: $body-bg-image;
+  background-position: $body-bg-position;
+  background-repeat: $body-bg-repeat;
   color: $text-color;
   display: flex;
   flex-direction: column;

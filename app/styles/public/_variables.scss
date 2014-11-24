@@ -18,8 +18,16 @@ $gold:                   rgba(107, 94, 62, 1) !default; // #6b5e3e
 //
 //## Settings for some of the most global styles.
 
+//** Background attachment for `<body>`.
+$body-bg-attachment:    fixed !default;
 //** Background color for `<body>`.
-$body-bg:               $black !default;
+$body-bg-color:         $black !default;
+//** Background image for `<body>`.
+$body-bg-image:         url(../images/background.png) !default;
+//** Background position for `<body>`.
+$body-bg-position:      center center !default;
+//** Background repeat for `<body>`.
+$body-bg-repeat:        no-repeat !default;
 //** Global text color on `<body>`.
 $text-color:            $white !default;
 
