@@ -31,6 +31,13 @@ $body-bg-repeat:        no-repeat !default;
 //** Global text color on `<body>`.
 $text-color:            $white !default;
 
+//** Background attachment for `#grid`.
+$grid-bg-attachment:    fixed !default;
+//** Background image for `#grid`.
+$grid-bg-image:         url(../images/grid.png) !default;
+//** Background image for `#grid.points`.
+$grid-points-bg-image:  url(../images/grid_point.png) !default;
+
 //** Global textual link color.
 $link-color:            $white !default;
 //** Link hover color.

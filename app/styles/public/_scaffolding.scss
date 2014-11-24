@@ -29,11 +29,24 @@ body {
   min-height: 100vh;
 }
 
+#grid {
+  background-image: $grid-bg-image;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+
+  &.points {
+    background-image: $grid-points-bg-image;
+  }
+}
+
 main {
   display: flex;
   flex: 1;
   font-size: $font-size-large;
-  margin: 72px;
+  margin: 64px;
 
   @media (max-width: $screen-xs-max) {
     margin: 36px;
