@@ -1,6 +1,8 @@
 // Generated on 2014-11-22 using generator-angular 0.10.0
 'use strict';
 
+var modRewrite = require('connect-modrewrite');
+
 // # Globbing
 // for performance reasons we're only matching one level down:
 // 'test/spec/{,*/}*.js'
@@ -76,6 +78,7 @@ module.exports = function (grunt) {
           open: true,
           middleware: function (connect) {
             return [
+              modRewrite(['^[^\\.]*$ /index.html [L]']),
               connect.static('.tmp'),
               connect().use(
                 '/bower_components',

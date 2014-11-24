@@ -31,6 +31,11 @@ angular
         redirectTo: '/'
       });
   })
+  .config(function ($locationProvider) {
+    $locationProvider
+      .html5Mode(true)
+      .hashPrefix('!');
+  })
   .config(function ($provide) {
     $provide.decorator('$controller', function ($location, $delegate) {
       return function(constructor, locals, later, indent) {
