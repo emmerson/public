@@ -27,10 +27,12 @@ angular.module('publicApp')
           element.addClass('points');
         }
 
-        TweenMax.to(element, 2, {
-          opacity: 0,
-          ease: flickerOutGrid,
-          onComplete: fadeInGridPoints
+        angular.element($window).one('load', function() {
+          TweenMax.to(element, 2, {
+            opacity: 0,
+            ease: flickerOutGrid,
+            onComplete: fadeInGridPoints
+          });
         });
       }
     };
