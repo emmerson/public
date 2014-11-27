@@ -16,4 +16,7 @@ describe('Directive: navLink', function () {
     element = angular.element('<li class="nav-link"></li>');
     element = $compile(element)(scope);
   }));
+
+  it('should set nav title', inject(function () {
+  }));
 });
