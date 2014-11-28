@@ -14,26 +14,26 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body data-ng-app="publicApp">
+  <body data-ng-app="publicApp" data-ng-controller="RootCtrl">
     <div id="grid" class="grid-flicker">
     </div>
 
-    <header data-ng-include="'views/partials/header.html'">
+    <header data-ng-include="'views/partials/header.html'"
+            onload="onHeaderLoad()">
     </header>
-    <main data-ng-view="" id="{{routeName}}">
+    <main data-ng-view=""
+          id="{{routeName}}"
+          onload="onMainLoad()">
     </main>
-    <footer data-ng-include="'views/partials/footer.html'">
+    <footer data-ng-include="'views/partials/footer.html'"
+            onload="onFooterLoad()">
     </footer>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
@@ -44,6 +44,7 @@
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/directives/gridflicker.js"></script>
     <script src="scripts/directives/navlink.js"></script>
+    <script src="scripts/controllers/root.js"></script>
     <!-- endbuild -->
 </body>
 </html>

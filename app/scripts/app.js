@@ -11,11 +11,7 @@
 angular
   .module('publicApp', [
     'ngAnimate',
-    'ngCookies',
-    'ngResource',
     'ngRoute',
-    'ngSanitize',
-    'ngTouch'
   ])
   .config(function ($routeProvider) {
     $routeProvider
