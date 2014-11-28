@@ -42,7 +42,7 @@ header {
     }
   }
 
-  hr {
+  hr.expanded {
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-name: expand;

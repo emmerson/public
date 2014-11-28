@@ -45,4 +45,8 @@ angular
         return $delegate(constructor, locals, later, indent);
       };
     });
+  })
+  .run(function($window, $document) {
+    var FastClick = $window.FastClick;
+    FastClick.attach($document[0].body);
   });
