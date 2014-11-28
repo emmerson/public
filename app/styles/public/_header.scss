@@ -42,13 +42,15 @@ header {
     }
   }
 
-  hr.expanded {
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-name: expand;
-    animation-timing-function: cubic-bezier(.23, 1, .32, 1);
-    margin: 0;
-    transform-origin: left center;
+  hr {
+    .expanded {
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      animation-name: expand;
+      animation-timing-function: cubic-bezier(.23, 1, .32, 1);
+      margin: 0;
+      transform-origin: left center;
+    }
   }
 
   nav {
