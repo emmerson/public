@@ -14,19 +14,15 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body data-ng-app="publicApp" data-ng-controller="RootCtrl">
+  <body data-ng-app="publicApp">
     <div id="grid" class="grid-flicker">
     </div>
 
-    <header data-ng-include="'views/partials/header.html'"
-            onload="onHeaderLoad()">
+    <header data-ng-include="'views/partials/header.html'">
     </header>
-    <main data-ng-view=""
-          id="{{routeName}}"
-          onload="onMainLoad()">
+    <main data-ng-view="" id="{{routeName}}">
     </main>
-    <footer data-ng-include="'views/partials/footer.html'"
-            onload="onFooterLoad()">
+    <footer data-ng-include="'views/partials/footer.html'">
     </footer>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -36,7 +32,6 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
-    <script src="bower_components/async/lib/async.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
