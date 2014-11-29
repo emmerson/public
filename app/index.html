@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/about.css">
     <!-- endbuild -->
   </head>
-  <body data-ng-app="publicApp">
+  <body data-ng-app="publicApp" data-ng-controller="RootCtrl">
     <div id="grid" class="grid-flicker">
     </div>
 
@@ -28,7 +28,6 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
@@ -46,6 +45,7 @@
     <script src="scripts/directives/header.js"></script>
     <script src="scripts/directives/main.js"></script>
     <script src="scripts/directives/footer.js"></script>
+    <script src="scripts/controllers/root.js"></script>
     <!-- endbuild -->
 </body>
 </html>
