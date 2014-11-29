@@ -18,11 +18,11 @@
     <div id="grid" class="grid-flicker">
     </div>
 
-    <header data-ng-include="'views/partials/header.html'">
+    <header data-ng-include="'views/partials/header.html'" class="header fade">
     </header>
-    <main data-ng-view="" id="{{routeName}}">
+    <main data-ng-view="" id="{{routeName}}" class="main {{routeName}} fade">
     </main>
-    <footer data-ng-include="'views/partials/footer.html'">
+    <footer data-ng-include="'views/partials/footer.html'" class="footer fade">
     </footer>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -41,6 +41,9 @@
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/directives/gridflicker.js"></script>
     <script src="scripts/directives/navlink.js"></script>
+    <script src="scripts/directives/header.js"></script>
+    <script src="scripts/directives/main.js"></script>
+    <script src="scripts/directives/footer.js"></script>
     <!-- endbuild -->
 </body>
 </html>
