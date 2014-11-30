@@ -21,7 +21,9 @@
 
     <header data-ng-include="'views/partials/header.html'" class="header fade">
     </header>
-    <main data-ng-view="" id="{{routeName}}" class="main {{routeName}} fade">
+    <main data-ng-view=""
+          id="{{routeName}}"
+          class="main watch {{routeName}} fade">
     </main>
     <footer data-ng-include="'views/partials/footer.html'" class="footer fade">
     </footer>
@@ -47,6 +49,8 @@
     <script src="scripts/directives/main.js"></script>
     <script src="scripts/directives/footer.js"></script>
     <script src="scripts/controllers/root.js"></script>
+    <script src="scripts/directives/about.js"></script>
+    <script src="scripts/directives/watch.js"></script>
     <!-- endbuild -->
 </body>
 </html>
