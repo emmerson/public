@@ -15,9 +15,7 @@ angular.module('publicApp')
         var link      = element.find('a');
         if (routeName === link.attr('href')) {
           element.addClass('active');
-
-          var document = $document[0];
-          var navTitle = document.getElementById('nav-title');
+          var navTitle = $document[0].getElementById('nav-title');
           navTitle.textContent = link.attr('title');
         }
       }

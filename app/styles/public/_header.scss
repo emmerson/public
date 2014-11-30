@@ -29,6 +29,7 @@ header {
     margin-bottom: 0;
   }
 
+  perspective: 1035px;
   transform: translate3d(0, 0, 0);
   transition: margin 600ms cubic-bezier(.23, 1, .32, 1);
 
@@ -54,6 +55,7 @@ header {
   }
 
   nav {
+    font-size: 0;
     margin-top: -1px;
   }
 
@@ -72,14 +74,16 @@ header {
       margin-right: 24px;
     }
 
+    overflow: hidden;
     padding-top: 18px;
     transition: margin-right 600ms cubic-bezier(.23, 1, .32, 1);
 
     a {
       color: rgba($white, .42);
+      font-size: $font-size-base;
       font-weight: 300;
+      transform: translateY(calc(-17px + -18px));
     }
-
   }
 
   .active {
