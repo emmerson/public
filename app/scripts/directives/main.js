@@ -16,7 +16,7 @@ angular.module('publicApp')
           requestAnimationFrame(function() {
             element.addClass('in');
           });
-        }, 1000 * 0.06);
+        }, 1000 * 0.161803399);
       }
     };
   });
