@@ -31,7 +31,6 @@ angular.module('publicApp')
                 }, {
                   y: 0
                 }, 0.161803399)
-              .delay(0.2)
               .fromTo(navTitle, 0.4, {
                 rotationX: 90,
                 transformOrigin: '50% 50% -8.5px'
