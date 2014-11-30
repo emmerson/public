@@ -20,7 +20,7 @@ footer {
   position: relative;
   transform: translateY(-9px);
   transition: all 600ms cubic-bezier(.23, 1, .32, 1) !important;
-  transition-property: margin, transform !important;
+  transition-property: margin, opacity, transform !important;
 
   &.slide-down {
     transform: translate3d(0, 0, 0);

@@ -7,11 +7,12 @@
  * # about
  */
 angular.module('publicApp')
-  .directive('about', function () {
+  .directive('about', function ($window) {
     return {
       restrict: 'C',
       link: function postLink(scope, element) {
-        element.text('this is the about directive');
+        var TimelineMax = $window.TimelineMax;
+        // element.text('this is the about directive');
       }
     };
   });
