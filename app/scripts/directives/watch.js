@@ -27,7 +27,7 @@ angular.module('publicApp')
           // disable recompiling until the next $digest loop
           scope.recompiled = true;
           $timeout(function() {
-            scope.recompiled = undefined;
+            scope.recompiled = false;
           });
         });
 
