@@ -83,6 +83,7 @@ header {
       font-size: $font-size-base;
       font-weight: 300;
       transform: translateY(calc(-17px + -18px));
+      transition-property: color;
     }
   }
 

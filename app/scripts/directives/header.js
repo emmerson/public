@@ -26,7 +26,7 @@ angular.module('publicApp')
             var navLinks = element[0].querySelectorAll('li a');
             var navTitle = $document[0].getElementById('nav-title');
             tl
-              .staggerFromTo(navLinks, 0.2, {
+              .staggerFromTo(navLinks, 0.6, {
                   y: -17 + -18
                 }, {
                   y: 0
@@ -37,7 +37,7 @@ angular.module('publicApp')
               }, {
                 rotationX: 0,
                 transformOrigin: '50% 50% -8.5px'
-              });
+              }, '-=0.4');
           });
         });
       }
