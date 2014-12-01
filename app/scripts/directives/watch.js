@@ -11,21 +11,29 @@ angular.module('publicApp')
     return {
       restrict: 'C',
       link: function postLink(scope, element, attrs) {
+        /**
+         * Watch for "class" changes.
+         */
+
         var clearObserve = attrs.$observe('class', function() {
-          // Disable recompiling within the same $digest loop
+          // disable recompiling within the same $digest loop
           if (scope.recompiled) {
             return;
           }
 
-          // Recompile when the class attribute changes
+          // recompile when the class attribute changes
           $compile(element)(scope);
 
-          // Disable recompiling until the next $digest loop
+          // disable recompiling until the next $digest loop
           scope.recompiled = true;
           $timeout(function() {
             scope.recompiled = undefined;
           });
         });
+
+        /**
+         * Handle "$destroy" event.
+         */
 
         scope.$on('$destroy', function() {
           clearObserve();

@@ -11,12 +11,17 @@ angular.module('publicApp')
     return {
       restrict: 'C',
       link: function postLink(scope, element) {
-        // Defer by two frames.
-        $timeout(function() {
-          requestAnimationFrame(function() {
+        /**
+         * Handle "initialize" events.
+         */
+
+        scope.$on('initialize', function() {
+          // defer by two frames
+          $timeout(function() { requestAnimationFrame(function() {
+            // fade in main
             element.addClass('in');
-          });
-        }, 1000 * 0.161803399);
+          }); }, 1000 * 0.161803399);
+        });
       }
     };
   });

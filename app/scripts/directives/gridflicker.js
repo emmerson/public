@@ -8,12 +8,20 @@
  */
 angular.module('publicApp')
   .directive('gridFlicker', function ($window) {
+    /**
+     * Module dependencies.
+     */
+
+    var RoughEase = $window.RoughEase;
+    var Quint     = $window.Quint;
+    var TweenMax  = $window.TweenMax;
+
     return {
       restrict: 'C',
       link: function postLink(scope, element) {
-        var RoughEase = $window.RoughEase;
-        var Quint     = $window.Quint;
-        var TweenMax  = $window.TweenMax;
+        /**
+         * Configure grid flicker.
+         */
 
         var flickerOutGrid = RoughEase.ease.config({
           strength: 16,
@@ -23,9 +31,17 @@ angular.module('publicApp')
           clamp: true
         });
 
+        /**
+         * Fade in grid points.
+         */
+
         function fadeInGridPoints() {
           element.addClass('points');
         }
+
+        /**
+         * Handle "load" event.
+         */
 
         angular.element($window).one('load', function() {
           TweenMax.to(element, 2, {
