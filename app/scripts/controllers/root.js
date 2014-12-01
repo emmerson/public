@@ -8,7 +8,7 @@
  * Controller of the publicApp
  */
 angular.module('publicApp')
-  .controller('RootCtrl', function ($scope, $window) {
+  .controller('RootCtrl', function ($scope, $window, $document) {
     $scope.$on('$includeContentLoaded', function(e) {
       var selector = e.targetScope.selector;
       console.log(selector + ' loaded.');
@@ -20,6 +20,7 @@ angular.module('publicApp')
     });
 
     angular.element($window).one('load', function() {
-      console.log('rekt');
+      var background = $document[0].getElementById('background');
+      angular.element(background).addClass('in');
     });
   });

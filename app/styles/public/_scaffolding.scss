@@ -15,11 +15,7 @@ html {
 }
 
 body {
-  background-attachment: $body-bg-attachment;
   background-color: $body-bg-color;
-  background-image: $body-bg-image;
-  background-position: $body-bg-position;
-  background-repeat: $body-bg-repeat;
   color: $text-color;
   display: flex;
   flex-direction: column;
@@ -27,6 +23,22 @@ body {
   font-size: $font-size-base;
   margin: 0;
   min-height: 100vh;
+}
+
+#background,
+#grid {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#background {
+  background-attachment: $body-bg-attachment;
+  background-image: $body-bg-image;
+  background-position: $body-bg-position;
+  background-repeat: $body-bg-repeat;
 }
 
 @keyframes fade-in {
@@ -41,12 +53,6 @@ body {
 
 #grid {
   background-image: $grid-bg-image;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  transform: translate3d(0, 0, 0);
-  width: 100%;
-  z-index: -1;
 
   &.points {
     animation-duration: 2s;
