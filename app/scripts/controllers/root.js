@@ -19,7 +19,7 @@ angular.module('publicApp')
       console.log(routeName + ' loaded.');
     });
 
-    angular.element($window).one('load', function(e) {
+    angular.element($window).one('load', function() {
       console.log('rekt');
     });
   });
