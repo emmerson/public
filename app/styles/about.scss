@@ -34,6 +34,15 @@
     font-size: 64px;
     font-weight: 100;
   }
+
+  .call-to-action {
+    transform: rotateX(90deg);
+    transition-property: font-size,
+                         padding,
+                         background-color,
+                         border-color,
+                         color;
+  }
 }
 
 @media (max-width: $screen-xs-max) {

@@ -33,7 +33,7 @@ angular.module('publicApp')
               opacity: 1,
               rotationX: 0,
               transformOrigin: '50% 50% -34.5px'
-            }, '-=0.4');
+            }, '-=0.2');
       }
     };
   });

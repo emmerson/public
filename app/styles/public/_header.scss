@@ -79,6 +79,7 @@ header {
 
     a {
       color: rgba($white, .42);
+      display: inline-block;
       font-size: $font-size-base;
       font-weight: 300;
       transform: translateY(calc(-17px + -18px));
