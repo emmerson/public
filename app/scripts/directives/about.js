@@ -22,9 +22,6 @@ angular.module('publicApp')
          */
 
         function animateAbout() {
-          // fade in main
-          element.addClass('in');
-
           // initialize timeline and retrieve elements to animate
           var tl           = new TimelineMax();
           var eyebrow      = element[0].getElementsByClassName('eyebrow');
@@ -33,6 +30,8 @@ angular.module('publicApp')
           tl
             // wait for main to stagger in
             .delay(0.161803399)
+            // fade in main
+            .call(function() { element.addClass('in'); })
             // fade in and slide down header
             .staggerFromTo([eyebrow, largeBlock], 0.4, {
                 opacity: 0,
