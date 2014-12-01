@@ -14,20 +14,6 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/about.css">
     <!-- endbuild -->
-  </head>
-  <body data-ng-app="publicApp" data-ng-controller="RootCtrl">
-    <div id="grid" class="grid-flicker">
-    </div>
-
-    <header data-ng-include="'views/partials/header.html'" class="header fade">
-    </header>
-    <main data-ng-view=""
-          id="{{routeName}}"
-          class="main watch {{routeName}} fade">
-    </main>
-    <footer data-ng-include="'views/partials/footer.html'" class="footer fade">
-    </footer>
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/angular/angular.js"></script>
@@ -37,7 +23,6 @@
     <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
@@ -51,5 +36,17 @@
     <script src="scripts/directives/about.js"></script>
     <script src="scripts/directives/watch.js"></script>
     <!-- endbuild -->
+  </head>
+  <body data-ng-app="publicApp" data-ng-controller="RootCtrl">
+    <div id="grid" class="grid-flicker">
+    </div>
+    <header data-ng-include="'views/partials/header.html'" class="header fade">
+    </header>
+    <main data-ng-view=""
+          id="{{routeName}}"
+          class="main watch {{routeName}} fade">
+    </main>
+    <footer data-ng-include="'views/partials/footer.html'" class="footer fade">
+    </footer>
 </body>
 </html>
