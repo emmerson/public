@@ -57,8 +57,7 @@ angular.module('publicApp')
          * Handle "initialize" event.
          */
 
-        var $scope = element.scope();
-        if ($rootScope.initialized && $scope.recompiled === false) {
+        if ($rootScope.initialized) {
           animateAbout();
         } else {
           var remove = scope.$on('initialize', function() {
