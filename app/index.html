@@ -43,7 +43,9 @@
     </div>
     <header data-ng-include="'views/partials/header.html'" class="header fade">
     </header>
-    <main data-ng-view="" id="{{routeName}}">
+    <main id="{{routeName}}">
+      <div data-ng-view="" class="section-container">
+      </div>
     </main>
     <footer data-ng-include="'views/partials/footer.html'" class="footer fade">
     </footer>

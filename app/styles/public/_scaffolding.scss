@@ -78,6 +78,14 @@ main {
   transition: margin 600ms cubic-bezier(.23, 1, .32, 1);
 }
 
+.section-container {
+  display: flex;
+  flex: 1;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+}
+
 
 // Links
 

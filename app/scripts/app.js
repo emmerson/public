@@ -54,13 +54,17 @@ angular
   .config(function ($provide) {
     $provide.decorator('$controller', function ($location, $delegate) {
       return function(constructor, locals, later, indent) {
-        var routeName = $location.path().replace('/', '');
-        if (routeName === '') {
-       // routeName = 'main';
-          routeName = 'about';
-        }
+        function updateRouteName() {
+          var routeName = $location.path().replace('/', '');
+          if (routeName === '') {
+         // routeName = 'main';
+            routeName = 'about';
+          }
 
-        locals.$scope.routeName = routeName;
+          locals.$scope.routeName = routeName;
+        } updateRouteName();
+
+        locals.$scope.$on('$viewContentLoaded', updateRouteName);
         return $delegate(constructor, locals, later, indent);
       };
     });

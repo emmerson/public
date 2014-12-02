@@ -8,7 +8,9 @@
 
 
 #about {
-  align-items: center;
+  .section-container {
+    align-items: center;
+  }
 
   h1 {
     font-weight: 300;
