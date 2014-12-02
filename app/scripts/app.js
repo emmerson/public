@@ -13,6 +13,11 @@ angular
     'ngAnimate',
     'ngRoute',
   ])
+
+  /**
+   * Configure routes.
+   */
+
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -27,11 +32,21 @@ angular
         redirectTo: '/'
       });
   })
+
+  /**
+   * Configure application deep linking.
+   */
+
   .config(function ($locationProvider) {
     $locationProvider
       .html5Mode(true)
       .hashPrefix('!');
   })
+
+  /**
+   * Decorate controllers with route name.
+   */
+
   .config(function ($provide) {
     $provide.decorator('$controller', function ($location, $delegate) {
       return function(constructor, locals, later, indent) {
@@ -46,10 +61,20 @@ angular
       };
     });
   })
+
+  /**
+   * Instantiate FastClick.
+   */
+
   .run(function($window, $document) {
     var FastClick = $window.FastClick;
     FastClick.attach($document[0].body);
   })
+
+  /**
+   * Default ease.
+   */
+
   .run(function($window) {
     var TweenLite = $window.TweenLite;
     var Quint     = $window.Quint;
