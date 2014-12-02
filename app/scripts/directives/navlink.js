@@ -7,7 +7,7 @@
  * # navLink
  */
 angular.module('publicApp')
-  .directive('navLink', function ($location, $document, $timeout) {
+  .directive('navLink', function ($location, $document) {
     return {
       restrict: 'C',
       link: function postLink(scope, element) {
