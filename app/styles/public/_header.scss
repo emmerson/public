@@ -75,7 +75,8 @@ header {
 
     overflow: hidden;
     padding-top: 18px;
-    transition: margin-right 600ms cubic-bezier(.23, 1, .32, 1);
+    transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+    transition-property: margin-right, border-color;
 
     a {
       color: rgba($white, .42);
