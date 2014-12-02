@@ -75,4 +75,8 @@ angular.module('publicApp')
       $scope.$broadcast('initialize');
       $rootScope.initialized = true;
     });
+
+    $scope.$on('$viewContentLoaded', function() {
+      $scope.$broadcast('viewLoaded');
+    });
   });
