@@ -28,6 +28,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/wiwo', {
+        templateUrl: 'views/wiwo.html',
+        controller: 'WiwoCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
@@ -50,8 +54,8 @@ angular
   .config(function ($provide) {
     $provide.decorator('$controller', function ($location, $delegate) {
       return function(constructor, locals, later, indent) {
-        var routeName = $location.path();
-        if (routeName === '/') {
+        var routeName = $location.path().replace('/', '');
+        if (routeName === '') {
        // routeName = 'main';
           routeName = 'about';
         }
