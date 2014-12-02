@@ -76,6 +76,10 @@ angular.module('publicApp')
       $rootScope.initialized = true;
     });
 
+    /**
+     * Broadcast "viewLoaded" events.
+     */
+
     $scope.$on('$viewContentLoaded', function() {
       $scope.$broadcast('viewLoaded');
     });
