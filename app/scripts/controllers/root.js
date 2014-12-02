@@ -37,12 +37,9 @@ angular.module('publicApp')
 
     function onviewcontentloaded(/*route*/) {
       return function(callback) {
-        var remove = $scope.$on('$viewContentLoaded', function(/*e*/) {
-          // var routeName = e.targetScope.routeName;
-          // if (routeName === route) {
-            remove();
-            callback(null);
-          // }
+        var remove = $scope.$on('$viewContentLoaded', function() {
+          remove();
+          callback(null);
         });
       };
     }
