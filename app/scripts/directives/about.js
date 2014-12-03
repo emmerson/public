@@ -29,7 +29,7 @@ angular.module('publicApp')
           var callToAction = element[0].getElementsByClassName('call-to-action');
           tl
             // wait for main to stagger in
-            .delay(0.161803399)
+            .delay(0.2)
             // fade in main
             .call(function() { element.addClass('in'); })
             // fade in and slide down header

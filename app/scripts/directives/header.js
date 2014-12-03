@@ -40,7 +40,7 @@ angular.module('publicApp')
                   y: -17 + -18
                 }, {
                   y: 0
-                }, 0.161803399)
+                }, 0.2)
               // rotate in title
               .fromTo(navTitle, 0.4, {
                 rotationX: 90,

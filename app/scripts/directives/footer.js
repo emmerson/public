@@ -23,7 +23,7 @@ angular.module('publicApp')
 
             // slide down footer
             element.addClass('slide-down');
-          }); }, 1000 * (0.161803399 * 2));
+          }); }, 1000 * (0.2 * 2));
         });
       }
     };
