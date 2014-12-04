@@ -3,14 +3,27 @@
 // --------------------------------------------------
 
 
+// Core variables and mixins
+@import 'public/variables';
+@import 'public/mixins';
+
+
 // Base styles
 // -------------------------
 
-.catalog {
-  align-self: center;
-  max-width: 1281px;
-  perspective: 1000px;
-  width: 100%;
+#wiwo {
+  // Section
+  // -------------------------
+
+  .section-container {
+    align-items: center;
+  }
+
+  section {
+    max-width: 1281px;
+    perspective: 1000px;
+    width: 100%;
+  }
 
   // Rows
   // -------------------------
