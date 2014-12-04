@@ -17,7 +17,7 @@
     @include clearfix;
 
     &:first-of-type {
-      margin-top: 36px;
+      margin-top: 32px;
 
       @media (max-width: (1035px - 1)) {
         .project-tile {
@@ -27,7 +27,7 @@
     }
 
     &:last-of-type {
-      margin-bottom: -36px;
+      margin-bottom: -32px;
 
       .project-tile {
         border-bottom: 1px solid rgba($white, .07);
@@ -42,9 +42,13 @@
     box-sizing: border-box;
     float: left;
     margin-bottom: 128px;
-    padding-right: 36px;
-    transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+    padding-right: 32px;
     width: 66.666666%;
+
+    @media (max-width: (1035px - 1)) {
+      padding-right: 0;
+      width: 100%;
+    }
   }
 
   h1 {
@@ -86,12 +90,18 @@
     float: left;
     min-height: 304.333333px;
     min-width: 291.333333px;
-    padding: 36px;
+    padding: 32px;
     position: relative;
-    top: calc(-36px - 1px);
+    top: calc(-32px - 1px);
     transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
     transition-property: background-color, width;
     width: 33.333333%;
+
+    @media (max-width: (1035px - 1)) {
+      border: 1px solid rgba($white, .07) !important;
+      border-bottom: 0 !important;
+      width: 100%;
+    }
 
     &:hover {
       background-color: rgba($black, .97);
@@ -100,12 +110,6 @@
       .callout-headline {
         color: $gold;
       }
-    }
-
-    @media (max-width: (1035px - 1)) {
-      border: 1px solid rgba($white, .07) !important;
-      border-bottom: 0 !important;
-      width: 100%;
     }
 
     &:last-of-type {
@@ -141,13 +145,13 @@
   }
 
   .when {
-    font-size: 12px;
+    font-size: $font-size-small;
     font-weight: 400;
   }
 
   .who {
     + .what {
-      font-size: 14px;
+      font-size: $font-size-base;
     }
   }
 
