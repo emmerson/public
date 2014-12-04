@@ -51,6 +51,16 @@ angular.module('publicApp')
               }, '-=0.4');
           }); });
         });
+
+
+        /**
+         * Handle "viewLoaded" events.
+         */
+
+        scope.$on('viewLoaded', function() {
+          var navTitle = $document[0].getElementById('nav-title');
+          navTitle.textContent = null;
+        });
       }
     };
   });

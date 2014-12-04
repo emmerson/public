@@ -7,7 +7,7 @@
  * # navLink
  */
 angular.module('publicApp')
-  .directive('navLink', function ($location, $document) {
+  .directive('navLink', function ($location, $document, $timeout) {
     return {
       restrict: 'C',
       link: function postLink(scope, element) {
@@ -35,7 +35,7 @@ angular.module('publicApp')
          */
 
         scope.$on('viewLoaded', function() {
-          updateNavLink();
+          $timeout(updateNavLink);
         });
       }
     };
