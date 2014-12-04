@@ -33,21 +33,21 @@ angular.module('publicApp')
             // fade in main
             .call(function() { element.addClass('in'); })
             // fade in and slide down header
-            .staggerFromTo([h1, intro], 0.4, {
+            .staggerFromTo([h1, intro], 0.6, {
                 opacity: 0,
-                y: -9
+                z: -152,
               }, {
                 opacity: 1,
-                y: 0
+                z: 0
               }, 0.2)
             // rotate in project tiles
-            .staggerFromTo(tiles, 0.6, {
+            .staggerFromTo(tiles, 2, {
                 opacity: 0,
-                rotationX: 90,
+                z: -152,
                 transformOrigin: '50% 50% -152px'
               }, {
                 opacity: 1,
-                rotationX: 0,
+                z: 0,
                 transformOrigin: '50% 50% -152px'
               }, 0.2, '-=0.4');
         }

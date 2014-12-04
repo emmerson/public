@@ -33,7 +33,7 @@ angular.module('publicApp')
             // fade in main
             .call(function() { element.addClass('in'); })
             // fade in and slide down header
-            .staggerFromTo([eyebrow, largeBlock], 0.4, {
+            .staggerFromTo([eyebrow, largeBlock], 0.6, {
                 opacity: 0,
                 y: -9
               }, {
@@ -49,7 +49,7 @@ angular.module('publicApp')
                 opacity: 1,
                 rotationX: 0,
                 transformOrigin: '50% 50% -34.5px'
-              }, '-=0.2');
+              }, '-=0.4');
         }
 
         /**

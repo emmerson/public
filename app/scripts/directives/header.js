@@ -42,13 +42,13 @@ angular.module('publicApp')
                   y: 0
                 }, 0.2)
               // rotate in title
-              .fromTo(navTitle, 0.4, {
+              .fromTo(navTitle, 0.6, {
                 rotationX: 90,
                 transformOrigin: '50% 50% -8.5px'
               }, {
                 rotationX: 0,
                 transformOrigin: '50% 50% -8.5px'
-              }, '-=0.4');
+              }, '-=' + 0.2 * (navLinks.length - 1));
           }); });
         });
 

@@ -8,6 +8,7 @@
 
 .catalog {
   max-width: 1281px;
+  perspective: 1000px;
   width: 100%;
 
   // Rows
@@ -82,6 +83,7 @@
   // -------------------------
 
   .project-tile {
+    backface-visibility: hidden;
     border: 1px solid rgba($white, .07);
     border-bottom: 0;
     border-right: 0;
