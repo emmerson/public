@@ -19,7 +19,7 @@ $gold:                   rgba(168, 155, 123, 1) !default; // #a89b7b
 //## Settings for some of the most global styles.
 
 //** Background attachment for `<body>`.
-$body-bg-attachment:    fixed !default;
+$body-bg-attachment:    scroll !default;
 //** Background color for `<body>`.
 $body-bg-color:         $black !default;
 //** Background image for `<body>`.
