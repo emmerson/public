@@ -26,6 +26,8 @@ body {
   font-size: $font-size-base;
   margin: 0;
   min-height: 100%;
+  // overflow-x: hidden;
+  overflow-y: scroll;
   position: relative;
 }
 
@@ -72,7 +74,26 @@ body {
 #main,
 footer {
   padding: 0 64px;
+
+  @media (max-width: $screen-xs-max) {
+    padding: 0 32px;
+  }
+
+  transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+  transition-property: padding, width;
   width: 896px;
+
+  @media (min-width: $screen-lg-min) {
+    width: 1024px;
+  }
+
+  @media (min-width: $screen-xs-max) and (max-width: 1024px) {
+    width: calc(100% - 2 * 64px);
+  }
+
+  @media (max-width: $screen-xs-max) {
+    width: calc(100% - 2 * 32px);
+  }
 }
 
 #main {
