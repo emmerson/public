@@ -21,7 +21,6 @@
 
   section {
     max-width: 1281px;
-    perspective: 1000px;
     width: 100%;
   }
 
@@ -30,6 +29,8 @@
 
   .row {
     @include clearfix;
+
+    perspective: 1000px;
 
     &:first-of-type {
       margin-top: 32px;
@@ -58,6 +59,7 @@
     float: left;
     margin-bottom: 128px;
     padding-right: 32px;
+    perspective: 1000px;
     width: 66.666666%;
 
     @media (max-width: (1035px - 1)) {
