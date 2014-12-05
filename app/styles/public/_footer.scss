@@ -7,16 +7,10 @@
 // -------------------------
 
 footer {
+  @include clearfix;
+
   color: rgba($white, .14);
   font-weight: 300;
-  margin: 64px;
-  margin-top: 0;
-
-  @media (max-width: $screen-xs-max) {
-    margin: 36px;
-    margin-top: 0;
-  }
-
   position: relative;
   transform: translateY(-9px);
   transition: all 600ms cubic-bezier(.23, 1, .32, 1) !important;
@@ -60,7 +54,6 @@ footer {
 
 #colophon {
   float: right;
-  position: absolute;
   right: 0;
   text-align: right;
   transition: all 600ms cubic-bezier(.23, 1, .32, 1);

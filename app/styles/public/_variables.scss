@@ -35,6 +35,8 @@ $text-color:            $white !default;
 $grid-bg-attachment:    fixed !default;
 //** Background image for `#grid`.
 $grid-bg-image:         url(../images/grid.png) !default;
+//** Background position for `#grid`.
+$grid-bg-position:      center top !default;
 //** Background image for `#grid.points`.
 $grid-points-bg-image:  url(../images/grid_point.png) !default;
 
