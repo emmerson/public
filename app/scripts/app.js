@@ -33,6 +33,10 @@ angular
         templateUrl: 'views/wiwo.html',
         controller: 'WiwoCtrl'
       })
+      .when('/portfolio', {
+        templateUrl: 'views/portfolio.html',
+        controller: 'PortfolioCtrl'
+      })
       .otherwise({
         redirectTo: '/404'
       });
