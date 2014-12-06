@@ -1,7 +1,5 @@
-// Generated on 2014-11-22 using generator-angular 0.10.0
+// Generated on 2014-12-06 using generator-angular 0.10.0
 'use strict';
-
-var modRewrite = require('connect-modrewrite');
 
 // # Globbing
 // for performance reasons we're only matching one level down:
@@ -58,7 +56,7 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= yeoman.app %>/**/*.html',
+          '<%= yeoman.app %>/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -70,15 +68,14 @@ module.exports = function (grunt) {
       options: {
         port: 9000,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: '0.0.0.0',
+        hostname: 'localhost',
         livereload: 35729
       },
       livereload: {
         options: {
-          open: 'http://localhost:<%= connect.options.port %>',
+          open: true,
           middleware: function (connect) {
             return [
-              modRewrite(['^[^\\.]*$ /index.html [L]']),
               connect.static('.tmp'),
               connect().use(
                 '/bower_components',
@@ -107,7 +104,7 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
-          open: 'http://localhost:<%= connect.options.port %>',
+          open: true,
           base: '<%= yeoman.dist %>'
         }
       }
@@ -220,7 +217,7 @@ module.exports = function (grunt) {
     // concat, minify and revision files. Creates configurations in memory so
     // additional tasks can operate on them
     useminPrepare: {
-      html: '<%= yeoman.app %>/{,*/}*.html',
+      html: '<%= yeoman.app %>/index.html',
       options: {
         dest: '<%= yeoman.dist %>',
         flow: {
@@ -237,7 +234,7 @@ module.exports = function (grunt) {
 
     // Performs rewrites based on filerev and the useminPrepare configuration
     usemin: {
-      html: ['<%= yeoman.dist %>/**/*.html'],
+      html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
         assetsDirs: ['<%= yeoman.dist %>','<%= yeoman.dist %>/images']
@@ -340,18 +337,22 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>',
           src: [
             '*.{ico,png,txt}',
-            // '.htaccess',
+            '.htaccess',
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
-            'fonts/{,*/}*.*',
-            '*.pdf'
+            'fonts/{,*/}*.*'
           ]
         }, {
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
+        }, {
+          expand: true,
+          cwd: '.',
+          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          dest: '<%= yeoman.dist %>'
         }]
       },
       styles: {

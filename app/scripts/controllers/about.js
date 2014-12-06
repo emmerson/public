@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name publicApp.controller:WiwoCtrl
+ * @name publicApp.controller:AboutCtrl
  * @description
- * # WiwoCtrl
+ * # AboutCtrl
  * Controller of the publicApp
  */
 angular.module('publicApp')
-  .controller('WiwoCtrl', function ($scope) {
+  .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
