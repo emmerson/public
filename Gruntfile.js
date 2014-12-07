@@ -1,4 +1,4 @@
-// Generated on 2014-12-06 using generator-angular 0.10.0
+// Generated on 2014-12-07 using generator-angular 0.10.0
 'use strict';
 
 // # Globbing
@@ -6,8 +6,6 @@
 // 'test/spec/{,*/}*.js'
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
-
-var modRewrite = require('connect-modrewrite');
 
 module.exports = function (grunt) {
 
@@ -78,7 +76,6 @@ module.exports = function (grunt) {
           open: true,
           middleware: function (connect) {
             return [
-              modRewrite(['^[^\\.]*$ /index.html [L]']),
               connect.static('.tmp'),
               connect().use(
                 '/bower_components',
@@ -94,7 +91,6 @@ module.exports = function (grunt) {
           port: 9001,
           middleware: function (connect) {
             return [
-              modRewrite(['^[^\\.]*$ /index.html [L]']),
               connect.static('.tmp'),
               connect.static('test'),
               connect().use(

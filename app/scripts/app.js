@@ -17,11 +17,6 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-
-  /**
-   * Configure routes.
-   */
-
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -35,14 +30,4 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  })
-
-  /**
-   * Configure application deep linking.
-   */
-
-  .config(function ($locationProvider) {
-    $locationProvider
-      .html5Mode(true)
-      .hashPrefix('!');
   });
