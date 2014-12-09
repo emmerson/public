@@ -12,17 +12,30 @@ angular
   .module('publicApp', [
     'ngRoute'
   ])
+
+  /**
+   * Configure routes.
+   */
+
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/main.html'
       })
       .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        redirectTo: '/'
       })
       .otherwise({
         redirectTo: '/'
       });
+  })
+
+  /**
+   * Configure application deep linking.
+   */
+
+  .config(function ($locationProvider) {
+    $locationProvider
+      .html5Mode(true)
+      .hashPrefix('!');
   });
