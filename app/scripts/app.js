@@ -35,10 +35,9 @@ angular
       })
       .when('/404', {
         templateUrl: 'views/404.html',
-        controller: '404Ctrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/404'
       });
   })
 
