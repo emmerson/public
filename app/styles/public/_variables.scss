@@ -19,6 +19,8 @@ $gray:                   lighten($gray-base, 33.5%); // #555
 $gray-light:             lighten($gray-base, 46.7%); // #777
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
+$white:                  #ccd8db;
+
 $brand-primary:         darken(#428bca, 6.5%);
 $brand-success:         #5cb85c;
 $brand-info:            #5bc0de;
@@ -31,9 +33,9 @@ $brand-danger:          #d9534f;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff;
+$body-bg:               #1f2324;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark;
+$text-color:            $white;
 
 //** Global textual link color.
 $link-color:            $brand-primary;
@@ -861,4 +863,4 @@ $page-header-border-color:    $gray-lighter;
 //** Width of horizontal description list titles
 $dl-horizontal-offset:        $component-offset-horizontal;
 //** Horizontal line color.
-$hr-border:                   $gray-lighter;
+$hr-border:                   rgba($white, .07);
