@@ -75,7 +75,7 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          open: 'http://localhost:<% connect.options.port %>',
+          open: 'http://localhost:<%= connect.options.port %>',
           middleware: function (connect) {
             return [
               modRewrite(['^[^\\.]*$ /index.html [L]']),
@@ -108,7 +108,7 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
-          open: 'http://localhost:<% connect.options.port %>',
+          open: 'http://localhost:<%= connect.options.port %>',
           base: '<%= yeoman.dist %>'
         }
       }
