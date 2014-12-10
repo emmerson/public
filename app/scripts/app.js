@@ -25,6 +25,14 @@ angular
       .when('/about', {
         redirectTo: '/'
       })
+      .when('/wiwo', {
+        templateUrl: 'views/wiwo.html',
+        controller: 'WiwoCtrl'
+      })
+      .when('/portfolio', {
+        templateUrl: 'views/portfolio.html',
+        controller: 'PortfolioCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
