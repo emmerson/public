@@ -21,11 +21,9 @@ body {
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  padding-bottom: 32px;
   padding-top: 32px;
 
   @media (min-width: $screen-sm-min) {
-    padding-bottom: 64px;
     padding-top: 64px;
   }
 
@@ -33,8 +31,23 @@ body {
 }
 
 #main {
-  margin: 0 auto -58px;
+  margin: 0 auto -90px;
+
+  @media (min-width: $screen-sm-min) {
+    margin: 0 auto -122px;
+  }
+
   min-height: 100%;
+
+  &::after {
+    content: ' '; // 1
+    display: table; // 2
+    height: 90px;
+
+    @media (min-width: $screen-sm-min) {
+      height: 122px;
+    }
+  }
 }
 
 main {
@@ -45,6 +58,14 @@ main {
   }
 
   transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+}
+
+footer {
+  margin-bottom: 32px;
+
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: 64px;
+  }
 }
 
 
