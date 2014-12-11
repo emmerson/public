@@ -18,16 +18,24 @@ body {
   height: 100%;
 }
 
+body {
+  overflow-x: hidden;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  @media (min-width: $screen-sm-min) {
+    padding-bottom: 64px;
+    padding-top: 64px;
+  }
+
+  transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+}
+
 
 // Sticky footer
 
 #main {
-  margin: 0 auto -90px;
-
-  @media (min-width: $screen-sm-min) {
-    margin: 0 auto -122px;
-  }
-
+  margin: 0 auto -58px;
   min-height: 100%;
 }
 

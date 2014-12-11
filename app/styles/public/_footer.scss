@@ -8,11 +8,6 @@
 
 footer {
   color: rgba($white, .14);
-  padding-bottom: 32px;
-
-  @media (min-width: $screen-sm-min) {
-    padding-bottom: 64px;
-  }
 
   a {
     color: rgba($white, .14);

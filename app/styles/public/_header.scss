@@ -7,18 +7,12 @@
 // -------------------------
 
 header {
-  padding-top: 32px;
-
-  @media (min-width: $screen-sm-min) {
-    padding-top: 64px;
-  }
-
   #logo-container {
     margin-bottom: 36px;
   }
 
   a {
-    color: $white;
+    color: rgba($white, .42);
 
     &:hover,
     &:focus {
@@ -26,7 +20,43 @@ header {
     }
 
     &:focus {
+      color: rgba($white, .42);
+    }
+  }
+
+  hr {
+    height: 0;
+    margin-bottom: 0;
+  }
+
+  nav {
+    margin-top: -1px;
+
+    ol {
+      line-height: normal;
+      margin-left: 0 !important;
+    }
+  }
+
+  li {
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    margin-right: $line-height-computed;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: $line-height-computed;
+    transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+  }
+
+  .active {
+    border-top: 1px solid $gold;
+
+    a {
       color: $white;
     }
+  }
+
+  h2 {
+    font-size: $font-size-large;
+    font-weight: 100;
   }
 }
