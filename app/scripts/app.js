@@ -33,8 +33,11 @@ angular
         templateUrl: 'views/portfolio.html',
         controller: 'PortfolioCtrl'
       })
+      .when('/theme', {
+        templateUrl: 'views/theme.html'
+      })
       .when('/404', {
-        templateUrl: 'views/404.html',
+        templateUrl: 'views/404.html'
       })
       .otherwise({
         redirectTo: '/404'
