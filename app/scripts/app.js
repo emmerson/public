@@ -10,8 +10,7 @@
  */
 angular
   .module('publicApp', [
-    'ngRoute',
-    'angular-loading-bar'
+    'ngRoute'
   ])
 
   /**
