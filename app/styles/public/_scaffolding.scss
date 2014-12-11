@@ -3,12 +3,23 @@
 // --------------------------------------------------
 
 
+// Highlighting
+
+::selection {
+  background: rgba($gold, .99);
+  color: $black;
+} 
+
+
 // Body reset
 
 html,
 body {
   height: 100%;
 }
+
+
+// Sticky footer
 
 #main {
   margin: 0 auto -90px;
@@ -19,6 +30,7 @@ body {
 
   min-height: 100%;
 }
+
 
 // Links
 

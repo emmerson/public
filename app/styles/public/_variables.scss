@@ -19,7 +19,11 @@ $gray:                   lighten($gray-base, 33.5%); // #555
 $gray-light:             lighten($gray-base, 46.7%); // #777
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
+$black:                  #1f2324;
+
 $white:                  #ccd8db;
+
+$gold:                   #a89b7b;
 
 $brand-primary:         darken(#a89b7b, 6.5%);
 $brand-success:         #5cb85c;
