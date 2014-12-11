@@ -16,4 +16,17 @@ header {
   #logo-container {
     margin-bottom: 36px;
   }
+
+  a {
+    color: $white;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: $white;
+    }
+  }
 }

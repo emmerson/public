@@ -16,5 +16,14 @@ footer {
 
   a {
     color: rgba($white, .14);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: rgba($white, .14);
+    }
   }
 }
