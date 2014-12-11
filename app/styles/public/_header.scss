@@ -1,0 +1,19 @@
+//
+// Header
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+header {
+  margin-top: 32px;
+
+  @media (min-width: $screen-sm-min) {
+    margin-top: 64px;
+  }
+
+  #logo-container {
+    margin-bottom: 36px;
+  }
+}
