@@ -1,19 +1,20 @@
 //
-// Header
+// Footer
 // --------------------------------------------------
 
 
 // Base styles
 // -------------------------
 
-header {
-  padding-top: 32px;
+footer {
+  color: rgba($white, .14);
+  padding-bottom: 32px;
 
   @media (min-width: $screen-sm-min) {
-    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
-  #logo-container {
-    margin-bottom: 36px;
+  a {
+    color: rgba($white, .14);
   }
 }

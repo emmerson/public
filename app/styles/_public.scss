@@ -2,8 +2,10 @@
 @import 'public/variables';
 
 // Core CSS
+@import 'public/scaffolding';
 @import 'public/font-stack';
 @import 'public/grid';
 
 // Components
 @import 'public/header';
+@import 'public/footer';

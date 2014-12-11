@@ -1,0 +1,27 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Body reset
+
+html,
+body {
+  height: 100%;
+}
+
+#main {
+  margin: 0 auto -90px;
+
+  @media (min-width: $screen-sm-min) {
+    margin: 0 auto -122px;
+  }
+
+  min-height: 100%;
+}
+
+// Links
+
+a {
+  transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+}
