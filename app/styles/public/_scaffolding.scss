@@ -8,7 +8,7 @@
 ::selection {
   background: rgba($gold, .99);
   color: $black;
-} 
+}
 
 
 // Body reset
@@ -32,12 +32,19 @@ body {
   transition: all 600ms cubic-bezier(.23, 1, .32, 1);
 }
 
-
-// Sticky footer
-
 #main {
   margin: 0 auto -58px;
   min-height: 100%;
+}
+
+main {
+  padding: 32px !important;
+
+  @media (min-width: $screen-sm-min) {
+    padding: 64px !important;
+  }
+
+  transition: all 600ms cubic-bezier(.23, 1, .32, 1);
 }
 
 
