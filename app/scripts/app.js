@@ -49,4 +49,13 @@ angular
     $locationProvider
       .html5Mode(true)
       .hashPrefix('!');
+  })
+
+  /**
+  * Instantiate FastClick.
+  */
+
+  .run(function($window, $document) {
+    var FastClick = $window.FastClick;
+    FastClick.attach($document[0].body);
   });
