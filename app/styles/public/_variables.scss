@@ -539,7 +539,7 @@ $popover-arrow-color:                 $popover-bg;
 //** Popover outer arrow width
 $popover-arrow-outer-width:           ($popover-arrow-width + 1);
 //** Popover outer arrow color
-$popover-arrow-outer-color:           fade-in($popover-border-color, .05);
+$popover-arrow-outer-color:           fade_in($popover-border-color, 0.05);
 //** Popover outer arrow fallback color
 $popover-arrow-outer-fallback-color:  darken($popover-fallback-border-color, 20%);
 
@@ -655,12 +655,12 @@ $progress-bar-info-bg:        $brand-info;
 //** Background color on `.list-group-item`
 $list-group-bg:                 $black;
 //** `.list-group-item` border color
-$list-group-border:             rgba($white, .14);
+$list-group-border:             #2c3031;
 //** List group border radius
 $list-group-border-radius:      $border-radius-base;
 
 //** Background color of single list items on hover
-$list-group-hover-bg:           $black-lighter;
+$list-group-hover-bg:           rgba($white, .07);
 //** Text color of active list items
 $list-group-active-color:       $component-active-color;
 //** Background color of active list items
