@@ -34,6 +34,7 @@ header {
 
     ol {
       line-height: normal;
+      margin-bottom: 0;
       margin-left: 0 !important;
     }
   }
@@ -58,5 +59,9 @@ header {
   h2 {
     font-size: $font-size-large;
     margin-bottom: 0;
+
+    &:empty {
+      margin: 0;
+    }
   }
 }
