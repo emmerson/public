@@ -64,6 +64,7 @@ main {
   display: flex !important;
   flex: 1;
   padding: 32px !important;
+  transform: translate3d(0, 0, 0);
   transition: all 600ms cubic-bezier(.23, 1, .32, 1);
 
   @media (min-width: $screen-sm-min) {
