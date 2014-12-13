@@ -1,0 +1,78 @@
+//
+// About
+// --------------------------------------------------
+
+
+// Core variables
+@import 'public/variables';
+
+
+// Base styles
+// -------------------------
+
+#about {
+  > .row {
+    display: flex;
+  }
+
+  section {
+    align-self: center;
+  }
+
+  h1 {
+    margin: 0;
+    margin-bottom: 18px;
+  }
+
+  .eyebrow,
+  .large-block {
+    display: block;
+    transition: font-size 600ms cubic-bezier(.23, 1, .32, 1);
+  }
+
+  .eyebrow {
+    font-size: 24px;
+  }
+
+  .large-block {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  #about {
+    h1 {
+      margin-bottom: 36px;
+    }
+
+    .eyebrow {
+      font-size: 30px;
+    }
+
+    .large-block {
+      font-size: 36px;
+    }
+  }
+}
+@media (min-width: $screen-md-min) {
+  #about {
+    .eyebrow {
+      font-size: 30px;
+    }
+
+    .large-block {
+      font-size: 48px;
+    }
+  }
+}
+@media (min-width: $screen-lg-min) {
+  #about {
+    .eyebrow {
+      font-size: 36px;
+    }
+
+    .large-block {
+      font-size: 60px;
+    }
+  }
+}
