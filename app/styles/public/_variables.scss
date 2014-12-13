@@ -15,7 +15,6 @@ $gray-light:             lighten($gray-base, 46.7%); // #777
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
 $black:                  #1f2324;
-$black-lighter:          lighten($black, 6.5%); // #2e3436
 
 $white:                  #ccd8db;
 
@@ -471,7 +470,7 @@ $pager-disabled-color:                 $pagination-disabled-color;
 
 $jumbotron-padding:              36px;
 $jumbotron-color:                inherit;
-$jumbotron-bg:                   $black-lighter;
+$jumbotron-bg:                   rgba($white, .07);
 $jumbotron-heading-color:        inherit;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5));
 

@@ -32,24 +32,22 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   padding-top: 32px;
+  transition: all 600ms cubic-bezier(.23, 1, .32, 1);
 
   @media (min-width: $screen-sm-min) {
     padding-top: 64px;
   }
-
-  transition: all 600ms cubic-bezier(.23, 1, .32, 1);
 }
 
 #main {
   display: flex;
   flex-direction: column;
   margin: 0 auto -90px;
+  min-height: 100%;
 
   @media (min-width: $screen-sm-min) {
     margin: 0 auto -122px;
   }
-
-  min-height: 100%;
 
   &::after {
     content: ' '; // 1
@@ -66,12 +64,11 @@ main {
   display: flex !important;
   flex: 1;
   padding: 32px !important;
+  transition: all 600ms cubic-bezier(.23, 1, .32, 1);
 
   @media (min-width: $screen-sm-min) {
     padding: 64px !important;
   }
-
-  transition: all 600ms cubic-bezier(.23, 1, .32, 1);
 }
 
 footer {

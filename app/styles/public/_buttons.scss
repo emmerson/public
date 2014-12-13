@@ -37,7 +37,6 @@
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
-    box-shadow: none;
     cursor: $cursor-disabled;
     pointer-events: none; // Future-proof disabling of clicks
   }
