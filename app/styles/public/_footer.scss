@@ -8,6 +8,14 @@
 
 footer {
   color: rgba($white, .14);
+  transform: translateY(-9px);
+  transition-duration: 600ms !important;
+  transition-property: margin, opacity, padding, transform, width !important;
+  transition-timing-function: cubic-bezier(.23, 1, .32, 1) !important;
+
+  &.slide-down {
+    transform: translate3d(0, 0, 0);
+  }
 
   a {
     color: rgba($white, .14);

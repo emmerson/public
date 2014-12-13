@@ -22,6 +22,8 @@ module.exports = function(config) {
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/angular-route/angular-route.js',
       'bower_components/fastclick/lib/fastclick.js',
+      'bower_components/async/lib/async.js',
+      'bower_components/gsap/src/uncompressed/TweenMax.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js'

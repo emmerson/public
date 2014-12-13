@@ -24,12 +24,32 @@ header {
     }
   }
 
+  @keyframes expand {
+    from {
+      transform: scaleX(0);
+    }
+
+    to {
+      transform: scaleX(1);
+    }
+  }
+
   hr {
     height: 0;
     margin-bottom: 0;
+
+    &.expand {
+      animation-duration: 600ms;
+      animation-fill-mode: forwards;
+      animation-name: expand;
+      animation-timing-function: cubic-bezier(.23, 1, .32, 1);
+      margin: 0;
+      transform-origin: left center;
+    }
   }
 
   nav {
+    font-size: 0;
     margin-top: -1px;
 
     ol {
@@ -42,10 +62,18 @@ header {
   li {
     border-top: 1px solid rgba(0, 0, 0, 0);
     margin-right: $line-height-computed;
+    overflow: hidden;
     padding-left: 0 !important;
     padding-right: 0 !important;
     padding-top: $line-height-computed;
     transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+
+    a {
+      display: inline-block;
+      font-size: $font-size-base;
+      transform: translateY(calc(-17px + -18px));
+      transition-property: color;
+    }
   }
 
   .active {

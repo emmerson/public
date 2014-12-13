@@ -37,6 +37,12 @@
   .large-block {
     font-size: 30px;
   }
+
+  a {
+    transition-property: background-color,
+                         border-color,
+                         color;
+  }
 }
 
 @media (min-width: $screen-sm-min) {

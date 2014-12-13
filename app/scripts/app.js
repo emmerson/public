@@ -84,4 +84,14 @@ angular
   .run(function($window, $document) {
     var FastClick = $window.FastClick;
     FastClick.attach($document[0].body);
+  })
+
+  /**
+  * Default ease.
+  */
+
+  .run(function($window) {
+    var TweenLite = $window.TweenLite;
+    var Quint     = $window.Quint;
+    TweenLite.defaultEase = Quint.easeOut;
   });
