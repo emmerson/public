@@ -30,12 +30,14 @@
   &:active,
   &.active {
     background-image: none;
+    box-shadow: none !important;
     outline: 0;
   }
 
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
+    box-shadow: none;
     cursor: $cursor-disabled;
     pointer-events: none; // Future-proof disabling of clicks
   }
@@ -89,6 +91,7 @@
   &[disabled],
   fieldset[disabled] & {
     background-color: transparent;
+    box-shadow: none;
   }
 
   &,
