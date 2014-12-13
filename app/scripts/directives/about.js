@@ -32,10 +32,10 @@ angular.module('publicApp')
             .delay(0.15)
             // fade in and slide down header
             .staggerFromTo([eyebrow, largeBlock], 0.4, {
-                // opacity: 0,
+                opacity: 0,
                 y: -18
               }, {
-                // opacity: 1,
+                opacity: 1,
                 y: 0
               }, 0.06)
             // rotate in call to action
