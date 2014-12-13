@@ -71,6 +71,13 @@ main {
   }
 }
 
+.section-container {
+  display: flex;
+  flex: 1;
+  min-height: 100%;
+  min-width: 100%;
+}
+
 footer {
   margin-bottom: 32px;
 

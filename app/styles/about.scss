@@ -11,12 +11,8 @@
 // -------------------------
 
 #about {
-  > .row {
-    display: flex;
-  }
-
-  section {
-    align-self: center;
+  .section-container {
+    align-items: center;
   }
 
   h1 {

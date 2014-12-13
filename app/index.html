@@ -23,7 +23,9 @@
               role="navigation"
               class="header fade">
       </header>
-      <main id={{routeName}} class="main container" data-ng-view="">
+      <main id="{{routeName}}" class="container">
+        <div class="main section-container" data-ng-view="">
+        </div>
       </main>
     </div>
     <footer data-ng-include="'views/partials/footer.html'" class="footer fade">
