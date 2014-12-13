@@ -55,6 +55,29 @@ angular
   })
 
   /**
+  * Decorate controllers with route name.
+  */
+
+  .config(function ($provide) {
+    $provide.decorator('$controller', function ($location, $delegate) {
+      return function(constructor, locals, later, indent) {
+        function updateRouteName() {
+          var routeName = $location.path().replace('/', '');
+          if (routeName === '') {
+         // routeName = 'main';
+            routeName = 'about';
+          }
+
+          locals.$scope.routeName = routeName;
+        } updateRouteName();
+
+        locals.$scope.$on('$viewContentLoaded', updateRouteName);
+        return $delegate(constructor, locals, later, indent);
+      };
+    });
+  })
+
+  /**
   * Instantiate FastClick.
   */
 
