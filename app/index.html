@@ -18,17 +18,16 @@
     <!-- endbuild -->
   </head>
   <body data-ng-app="publicApp" data-ng-controller="RootCtrl">
-    <div id="main">
-      <header data-ng-include="'views/partials/header.html'"
-              role="navigation"
-              class="header fade">
-      </header>
-      <main id="{{routeName}}" class="container">
-        <div class="main section-container" data-ng-view="">
-        </div>
-      </main>
-    </div>
-    <footer data-ng-include="'views/partials/footer.html'" class="footer fade">
+    <header data-ng-include="'views/partials/header.html'"
+            role="navigation"
+            class="fade header">
+    </header>
+    <main id="{{routeName}}">
+      <div class="main container" data-ng-view="">
+      </div>
+    </main>
+    <footer data-ng-include="'views/partials/footer.html'"
+            class="fade footer">
     </footer>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
