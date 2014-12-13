@@ -37,6 +37,19 @@ body {
     padding-bottom: 64px;
     padding-top: 64px;
   }
+
+  > .background {
+    background-image: url('../images/background.png');
+    background-position: center center;
+    height: 100vh;
+    margin-top: -32px;
+    position: fixed;
+    width: 100vw;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: -64px;
+    }
+  }
 }
 
 main {

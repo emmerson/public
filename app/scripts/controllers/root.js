@@ -52,8 +52,6 @@ angular.module('publicApp')
     function onload() {
       return function(callback) {
         angular.element($window).one('load', function() {
-          var background = $document[0].getElementById('background');
-          angular.element(background).addClass('in');
           callback(null);
         });
       };
