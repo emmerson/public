@@ -12,7 +12,6 @@ angular.module('publicApp')
       restrict: 'C',
       link: function postLink(scope, element) {
         scope.$on('initialize', function() {
-          console.log(true);
           element.addClass('in');
         });
       }

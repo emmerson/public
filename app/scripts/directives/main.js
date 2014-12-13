@@ -7,7 +7,7 @@
  * # main
  */
 angular.module('publicApp')
-  .directive('main', function ($timeout) {
+  .directive('main', function ($rootScope, $timeout) {
     return {
       restrict: 'C',
       link: function postLink(scope, element) {
@@ -16,6 +16,10 @@ angular.module('publicApp')
          */
 
         function fadeIn() {
+          if (!$rootScope.initialized) {
+            return;
+          }
+
           // defer by two frames
           $timeout(function() { requestAnimationFrame(function() {
             element.find('section').addClass('in');
