@@ -67,8 +67,8 @@ angular.module('publicApp')
       onincludecontentloaded('footer'),
       onload()
     ], function() {
-      $scope.$broadcast('initialize');
       $rootScope.initialized = true;
+      $scope.$broadcast('initialize');
     });
 
     /**
