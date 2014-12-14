@@ -53,6 +53,14 @@ body {
   }
 }
 
+.grid-flicker.background {
+  background-image: url('../images/grid.png');
+
+  &.points {
+    background-image: url('../images/grid_point.png');
+  }
+}
+
 main {
   display: flex !important;
   flex: 1;
