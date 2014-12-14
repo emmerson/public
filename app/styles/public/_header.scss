@@ -89,6 +89,7 @@ header {
   h2 {
     font-size: $font-size-large;
     margin-bottom: 0;
+    transform: rotateX(90deg);
 
     &:empty {
       margin: 0;
