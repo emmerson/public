@@ -44,6 +44,7 @@ body {
     height: 100vh;
     margin-top: -32px;
     position: fixed;
+    transform: translate3d(0, 0, 0);
     width: 100vw;
 
     @media (min-width: $screen-sm-min) {
