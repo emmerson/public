@@ -38,6 +38,16 @@ body {
     padding-top: 64px;
   }
 
+  &:before {
+    margin-bottom: 32px;
+    padding: 0 32px 32px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 64px;
+      padding: 0 64px 64px;
+    }
+  }
+
   > .background {
     background-image: url('../images/background.png');
     background-position: center center;
@@ -55,6 +65,7 @@ body {
 
 .grid-flicker.background {
   background-image: url('../images/grid.png');
+  background-position: left top;
 
   &.points {
     background-image: url('../images/grid_point.png');

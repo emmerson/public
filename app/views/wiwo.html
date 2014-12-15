@@ -5,10 +5,29 @@
     <title>WIWO</title>
   </head>
   <body>
-    <section class="fade">
-      <p class="lead">
-        This is the wiwo view.
-      </p>
+    <section class="wiwo fade clearfix">
+      <div class="intro-heading col-md-8">
+        <h1>
+          Passion and drive.<br>
+          Two boundless forces.
+        </h1>
+        <p class="lead">
+          Here’s where I put my energy—day in, and day out.
+        </p>
+      </div>
+      <div data-ng-repeat="project in projects"
+           class="project-tile col-xs-12 col-sm-6 col-md-4">
+        <div class="callout-headline">
+          {{project.type}}
+        </div>
+        <img alt="{{project.name}}"
+             data-ng-attr-src="{{project.logo.src}}"
+             width="{{project.logo.width}}">
+        <div class="callout-copy">
+          <span class="when">{{project.since}}–Present</span>
+          <span class="what">{{project.what}}</span>
+        </div>
+      </div>
     </section>
   </body>
 </html>
