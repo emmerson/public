@@ -14,7 +14,7 @@ angular.module('publicApp')
         type: 'Organization',
         name: 'Planimeter',
         logo: {
-          src: 'images/logo_planimeter.svg',
+          src: 'images/logo_planimeter.4ff78814.svg',
           width: 215
         },
         since: 2014,
@@ -24,7 +24,7 @@ angular.module('publicApp')
         type: 'Game',
         name: 'Vertex Adventure',
         logo: {
-          src: 'images/logo_vadventure.svg',
+          src: 'images/logo_vadventure.dd082bfe.svg',
           width: 215
         },
         since: 2013,
@@ -34,7 +34,7 @@ angular.module('publicApp')
         type: 'Engine',
         name: 'Grid',
         logo: {
-          src: 'images/logo_grid.svg',
+          src: 'images/logo_grid.19de7e30.svg',
           width: 122
         },
         since: 2013,
@@ -44,7 +44,7 @@ angular.module('publicApp')
         type: 'Platform',
         name: 'Axis',
         logo: {
-          src: 'images/logo_axis.svg',
+          src: 'images/logo_axis.08eef562.svg',
           width: 117
         },
         since: 2013,
