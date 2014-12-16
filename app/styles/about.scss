@@ -33,13 +33,38 @@
   }
 
   p {
-    margin: 0;
+    font-size: $font-size-large;
+
+    &.lead {
+      margin-bottom: 32px;
+
+      @media (min-width: $screen-sm-min) {
+        margin-bottom: 96px;
+      }
+    }
   }
 
   a {
     transition-property: background-color,
                          border-color,
                          color;
+  }
+
+  .row {
+    color: rgba($white, .42);
+    position: relative;
+
+    @media (min-width: $screen-sm-min) {
+      .vr {
+        border: 1px solid rgba($white, .07);
+        border-right-width: 0;
+        content: ' ';
+        display: inline-block;
+        height: 100%;
+        position: absolute;
+        width: 0;
+      }
+    }
   }
 }
 
