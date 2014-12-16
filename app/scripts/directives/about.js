@@ -72,11 +72,11 @@ angular.module('publicApp')
          */
 
         if ($rootScope.initialized) {
-          animateAbout();
+          requestAnimationFrame(animateAbout);
         } else {
           var remove = scope.$on('initialize', function() {
             remove();
-            animateAbout();
+            requestAnimationFrame(animateAbout);
           });
         }
       }
