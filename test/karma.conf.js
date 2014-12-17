@@ -25,6 +25,8 @@ module.exports = function(config) {
       'bower_components/async/lib/async.js',
       'bower_components/gsap/src/uncompressed/TweenMax.js',
       'bower_components/lazy.js/lazy.js',
+      'bower_components/odometer/odometer.js',
+      'bower_components/angular-odometer-js/dist/angular-odometer.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js'
