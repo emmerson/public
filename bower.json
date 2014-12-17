@@ -20,6 +20,12 @@
   "overrides": {
     "async": {
       "main": "./lib/async.js"
+    },
+    "odometer": {
+      "main": [
+        "odometer.js",
+        "themes/odometer-theme-minimal.css"
+      ]
     }
   },
   "resolutions": {
