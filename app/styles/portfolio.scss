@@ -1,0 +1,32 @@
+//
+// Portfolio
+// --------------------------------------------------
+
+
+// Core variables
+@import 'public/variables';
+
+
+// Base styles
+// -------------------------
+
+#portfolio {
+  align-items: center;
+
+  // Projects
+  // -------------------------
+
+  .project {
+    border-bottom: 1px solid rgba($white, .07);
+    padding-bottom: 9px;
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+
+  h1,
+  h4 {
+    margin-top: 0;
+  }
+}

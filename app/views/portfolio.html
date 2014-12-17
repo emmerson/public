@@ -5,10 +5,36 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <section class="fade">
-      <p class="lead">
-        This is the portfolio view.
+    <section class="portfolio fade row">
+      <h1 class="col-sm-6">
+        5 years of hacking, and pixel pushing.
+      </h1>
+      <p class="lead col-sm-6">
+        I’ve modified levels and developed addons and modifications for games,
+        written patches for commercial products, reversed engineered platforms.
       </p>
+      <p class="col-sm-6 col-sm-offset-6 text-muted">
+        The compliation of this portfolio is a work in
+        progress.
+      </p>
+      <div class="year col-xs-12" data-ng-repeat="year in years">
+        <h2 class="page-header">
+          {{year}}
+        </h2>
+        <div class="project" data-ng-repeat="project in projects[year]">
+          <div>
+            <h3>
+              {{project.name}} <small>{{project.when}}</small>
+            </h3>
+            <h4>
+              {{project.type}} for {{project.for}}
+            </h4>
+            <p>
+              {{project.description}}
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
