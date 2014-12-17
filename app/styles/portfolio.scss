@@ -13,6 +13,13 @@
 #portfolio {
   align-items: center;
 
+  // Headings
+  // -------------------------
+
+  h1 > small {
+    font-weight: 100;
+  }
+
   // Projects
   // -------------------------
 

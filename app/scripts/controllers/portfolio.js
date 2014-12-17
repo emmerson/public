@@ -404,6 +404,8 @@ angular.module('publicApp')
       }
     ];
 
+    $scope.projectCount = $scope.projects.length;
+
     var descending = true;
 
     function when(project) {
