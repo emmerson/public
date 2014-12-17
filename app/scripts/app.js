@@ -10,7 +10,8 @@
  */
 angular
   .module('publicApp', [
-    'ngRoute'
+    'ngRoute',
+    'ui.odometer'
   ])
 
   /**
