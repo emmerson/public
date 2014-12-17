@@ -17,8 +17,7 @@ describe('Controller: PortfolioCtrl', function () {
   }));
 
   it('should attach a list of projects to the scope', function () {
-    console.log(scope);
-    expect(scope.projects.keys().length).toBeGreaterThan(0);
+    expect(Object.keys(scope.projects).length).toBeGreaterThan(0);
   });
 
   it('should attach a list of years to the scope', function () {
