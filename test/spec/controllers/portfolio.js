@@ -23,4 +23,8 @@ describe('Controller: PortfolioCtrl', function () {
   it('should attach a list of years to the scope', function () {
     expect(scope.years.length).toBeGreaterThan(0);
   });
+
+  it('should attach a list of filtered results to the scope', function () {
+    expect(Object.keys(scope.results).length).toBeGreaterThan(0);
+  });
 });

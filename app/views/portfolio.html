@@ -8,10 +8,10 @@
     <section class="portfolio fade row">
       <h1 class="col-sm-6">
         5 years of hacking, and pixel&nbsp;pushing.<br>
-        <small><span data-odometer="projectCount"></span>+ projects and counting.</small>
+        <small><span data-odometer="projects.length"></span>+ projects and counting.</small>
       </h1>
       <p class="lead col-sm-6">
-        <span class="eyebrow">Filter Works (Coming Soon)</span>
+        <span class="eyebrow">Filter Works</span>
         I’ve modified <a href data-ng-click="filter('Level')">levels</a> and
         developed <a href data-ng-click="filter('Addon')">addons and
         modifications</a> for games, written
@@ -21,7 +21,7 @@
         engineered</a> platforms, created
         <a href data-ng-click="filter('Library')">libraries</a> for
         languages, and architected
-        <a href data-ng-click="filter('Engine')">engines and
+        <a href data-ng-click="filter('Engines and Software Development Kits')">engines and
         software development kits.</a>
       </p>
       <p class="col-sm-6 col-sm-offset-6 text-muted">
@@ -32,7 +32,7 @@
         <h2 class="page-header">
           {{year}}
         </h2>
-        <div class="project" data-ng-repeat="project in projects[year]">
+        <div class="project" data-ng-repeat="project in results[year]">
           <div>
             <h3>
               {{project.name}} <small>{{project.when}}</small>

@@ -40,7 +40,7 @@ angular.module('publicApp')
       {
         category:    'Design',
         when:        2009,
-        type:        'Map',
+        type:        'Level',
         for:         'Garry’s Mod',
         name:        'gm_construct_night',
         description: 'A nighttime variant of gm_construct.'
@@ -48,7 +48,7 @@ angular.module('publicApp')
       {
         category:    'Design',
         when:        2009,
-        type:        'Map',
+        type:        'Level',
         for:         'Garry’s Mod',
         name:        'gm_flatgrass_night',
         description: 'A nighttime variant of gm_flatgrass.'
@@ -227,7 +227,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
-        type:        'Addon',
+        type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Language Fixes',
         description: 'Adds natural language to undefined values.'
@@ -268,7 +268,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
-        type:        'Addon',
+        type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Ghosting Fade System',
         description: 'Fades out all ghosts after time, to prevent dormant ' +
@@ -294,7 +294,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
-        type:        'Addon',
+        type:        'Engines and Software Development Kits',
         for:         'Garry’s Mod',
         name:        'Scripted Weapon Bases',
         description: 'Adds HL2 scripted weapon bases.'
@@ -302,7 +302,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
-        type:        'Addon',
+        type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Sandbox Setting Defaults',
         description: 'Resets sandbox limits and ConVars to their defaults on ' +
@@ -311,7 +311,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
-        type:        'Addon',
+        type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Insurgency Spawn Points',
         description: 'Adds working spawn points to Insurgency maps.'
@@ -351,7 +351,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
-        type:        'Addon',
+        type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Ragdoll Fade System',
         description: 'Fades out all client-side ragdolls after time, to ' +
@@ -376,18 +376,27 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
-        type:        'Addon',
+        type:        'Reverse Engineering',
         for:         'Garry’s Mod',
         name:        'SteamID to IP',
-        description: 'Meta conversion of player IDs in Garry’s Mod'
+        description: 'Converts Garry’s Mod API to use fake SteamIDs based on ' +
+                     'IP addresses.'
       },
       {
         category:    'Development',
         when:        2010,
-        type:        'Addon',
+        type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Light IgnoreZ Fix',
         description: 'Fixes lights from showing up through the world.'
+      },
+      {
+        category:    'Development',
+        when:        2013,
+        type:        'Addon',
+        for:         'Garry’s Mod',
+        name:        '- ("Dash")',
+        description: 'Adds real-time scripting to Garry’s Mod.'
       },
       {
         category:    'Development',
@@ -401,24 +410,41 @@ angular.module('publicApp')
                      'minimalistic, and brilliantly responsive HUD for you ' +
                      'personally or for any players you may be hosting in a ' +
                      'suspenseful skirmish.'
-      }
+        }
     ];
 
-    $scope.projectCount = $scope.projects.length;
-
-    var descending = true;
+    /**
+     * Functional "when" helper.
+     */
 
     function when(project) {
       return project.when;
     }
 
-    $scope.years = Lazy($scope.projects)
-      .sortBy(when, descending)
-      .pluck('when')
-      .uniq()
-      .toArray();
+    /**
+     * Descending chronology.
+     */
 
-    $scope.projects = Lazy($scope.projects)
-      .groupBy(when)
-      .toObject();
+    var descending = true;
+
+    /**
+     * Filter results.
+     */
+
+    $scope.filter = function(type) {
+      $scope.results = Lazy($scope.projects);
+      if (type) {
+        $scope.results = $scope.results.where({type: type});
+      }
+
+      $scope.years = Lazy($scope.results.toArray())
+        .sortBy(when, descending)
+        .pluck('when')
+        .uniq()
+        .toArray();
+
+      $scope.results = $scope.results
+        .groupBy(when)
+        .toObject();
+    }; $scope.filter();
   });
