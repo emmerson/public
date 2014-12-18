@@ -12,25 +12,62 @@
       </h1>
       <p class="lead col-sm-6">
         <span class="eyebrow">Filter Works</span>
-        I’ve modified <a href data-ng-click="filter('Level')">levels</a> and
-        developed <a href data-ng-click="filter('Addon')">addons and
-        modifications</a> for games, written
-        <a href data-ng-click="filter('Patch')">patches</a> for commercial
-        products,
-        <a href data-ng-click="filter('Reverse Engineering')">reversed
-        engineered</a> platforms, created
-        <a href data-ng-click="filter('Library')">libraries</a> for
-        languages, architected
-        <a href data-ng-click="filter('Engines and Software Development Kits')">engines and
-        software development kits,</a> authored
-        <a href data-ng-click="filter('Game')">games,</a> built desktop
-        <a href data-ng-click="filter('Application')">applications</a>, and
-        designed
-        <a href data-ng-click="filter('Website')">websites.</a>
+        I’ve modified
+        <!--
+          Levels
+        -->
+        <a href
+           data-ng-click="filter('Level')">levels</a> and developed
+        <!--
+          Addons
+        -->
+        <a href
+           data-ng-click="filter('Addon')">addons and modifications</a> for
+        games, written
+        <!--
+          Patches
+        -->
+        <a href
+           data-ng-click="filter('Patch')">patches</a> for commercial products,
+        <!--
+          Reverse Engineering
+        -->
+        <a href
+           data-ng-click="filter('Reverse Engineering')">reversed engineered</a>
+        platforms, created
+        <!--
+          Libraries and APIs
+        -->
+        <a href
+           data-ng-click="filter('Libraries and APIs')">libraries and APIs</a>
+        for languages and platforms, architected
+        <!--
+          Engines and SDKs
+        -->
+        <a href
+           data-ng-click="filter('Engines and SDKs')">engines and SDKs,</a>
+        authored
+        <!--
+          Games
+        -->
+        <a href
+           data-ng-click="filter('Game')">games,</a> built desktop
+        <!--
+          Applications
+        -->
+        <a href
+           data-ng-click="filter('Application')">applications,</a>
+        and designed
+        <!--
+          Websites and Webapps
+        -->
+        <a href
+           data-ng-click="filter('Websites and Webapps')">websites and
+        webapps.</a>
       </p>
       <p class="col-sm-6 col-sm-offset-6 text-muted">
         The compliation of this portfolio is a work in
-        progress. Works under NDA, and some closed-source projects omitted.
+        progress. Works under NDAs, and some closed-source projects omitted.
       </p>
       <div class="year col-xs-12" data-ng-repeat="year in years">
         <h2 class="page-header">
@@ -40,10 +77,11 @@
           <div>
             <h3>
               {{project.name}}
-              <small data-ng-if="project.small">{{project.small}}</small>
+              <small data-ng-if="project.small"><em>{{project.small}}</em></small>
             </h3>
+            <span class="label label-default">{{project.type}}</span>
             <h4>
-              {{project.type}} for {{project.for}}
+              for {{project.for}}
             </h4>
             <p>
               {{project.description}}

@@ -295,7 +295,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
-        type:        'Engines and Software Development Kits',
+        type:        'Engines and SDKs',
         for:         'Garry’s Mod',
         name:        'Scripted Weapon Bases',
         description: 'Adds HL2 scripted weapon bases.'
@@ -437,7 +437,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2012,
-        type:        'Library',
+        type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lbass',
         description: 'BASS Audio Library bindings for Lua 5.1'
@@ -445,7 +445,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2012,
-        type:        'Library',
+        type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lclass',
         description: 'lclass is a class implementation for Lua 5.1. It has ' +
@@ -456,7 +456,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2011,
-        type:        'Library',
+        type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lopensteamworks',
         description: 'Open Steamworks bindings for Lua 5.1'
@@ -464,7 +464,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2012,
-        type:        'Library',
+        type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lsapi',
         description: 'Microsoft Speech API bindings for Lua 5.1'
@@ -472,7 +472,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2012,
-        type:        'Library',
+        type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lwinapi',
         description: 'Windows API bindings for Lua 5.1'
@@ -480,7 +480,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2012,
-        type:        'Library',
+        type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lwolframalpha',
         description: 'Wolfram|Alpha Webservice API bindings for Lua 5.1'
@@ -488,7 +488,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2011,
-        type:        'Library',
+        type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'steamcommunity-utils',
         description: 'A toolkit in Lua for interacting with Steam Community'
@@ -508,7 +508,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2014,
-        type:        'Library',
+        type:        'Libraries and APIs',
         for:         'PHP',
         name:        'Steam Web PHP API',
         description: 'An API wrapper for interfacing with Steam’s Web API ' +
@@ -518,7 +518,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2014,
-        type:        'Website',
+        type:        'Websites and Webapps',
         for:         'Dota 2',
         name:        'Metrics Hunter',
         description: 'The First Open-Source Decentralized Dota 2 ' +

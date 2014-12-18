@@ -47,6 +47,16 @@
     &:last-of-type {
       border-bottom: 0;
     }
+
+    .label {
+      margin-right: 1px;
+      position: relative;
+      top: -2px;
+
+      + h4 {
+        display: inline-block;
+      }
+    }
   }
 
   h1,
