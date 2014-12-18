@@ -397,7 +397,8 @@ angular.module('publicApp')
         when:        2013,
         type:        'Addon',
         for:         'Garry’s Mod',
-        name:        '- ("Dash")',
+        name:        '-',
+        small:       '(“Dash”)',
         description: 'Adds real-time scripting to Garry’s Mod.'
       },
       {
