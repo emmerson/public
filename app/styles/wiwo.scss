@@ -104,10 +104,6 @@
     &:hover {
       background-color: rgba($black, .97);
       color: $white;
-
-      .callout-headline {
-        color: $gold;
-      }
     }
 
     &:last-of-type {
@@ -124,6 +120,7 @@
   // -------------------------
 
   .callout-headline {
+    color: $gold;
     font-size: 10px;
     font-weight: 400;
     letter-spacing: 1px;
