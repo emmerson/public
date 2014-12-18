@@ -20,9 +20,13 @@
         <a href data-ng-click="filter('Reverse Engineering')">reversed
         engineered</a> platforms, created
         <a href data-ng-click="filter('Library')">libraries</a> for
-        languages, and architected
+        languages, architected
         <a href data-ng-click="filter('Engines and Software Development Kits')">engines and
-        software development kits.</a>
+        software development kits,</a> authored
+        <a href data-ng-click="filter('Game')">games,</a> built desktop
+        <a href data-ng-click="filter('Application')">applications</a>, and
+        designed
+        <a href data-ng-click="filter('Website')">websites.</a>
       </p>
       <p class="col-sm-6 col-sm-offset-6 text-muted">
         The compliation of this portfolio is a work in
@@ -35,7 +39,7 @@
         <div class="project" data-ng-repeat="project in results[year]">
           <div>
             <h3>
-              {{project.name}} <small>{{project.when}}</small>
+              {{project.name}}
             </h3>
             <h4>
               {{project.type}} for {{project.for}}

@@ -21,6 +21,7 @@ angular.module('publicApp')
      */
 
     $scope.projects = [
+      // Garry’s Mod
       {
         category:    'Development',
         when:        2009,
@@ -379,8 +380,9 @@ angular.module('publicApp')
         type:        'Reverse Engineering',
         for:         'Garry’s Mod',
         name:        'SteamID to IP',
-        description: 'Converts Garry’s Mod API to use fake SteamIDs based on ' +
-                     'IP addresses.'
+        description: 'Converts Garry’s Mod API to use fake SteamIDs (used ' +
+                     'for authentication and player uniqueness) based on IP ' +
+                     'addresses, thus allowing players to play for free.'
       },
       {
         category:    'Development',
@@ -410,7 +412,149 @@ angular.module('publicApp')
                      'minimalistic, and brilliantly responsive HUD for you ' +
                      'personally or for any players you may be hosting in a ' +
                      'suspenseful skirmish.'
-        }
+      },
+      // Half-Life 2: Sandbox
+      {
+        category:    'Development',
+        when:        2011,
+        type:        'Game',
+        for:         'Source Engine',
+        name:        'Half-Life 2: Sandbox',
+        description: 'Half-Life 2: Sandbox is an open-source sandbox ' +
+                     'modification of the Source Engine which provides Lua ' +
+                     'as a scripting platform for developers to quickly ' +
+                     'prototype game ideas. The minimalistic game includes ' +
+                     'a sandbox gamemode for playing with the many aspects ' +
+                     'of the Source Engine.'
+      },
+      // Knight Game II
+      {
+        category:    'Development',
+        when:        2011,
+        type:        'Game',
+        for:         'LÖVE',
+        name:        'Knight Game II',
+        description: 'A pixel-perfect recreation of Knight Game II from ' +
+                     'Antics comic strip #203.'
+      },
+      // Lua Libraries
+      {
+        category:    'Development',
+        when:        2012,
+        type:        'Library',
+        for:         'Lua 5.1',
+        name:        'lbass',
+        description: 'BASS Audio Library bindings for Lua 5.1'
+      },
+      {
+        category:    'Development',
+        when:        2012,
+        type:        'Library',
+        for:         'Lua 5.1',
+        name:        'lclass',
+        description: 'lclass is a class implementation for Lua 5.1. It has ' +
+                     'been designed to be the simplest, most ' +
+                     'comprehensive, and smallest class implementation for ' +
+                     'Lua. lclass accomplishes these goals without fluff. ' +
+                     'The source also conveniently provides thorough ' +
+                     'documentation and commenting to explain each piece ' +
+                     'of functionality, from how creating instances of ' +
+                     'classes works, down to inheritable metamethods.'
+      },
+      {
+        category:    'Development',
+        when:        2011,
+        type:        'Library',
+        for:         'Lua 5.1',
+        name:        'lopensteamworks',
+        description: 'Open Steamworks bindings for Lua 5.1'
+      },
+      {
+        category:    'Development',
+        when:        2012,
+        type:        'Library',
+        for:         'Lua 5.1',
+        name:        'lsapi',
+        description: 'Microsoft Speech API bindings for Lua 5.1'
+      },
+      {
+        category:    'Development',
+        when:        2012,
+        type:        'Library',
+        for:         'Lua 5.1',
+        name:        'lwinapi',
+        description: 'Windows API bindings for Lua 5.1'
+      },
+      {
+        category:    'Development',
+        when:        2012,
+        type:        'Library',
+        for:         'Lua 5.1',
+        name:        'lwolframalpha',
+        description: 'Wolfram|Alpha Webservice API bindings for Lua 5.1'
+      },
+      {
+        category:    'Development',
+        when:        2011,
+        type:        'Library',
+        for:         'Lua 5.1',
+        name:        'steamcommunity-utils',
+        description: 'A toolkit in Lua for interacting with Steam Community'
+      },
+      {
+        category:    'Development',
+        when:        2012,
+        type:        'Reverse Engineering',
+        for:         'Steam’s Web API',
+        name:        'Steam Web Lua API',
+        description: 'The Steam Web Lua API is a small library originally ' +
+                     'designed to provide the web interfaces utilized in ' +
+                     'Steam Mobile. These interfaces were reverse ' +
+                     'engineered before Steam Mobile had been officially ' +
+                     'released, during the application’s beta. Inside you ' +
+                     'will find wrappers to the individual interface ' +
+                     'methods and some explanation of their usage. The ' +
+                     'library is not fully documented, however there is ' +
+                     'more than enough information provided to replicate a ' +
+                     'Steam chat client.'
+      },
+      {
+        category:    'Development',
+        when:        2014,
+        type:        'Library',
+        for:         'PHP',
+        name:        'Steam Web PHP API',
+        description: 'An API wrapper for interfacing with Steam’s Web API ' +
+                     'using PHP'
+      },
+      // Websites
+      {
+        category:    'Development & Design',
+        when:        2014,
+        type:        'Website',
+        for:         'Dota 2',
+        name:        'Metrics Hunter',
+        description: 'The First Open-Source Decentralized Dota 2 ' +
+                     'Statistics Tracker'
+      },
+      // Minecraft
+      {
+        category:    'Development',
+        when:        2013,
+        type:        'Addon',
+        for:         'Minecraft',
+        name:        'PluginSync',
+        description: 'A Bukkit plugin to sync your server to a plugin depot.'
+      },
+      // Desktop Services
+      {
+        category:    'Development',
+        when:        2013,
+        type:        'Application',
+        for:         'Windows',
+        name:        'scrnshot',
+        description: 'A simple screenshot tool'
+      }
     ];
 
     /**
