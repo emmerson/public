@@ -524,6 +524,103 @@ angular.module('publicApp')
         description: 'The First Open-Source Decentralized Dota 2 ' +
                      'Statistics Tracker'
       },
+      {
+        category:    'Development & Design',
+        when:        2013,
+        type:        'Websites and Webapps',
+        for:         'Microsoft',
+        name:        'Binocular',
+        description: 'Internal project tracker for small teams'
+      },
+      {
+        category:    'Development & Design',
+        when:        2013,
+        type:        'Websites and Webapps',
+        for:         'Andrew McWatters',
+        name:        'andrewmcwatters.com (2013)',
+        description: 'Personal website, portfolio, and résumé'
+      },
+      {
+        category:    'Development & Design',
+        when:        2013,
+        type:        'Websites and Webapps',
+        for:         'Adam & Eve’s Alter',
+        name:        'Let the Koran Speak',
+        description: 'Religious educational program'
+      },
+      {
+        category:    'Development & Design',
+        when:        2013,
+        type:        'Websites and Webapps',
+        for:         'boo1ean GmbH',
+        name:        'Individual Executive Layer',
+        description: 'Product website for boo1ean’s digital rights ' +
+                     'management software'
+      },
+      {
+        category:    'Development & Design',
+        when:        2013,
+        type:        'Websites and Webapps',
+        for:         'boo1ean GmbH',
+        name:        'boo1ean.de',
+        description: 'Company website'
+      },
+      {
+        category:    'Development & Design',
+        when:        2012,
+        type:        'Websites and Webapps',
+        for:         'Northside church of Christ',
+        name:        'northsidechurchofchrist.org Redesign Proposal',
+        description: 'Church website'
+      },
+      {
+        category:    'Development & Design',
+        when:        2012,
+        type:        'Websites and Webapps',
+        for:         'Elpis Host',
+        name:        'elpishost.com',
+        description: 'Game server provider website'
+      },
+      {
+        category:    'Development & Design',
+        when:        2012,
+        type:        'Websites and Webapps',
+        for:         'Andrew McWatters',
+        name:        'andrewmcwatters.com (2012)',
+        description: 'Personal website, portfolio, and résumé'
+      },
+      {
+        category:    'Development & Design',
+        when:        2012,
+        type:        'Websites and Webapps',
+        for:         'Phoenix Faction Studios',
+        name:        'phxfaction.com',
+        description: 'Game journalism blog'
+      },
+      {
+        category:    'Development & Design',
+        when:        2011,
+        type:        'Websites and Webapps',
+        for:         'Phoenixerve',
+        name:        'phoenixerve.com',
+        description: 'Game server provider website'
+      },
+      {
+        category:    'Development & Design',
+        when:        2011,
+        type:        'Websites and Webapps',
+        for:         'Andrew McWatters',
+        name:        'andrewmcwatters.com (2011)',
+        description: 'Personal website, portfolio, and résumé'
+      },
+      {
+        category:    'Development & Design',
+        when:        2011,
+        type:        'Websites and Webapps',
+        for:         'Brohoster',
+        name:        'brohoster.com',
+        description: 'Game server provider website'
+      },
       // Minecraft
       {
         category:    'Development',
@@ -543,6 +640,14 @@ angular.module('publicApp')
         description: 'A simple screenshot tool'
       }
     ];
+
+    /**
+     * Category count.
+     */
+
+    $scope.count = function(type) {
+      return Lazy($scope.projects).where({type: type}).toArray().length;
+    };
 
     /**
      * Functional "when" helper.
