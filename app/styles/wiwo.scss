@@ -61,7 +61,7 @@
     border-bottom-width: 0;
     display: inline-flex;
     flex-direction: column;
-    min-height: 246.333333px;
+    min-height: 236px;
     opacity: 0;
     padding: 32px;
     position: relative;
@@ -86,13 +86,10 @@
         border-right-width: 0;
       }
 
-      &:nth-of-type(2) {
-        border-right-width: 1px;
-      }
-
       &:nth-last-of-type(1),
       &:nth-last-of-type(2),
-      &:nth-last-of-type(3) {
+      &:nth-last-of-type(3),
+      &:nth-last-of-type(4), {
         border-bottom-width: 1px;
       }
 
@@ -111,8 +108,61 @@
     }
 
     img {
-      display: flex;
-      flex: 1;
+      transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+    }
+  }
+
+  #planimeter img {
+    height: 21px;
+    width: 147px;
+
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 38px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      margin-bottom: 59px;
+      width: 197px;
+    }
+  }
+
+  #vadventure img {
+    height: 59px;
+    width: 147px;
+
+    @media (min-width: $screen-lg-min) {
+      height: 80px;
+      width: 197px;
+    }
+  }
+
+  #grid img {
+    height: 25px;
+    width: 84.93px;
+
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 34px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      height: 33px;
+      margin-bottom: 47px;
+      width: 112.12px;
+    }
+  }
+
+  #axis img {
+    height: 25px;
+    width: 81.66px;
+
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 34px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      height: 33px;
+      margin-bottom: 47px;
+      width: 107.80px;
     }
   }
 
@@ -128,6 +178,11 @@
     margin-top: 0;
     text-transform: uppercase;
     transition: all 600ms cubic-bezier(.23, 1, .32, 1);
+
+    .label {
+      position: relative;
+      top: -1px;
+    }
   }
 
   .callout-copy {

@@ -38,14 +38,16 @@ angular.module('publicApp')
                 opacity: 1,
                 z: 0
               }, 0.06)
-            // bring forth project tiles
-            .staggerFromTo(tiles, 0.6, {
+            // rotate in project tiles
+            .staggerFromTo(tiles, 6, {
                 opacity: 0,
-                z: -141,
+                // z: -141,
+                rotationY: 90
               }, {
                 opacity: 1,
-                z: 0,
-              }, 0.06, '-=0.4');
+                // z: 0,
+                rotationY: 0
+              }, 0.6, '-=0.4');
         }
 
         /**
