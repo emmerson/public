@@ -15,7 +15,7 @@ angular.module('publicApp')
         new:  true,
         type: 'Organization',
         name: 'Planimeter',
-        logo: 'images/logo_planimeter.svg',
+        logo: 'images/logo_planimeter.4ff78814.svg',
         since: 2014,
         what: 'International Development Team'
       },
@@ -23,7 +23,7 @@ angular.module('publicApp')
         id:   'vadventure',
         type: 'Game',
         name: 'Vertex Adventure',
-        logo: 'images/logo_vadventure.svg',
+        logo: 'images/logo_vadventure.dd082bfe.svg',
         since: 2013,
         what: '2D Fantasy MMORPG'
       },
@@ -31,7 +31,7 @@ angular.module('publicApp')
         id:   'grid',
         type: 'Engine',
         name: 'Grid',
-        logo: 'images/logo_grid.svg',
+        logo: 'images/logo_grid.19de7e30.svg',
         since: 2013,
         what: '2D Game Engine'
       },
@@ -39,7 +39,7 @@ angular.module('publicApp')
         id:   'axis',
         type: 'Platform',
         name: 'Axis',
-        logo: 'images/logo_axis.svg',
+        logo: 'images/logo_axis.08eef562.svg',
         since: 2013,
         what: 'Game Account Management System'
       }
