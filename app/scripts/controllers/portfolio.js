@@ -571,7 +571,8 @@ angular.module('publicApp')
         when:        2012,
         type:        'Websites and Webapps',
         for:         'Northside church of Christ',
-        name:        'northsidechurchofchrist.org Redesign Proposal',
+        name:        'northsidechurchofchrist.org',
+        small:       'Redesign Proposal',
         description: 'Church website'
       },
       {
