@@ -520,6 +520,14 @@ angular.module('publicApp')
         category:    'Development & Design',
         when:        2014,
         type:        'Websites and Webapps',
+        for:         'Andrew McWatters',
+        name:        'andrewmcwatters.com (2015)',
+        description: 'Personal website, portfolio, and résumé'
+      },
+      {
+        category:    'Development & Design',
+        when:        2014,
+        type:        'Websites and Webapps',
         for:         'Dota 2',
         name:        'Metrics Hunter',
         description: 'The First Open-Source Decentralized Dota 2 ' +
