@@ -28,7 +28,6 @@ angular.module('publicApp')
           var largeBlock   = element[0].getElementsByClassName('large-block');
           var small        = element[0].getElementsByTagName('small');
           var callToAction = element[0].getElementsByClassName('btn');
-          var p            = element[0].getElementsByClassName('col-sm-6');
           tl
             // wait for main to stagger in
             .delay(0.15)
