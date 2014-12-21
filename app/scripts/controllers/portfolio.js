@@ -288,7 +288,8 @@ angular.module('publicApp')
         when:        2009,
         type:        'Addon',
         for:         'Garry’s Mod',
-        name:        'PLGL (Present Launching Grenade Launcher)',
+        name:        'PLGL',
+        small:       '(“Present Launching Grenade Launcher”)',
         description: 'Adds a grenade launcher with holiday cheer as its ' +
                      'primary ammunition!'
       },
@@ -371,7 +372,7 @@ angular.module('publicApp')
         when:        2010,
         type:        'Addon',
         for:         'Garry’s Mod',
-        name:        'Airboat Gun',
+        name:        'Player Clothing',
         description: 'Adds selectable clothing to player models.'
       },
       {
