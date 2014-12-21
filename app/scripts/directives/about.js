@@ -26,13 +26,14 @@ angular.module('publicApp')
           var tl           = new TimelineMax();
           var eyebrow      = element[0].getElementsByClassName('eyebrow');
           var largeBlock   = element[0].getElementsByClassName('large-block');
+          var small        = element[0].getElementsByTagName('small');
           var callToAction = element[0].getElementsByClassName('btn');
           var p            = element[0].getElementsByClassName('col-sm-6');
           tl
             // wait for main to stagger in
             .delay(0.15)
             // fade in and slide down header
-            .staggerFromTo([eyebrow, largeBlock], 0.4, {
+            .staggerFromTo([eyebrow, largeBlock, small], 0.4, {
                 opacity: 0,
                 y: -18
               }, {
@@ -48,23 +49,7 @@ angular.module('publicApp')
                 opacity: 1,
                 rotationX: 0,
                 transformOrigin: '50% 50% -34.5px'
-              }, '-=0.4')
-            // slide in paragraphs
-            .fromTo(p[0], 0.6, {
-                opacity: 0,
-                x: -18,
-              }, {
-                opacity: 1,
-                x: 0,
-              }, '-=0.6')
-            // slide in paragraphs
-            .fromTo(p[1], 0.6, {
-                opacity: 0,
-                x: 18,
-              }, {
-                opacity: 1,
-                x: 0,
-              }, '-=0.6');
+              }, '-=0.4');
         }
 
         /**

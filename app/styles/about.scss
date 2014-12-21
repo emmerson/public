@@ -32,40 +32,19 @@
     font-size: 30px;
   }
 
-  p {
-    font-size: $font-size-large;
+  small {
+    font-weight: 300;
+    margin-top: 24px;
+  }
 
-    &.lead {
-      margin-bottom: 32px;
-
-      @media (min-width: $screen-sm-min) {
-        margin-bottom: 96px;
-      }
-    }
+  .lead {
+    margin-bottom: 0;
   }
 
   a {
     transition-property: background-color,
                          border-color,
                          color;
-  }
-
-  .row {
-    color: rgba($white, .42);
-    position: relative;
-
-    @media (min-width: $screen-sm-min) {
-      .vr {
-        border: 1px solid rgba($white, .07);
-        border-right-width: 0;
-        content: ' ';
-        display: inline-block;
-        height: calc(100% - 9px);
-        left: 50%;
-        position: absolute;
-        width: 0;
-      }
-    }
   }
 }
 
