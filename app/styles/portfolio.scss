@@ -11,6 +11,8 @@
 // -------------------------
 
 #portfolio {
+  transform: none;
+
   // Headings
   // -------------------------
 
@@ -26,7 +28,13 @@
   // -------------------------
 
   .affix {
-    width: 263px;
+    padding-top: 64px;
+    top: 0;
+    width: 185px;
+
+    @media (min-width: $screen-lg-min) {
+      width: 235px;
+    }
   }
 
   // Projects
