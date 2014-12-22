@@ -11,21 +11,19 @@ angular.module('publicApp')
     return {
       restrict: 'A',
       link: function postLink(scope, element, attrs) {
-        requestAnimationFrame(function() {
-          var spy = attrs.spy;
+        var spy = attrs.spy;
 
-          /**
-           * Affix spy.
-           */
+        /**
+         * Affix spy.
+         */
 
-          if (spy === 'affix') {
-            var offset = {};
-            if (element.data('offset-top'))    { offset.top    = +element.data('offset-top'); }
-            if (element.data('offset-bottom')) { offset.bottom = +element.data('offset-bottom'); }
-            console.log(offset);
-            element.affix({offset: offset});
-          }
-        });
+        if (spy === 'affix') {
+          var offset = {};
+          if (element.data('offset-top'))    { offset.top    = +element.data('offset-top'); }
+          if (element.data('offset-bottom')) { offset.bottom = +element.data('offset-bottom'); }
+          console.log(offset);
+          element.affix({offset: offset});
+        }
       }
     };
   });
