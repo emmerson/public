@@ -522,6 +522,7 @@ angular.module('publicApp')
         type:        'Websites and Webapps',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2015)',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r208.portfolio.png',
         description: 'Personal website, portfolio, and résumé'
       },
       {

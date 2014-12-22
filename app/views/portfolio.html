@@ -6,94 +6,101 @@
   </head>
   <body>
     <section class="portfolio fade row">
-      <h1 class="col-sm-6">
-        5 years of hacking, and pixel&nbsp;pushing.<br>
-        <small><span data-odometer="projects.length"></span>+ projects and counting.</small>
-      </h1>
-      <p class="lead col-sm-6">
-        <span class="eyebrow">Filter Works</span>
-        I’ve modified
-        <!--
-          Levels
-        -->
-        <a href
-           data-ng-click="filter('Level')">levels&nbsp;<span class="badge">
-           {{count('Level')}}</span></a> and developed
-        <!--
-          Addons
-        -->
-        <a href
-           data-ng-click="filter('Addon')">addons and modifications&nbsp;<span class="badge">
-           {{count('Addon')}}</span></a> for
-        games, written
-        <!--
-          Patches
-        -->
-        <a href
-           data-ng-click="filter('Patch')">patches&nbsp;<span class="badge">
-           {{count('Patch')}}</span></a> for commercial products,
-        <!--
-          Reverse Engineering
-        -->
-        <a href
-           data-ng-click="filter('Reverse Engineering')">reversed engineered&nbsp;<span class="badge">
-           {{count('Reverse Engineering')}}</span></a></a>
-        platforms, created
-        <!--
-          Libraries and APIs
-        -->
-        <a href
-           data-ng-click="filter('Libraries and APIs')">libraries and APIs&nbsp;<span class="badge">
-           {{count('Libraries and APIs')}}</span></a>
-        for languages and platforms, architected
-        <!--
-          Engines and SDKs
-        -->
-        <a href
-           data-ng-click="filter('Engines and SDKs')">engines and SDKs&nbsp;<span class="badge">
-           {{count('Engines and SDKs')}}</span>,</a>
-        authored
-        <!--
-          Games
-        -->
-        <a href
-           data-ng-click="filter('Game')">games&nbsp;<span class="badge">
-           {{count('Game')}}</span>,</a> built desktop
-        <!--
-          Applications
-        -->
-        <a href
-           data-ng-click="filter('Application')">applications&nbsp;<span class="badge">
-           {{count('Application')}}</span>,</a>
-        and designed
-        <!--
-          Websites and Webapps
-        -->
-        <a href
-           data-ng-click="filter('Websites and Webapps')">websites and webapps&nbsp;<span class="badge">
-          {{count('Websites and Webapps')}}</span>.</a>
-      </p>
-      <p class="col-sm-6 col-sm-offset-6 text-muted">
-        The compliation of this portfolio is a work in
-        progress. Works under NDAs, and some closed-source projects omitted.
-      </p>
-      <div class="year col-xs-12" data-ng-repeat="year in years">
-        <h2 class="page-header">
-          {{year}}
-        </h2>
-        <div class="project" data-ng-repeat="project in results[year]">
-          <div>
-            <h3>
-              {{project.name}}
-              <small data-ng-if="project.small"><em>{{project.small}}</em></small>
-            </h3>
-            <span class="label label-default">{{project.type}}</span>
-            <h4>
-              for {{project.for}}
-            </h4>
-            <p>
-              {{project.description}}
-            </p>
+      <div class="col-sm-3" role="complementary">
+        <div data-spy="affix" data-offset="273">
+          <p class="lead">
+            <span class="eyebrow">Filter Works</span>
+            I’ve modified
+            <!--
+              Levels
+            -->
+            <a href
+               data-ng-click="filter('Level')">levels&nbsp;<span class="badge">
+               {{count('Level')}}</span></a> and developed
+            <!--
+              Addons
+            -->
+            <a href
+               data-ng-click="filter('Addon')">addons and modifications&nbsp;<span class="badge">
+               {{count('Addon')}}</span></a> for
+            games, written
+            <!--
+              Patches
+            -->
+            <a href
+               data-ng-click="filter('Patch')">patches&nbsp;<span class="badge">
+               {{count('Patch')}}</span></a> for commercial products,
+            <!--
+              Reverse Engineering
+            -->
+            <a href
+               data-ng-click="filter('Reverse Engineering')">reversed engineered&nbsp;<span class="badge">
+               {{count('Reverse Engineering')}}</span></a></a>
+            platforms, created
+            <!--
+              Libraries and APIs
+            -->
+            <a href
+               data-ng-click="filter('Libraries and APIs')">libraries and APIs&nbsp;<span class="badge">
+               {{count('Libraries and APIs')}}</span></a>
+            for languages and platforms, architected
+            <!--
+              Engines and SDKs
+            -->
+            <a href
+               data-ng-click="filter('Engines and SDKs')">engines and SDKs&nbsp;<span class="badge">
+               {{count('Engines and SDKs')}}</span>,</a>
+            authored
+            <!--
+              Games
+            -->
+            <a href
+               data-ng-click="filter('Game')">games&nbsp;<span class="badge">
+               {{count('Game')}}</span>,</a> built desktop
+            <!--
+              Applications
+            -->
+            <a href
+               data-ng-click="filter('Application')">applications&nbsp;<span class="badge">
+               {{count('Application')}}</span>,</a>
+            and designed
+            <!--
+              Websites and Webapps
+            -->
+            <a href
+               data-ng-click="filter('Websites and Webapps')">websites and webapps&nbsp;<span class="badge">
+              {{count('Websites and Webapps')}}</span>.</a>
+          </p>
+          <p class="text-muted">
+            The compliation of this portfolio is a work in
+            progress. Works under NDAs, and some closed-source projects omitted.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-9" role="main">
+        <h1>
+          5 years of hacking, and pixel&nbsp;pushing.<br>
+          <small><span data-odometer="projects.length"></span>+ projects and counting.</small>
+        </h1>
+        <div class="year" data-ng-repeat="year in years">
+          <h2 class="page-header">
+            {{year}}
+          </h2>
+          <div class="project" data-ng-repeat="project in results[year]">
+            <div>
+              <h3>
+                {{project.name}}
+                <small data-ng-if="project.small"><em>{{project.small}}</em></small>
+                <small class="pull-right text-right"><a href="{{project.concept}}" data-ng-if="project.concept">View Concept</a></small>
+              </h3>
+              <span class="label label-default">{{project.type}}</span>
+              <h4>
+                for {{project.for}}
+              </h4>
+              <p>
+                {{project.description}}
+              </p>
+            </div>
           </div>
         </div>
       </div>
