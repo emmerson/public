@@ -21,7 +21,6 @@ angular.module('publicApp')
           var offset = {};
           if (element.data('offset-top'))    { offset.top    = +element.data('offset-top'); }
           if (element.data('offset-bottom')) { offset.bottom = +element.data('offset-bottom'); }
-          console.log(offset);
           element.affix({offset: offset});
         }
       }
