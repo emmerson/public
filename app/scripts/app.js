@@ -11,7 +11,8 @@
 angular
   .module('publicApp', [
     'ngRoute',
-    'ui.odometer'
+    'ui.odometer',
+    'scrollto'
   ])
 
   /**

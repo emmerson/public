@@ -519,7 +519,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2014,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2015)',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r208.portfolio.png',
@@ -528,7 +528,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2014,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Dota 2',
         name:        'Metrics Hunter',
         description: 'The First Open-Source Decentralized Dota 2 ' +
@@ -537,7 +537,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2013,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Microsoft',
         name:        'Binocular',
         description: 'Internal project tracker for small teams'
@@ -545,7 +545,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2013,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2013)',
         description: 'Personal website, portfolio, and résumé'
@@ -553,7 +553,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2013,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Adam & Eve’s Alter',
         name:        'Let the Koran Speak',
         description: 'Religious educational program'
@@ -561,7 +561,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2013,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'boo1ean GmbH',
         name:        'Individual Executive Layer',
         description: 'Product website for boo1ean’s digital rights ' +
@@ -570,7 +570,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2013,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'boo1ean GmbH',
         name:        'boo1ean.de',
         description: 'Company website'
@@ -578,7 +578,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2012,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Northside church of Christ',
         name:        'northsidechurchofchrist.org',
         small:       'Redesign Proposal',
@@ -587,7 +587,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2012,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Elpis Host',
         name:        'elpishost.com',
         description: 'Game server provider website'
@@ -595,7 +595,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2012,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2012)',
         description: 'Personal website, portfolio, and résumé'
@@ -603,7 +603,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2012,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Phoenix Faction Studios',
         name:        'phxfaction.com',
         description: 'Game journalism blog'
@@ -611,7 +611,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2011,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Phoenixerve',
         name:        'phoenixerve.com',
         description: 'Game server provider website'
@@ -619,7 +619,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2011,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2011)',
         description: 'Personal website, portfolio, and résumé'
@@ -627,7 +627,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2011,
-        type:        'Websites and Webapps',
+        type:        'Website',
         for:         'Brohoster',
         name:        'brohoster.com',
         description: 'Game server provider website'
@@ -657,8 +657,35 @@ angular.module('publicApp')
      */
 
     $scope.count = function(type) {
-      return Lazy($scope.projects).where({type: type}).toArray().length;
+      return Lazy($scope.projects)
+        .where({type: type})
+        .toArray()
+        .length;
     };
+
+    /**
+    * Functional "type" length helper.
+    */
+
+    function typeLength(project) {
+      return $scope.count(project.type);
+    }
+
+    /**
+    * Descending chronology.
+    */
+
+    var descending = true;
+
+    /**
+     * Categories.
+     */
+
+    $scope.categories = Lazy($scope.projects)
+      .sortBy(typeLength, descending)
+      .pluck('type')
+      .uniq()
+      .toArray();
 
     /**
      * Functional "when" helper.
@@ -669,19 +696,17 @@ angular.module('publicApp')
     }
 
     /**
-     * Descending chronology.
-     */
-
-    var descending = true;
-
-    /**
      * Filter results.
      */
 
     $scope.filter = function(type) {
-      $scope.results = Lazy($scope.projects);
+      $scope.activeFilter = type;
+      $scope.results      = Lazy($scope.projects);
+
       if (type) {
-        $scope.results = $scope.results.where({type: type});
+        $scope.results =
+        $scope.results
+          .where({type: type});
       }
 
       $scope.years = Lazy($scope.results.toArray())

@@ -652,14 +652,14 @@ $progress-bar-info-bg:        $brand-info;
 //##
 
 //** Background color on `.list-group-item`
-$list-group-bg:                 $black;
+$list-group-bg:                 transparent;
 //** `.list-group-item` border color
-$list-group-border:             #2c3031;
+$list-group-border:             rgba($white, .07);
 //** List group border radius
 $list-group-border-radius:      $border-radius-base;
 
 //** Background color of single list items on hover
-$list-group-hover-bg:           rgba($white, .07);
+$list-group-hover-bg:           rgba($black, .93);
 //** Text color of active list items
 $list-group-active-color:       $component-active-color;
 //** Background color of active list items
@@ -761,7 +761,7 @@ $badge-active-color:          $link-color;
 //** Badge background color in active nav link
 $badge-active-bg:             #fff;
 
-$badge-font-weight:           bold;
+$badge-font-weight:           500;
 $badge-line-height:           1;
 $badge-border-radius:         10px;
 
