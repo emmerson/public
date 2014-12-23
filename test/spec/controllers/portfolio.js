@@ -20,6 +20,10 @@ describe('Controller: PortfolioCtrl', function () {
     expect(Object.keys(scope.projects).length).toBeGreaterThan(0);
   });
 
+  it('should attach a list of categories to the scope', function () {
+    expect(scope.categories.length).toBeGreaterThan(0);
+  });
+
   it('should attach a list of years to the scope', function () {
     expect(scope.years.length).toBeGreaterThan(0);
   });
