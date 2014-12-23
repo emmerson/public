@@ -60,7 +60,9 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'An AK47 That Shoots Babies',
-        description: 'No need to request this anymore.'
+        description: 'Based on an inside joke from Facepunch Studios Forums,' +
+                     'this addon adds an AK47 to Garry’s Mod that shoots ' +
+                     'babies.'
       },
       {
         category:    'Development',
@@ -531,6 +533,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Dota 2',
         name:        'Metrics Hunter',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/metrics-hunter.r34.portfolio.r2.png',
         description: 'The First Open-Source Decentralized Dota 2 ' +
                      'Statistics Tracker'
       },
@@ -540,6 +543,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Microsoft',
         name:        'Binocular',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/binocular.r61.portfolio.png',
         description: 'Internal project tracker for small teams'
       },
       {
@@ -548,6 +552,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2013)',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r159.portfolio.png',
         description: 'Personal website, portfolio, and résumé'
       },
       {
@@ -556,6 +561,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Adam & Eve’s Alter',
         name:        'Let the Koran Speak',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/letthekoranspeak.com.r39.portfolio.png',
         description: 'Religious educational program'
       },
       {
@@ -564,6 +570,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'boo1ean GmbH',
         name:        'Individual Executive Layer',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/I.E.L.r47.portfolio.png',
         description: 'Product website for boo1ean’s digital rights ' +
                      'management software'
       },
@@ -581,6 +588,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Northside church of Christ',
         name:        'northsidechurchofchrist.org',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/northsidechurchofchrist.org.r35.portfolio.png',
         small:       'Redesign Proposal',
         description: 'Church website'
       },
@@ -590,6 +598,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Elpis Host',
         name:        'elpishost.com',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/northsidechurchofchrist.org.r35.portfolio.png',
         description: 'Game server provider website'
       },
       {
@@ -598,6 +607,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2012)',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r85.portfolio.png',
         description: 'Personal website, portfolio, and résumé'
       },
       {
@@ -606,6 +616,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Phoenix Faction Studios',
         name:        'phxfaction.com',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/phoenixfaction.com.r60.portfolio.png',
         description: 'Game journalism blog'
       },
       {
@@ -614,6 +625,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Phoenixerve',
         name:        'phoenixerve.com',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/phoenixerve.com.r19.portfolio.png',
         description: 'Game server provider website'
       },
       {
@@ -622,6 +634,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2011)',
+        concept:     'https://github.com/andrewmcwatters/portfolio/blob/master/andrewmcwatters.com.r6.portfolio.png',
         description: 'Personal website, portfolio, and résumé'
       },
       {
@@ -630,6 +643,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Brohoster',
         name:        'brohoster.com',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/brohoster.com.r11.portfolio.png',
         description: 'Game server provider website'
       },
       // Minecraft
