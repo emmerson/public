@@ -333,6 +333,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Scripted Weapon Bases',
         language:    'Lua',
+        repository:  'https://code.google.com/p/swep-bases/',
         description: 'Adds HL2 scripted weapon bases.'
       },
       {
