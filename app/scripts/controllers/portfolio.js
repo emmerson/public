@@ -470,6 +470,7 @@ angular.module('publicApp')
         for:         'Source Engine',
         name:        'Half-Life 2: Sandbox',
         language:    'C++',
+        repository:  'https://code.google.com/p/hl2sb-src/',
         description: 'Half-Life 2: Sandbox is an open-source sandbox ' +
                      'modification of the Source Engine which provides Lua ' +
                      'as a scripting platform for developers to quickly ' +
