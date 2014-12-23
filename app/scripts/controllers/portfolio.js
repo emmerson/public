@@ -402,6 +402,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        '-',
         small:       '(“Dash”)',
+        download:    '-.zip',
         description: 'Adds real-time scripting to Garry’s Mod.'
       },
       {
@@ -661,6 +662,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Minecraft',
         name:        'PluginSync',
+        download:    'PluginSync.zip',
         description: 'A Bukkit plugin to sync your server to a plugin depot.'
       },
       // Desktop Services
@@ -670,6 +672,7 @@ angular.module('publicApp')
         type:        'Application',
         for:         'Windows',
         name:        'scrnshot',
+        download:    'scrnshot.zip',
         description: 'A simple screenshot tool'
       }
     ];
