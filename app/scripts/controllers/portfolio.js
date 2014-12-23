@@ -410,8 +410,9 @@ angular.module('publicApp')
         when:        2013,
         type:        'Addon',
         for:         'Garry’s Mod',
-        name:        'Trouble in Terrorist Town: Connextion',
-        description: 'Trouble in Terrorist Town: Connextion is a ' +
+        name:        'Trouble in Terrorist Town: Connection',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/Trouble%20In%20Terrorist%20Town%20Connection.r32.portfolio.png',
+        description: 'Trouble in Terrorist Town: Connection is a ' +
                      'beautifully flat and modern redesign of TTT’s head-up ' +
                      'display and core UI.'
       },
