@@ -130,6 +130,10 @@
     img {
       transition: all 600ms cubic-bezier(.23, 1, .32, 1);
     }
+
+    .text-primary {
+      text-decoration: line-through;
+    }
   }
 
   #planimeter img {
