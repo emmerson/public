@@ -30,4 +30,8 @@ footer > .container {
     padding-left: 64px !important;
     padding-right: 64px !important;
   }
+
+  @media (min-width: $screen-lg-min) {
+    width: 100%;
+  }
 }

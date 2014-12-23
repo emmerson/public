@@ -29,6 +29,10 @@
 
   section {
     perspective: 1000px;
+
+    @media (min-width: $screen-lg-min) {
+      perspective: 2000px;
+    }
   }
 
   // Heading
@@ -42,6 +46,10 @@
 
     @media (min-width: $screen-sm-min) {
       margin-bottom: 96px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      perspective: 2000px;
     }
 
     small {
