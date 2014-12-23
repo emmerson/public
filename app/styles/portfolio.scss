@@ -33,7 +33,9 @@
     width: 185px;
 
     @media (min-width: $screen-lg-min) {
-      width: 235px;
+      // width: 235px;
+      // HACKHACK: What the fuck?
+      width: calc(25% - 3 * 18px - 5px);
     }
   }
 
