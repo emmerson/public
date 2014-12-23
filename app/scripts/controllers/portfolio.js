@@ -25,6 +25,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'VGUI2 Skin',
@@ -34,6 +35,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Counter-Strike: Source Weapons',
@@ -43,6 +45,7 @@ angular.module('publicApp')
       {
         category:    'Design',
         when:        2009,
+        avocational: true,
         type:        'Level',
         for:         'Garry’s Mod',
         name:        'gm_construct_night',
@@ -51,6 +54,7 @@ angular.module('publicApp')
       {
         category:    'Design',
         when:        2009,
+        avocational: true,
         type:        'Level',
         for:         'Garry’s Mod',
         name:        'gm_flatgrass_night',
@@ -59,6 +63,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'An AK47 That Shoots Babies',
@@ -70,6 +75,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Melonnade',
@@ -79,6 +85,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'The Manhattan Grenade',
@@ -89,6 +96,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'The Time Grenade',
@@ -98,6 +106,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Altimeter HUD Element',
@@ -107,6 +116,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Christmas Lights',
@@ -116,6 +126,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Fall Damage',
@@ -125,6 +136,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'HEV Extensions',
@@ -134,6 +146,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Boomstick',
@@ -143,6 +156,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Overwatch Military Issue Dark Energy Rifle',
@@ -152,6 +166,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Your Head A Splode',
@@ -161,6 +176,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Vortex Weaponry',
@@ -170,6 +186,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Half-Life 2 Orange Box Weapons',
@@ -180,6 +197,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Grenadegun',
@@ -189,6 +207,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Boxnade',
@@ -198,6 +217,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Pulse-Shotgun',
@@ -207,6 +227,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Water Explosive',
@@ -216,6 +237,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Assault SMG',
@@ -225,6 +247,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Armed Attachments',
@@ -235,6 +258,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Quick Menu',
@@ -244,6 +268,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'NanoHEV',
@@ -253,6 +278,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Language Fixes',
@@ -262,6 +288,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Essential STools',
@@ -271,6 +298,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Sandbox Gravity Gun',
@@ -281,6 +309,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Drop Primary',
@@ -290,6 +319,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Ownership HUD for Simple Prop Protection',
@@ -299,6 +329,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Ghosting Fade System',
@@ -309,6 +340,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Death Ragdolls',
@@ -318,6 +350,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'PLGL',
@@ -329,6 +362,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2009,
+        avocational: true,
         type:        'Engines and SDKs',
         for:         'Garry’s Mod',
         name:        'Scripted Weapon Bases',
@@ -339,6 +373,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
+        avocational: true,
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Sandbox Setting Defaults',
@@ -349,6 +384,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
+        avocational: true,
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Insurgency Spawn Points',
@@ -358,6 +394,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Ion Cannon',
@@ -367,6 +404,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Mounted Pulse-Rifle',
@@ -376,6 +414,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Watermelon',
@@ -385,6 +424,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Thruster',
@@ -394,6 +434,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
+        avocational: true,
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Ragdoll Fade System',
@@ -404,6 +445,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Airboat Gun',
@@ -413,6 +455,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Player Clothing',
@@ -422,17 +465,19 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2010,
+        avocational: true,
         type:        'Reverse Engineering',
         for:         'Garry’s Mod',
         name:        'SteamID to IP',
         language:    'Lua',
         description: 'Converts Garry’s Mod API to use fake SteamIDs (used ' +
                      'for authentication and player uniqueness) based on IP ' +
-                     'addresses, thus allowing players to play for free.'
+                     'addresses.'
       },
       {
         category:    'Development',
         when:        2010,
+        avocational: true,
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Light IgnoreZ Fix',
@@ -442,6 +487,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2013,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        '-',
@@ -453,6 +499,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2013,
+        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Trouble in Terrorist Town: Connection',
@@ -466,6 +513,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2011,
+        avocational: true,
         type:        'Game',
         for:         'Source Engine',
         name:        'Half-Life 2: Sandbox',
@@ -480,6 +528,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2011,
+        avocational: true,
         type:        'Game',
         for:         'LÖVE',
         name:        'Knight Game II',
@@ -491,6 +540,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2012,
+        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lbass',
@@ -501,6 +551,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2012,
+        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lclass',
@@ -514,6 +565,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2011,
+        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lopensteamworks',
@@ -524,6 +576,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2012,
+        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lsapi',
@@ -534,6 +587,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2012,
+        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lwinapi',
@@ -544,6 +598,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2012,
+        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lwolframalpha',
@@ -554,6 +609,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2011,
+        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'steamcommunity-utils',
@@ -564,6 +620,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2012,
+        avocational: true,
         type:        'Reverse Engineering',
         for:         'Steam’s Web API',
         name:        'Steam Web Lua API',
@@ -578,6 +635,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2014,
+        avocational: true,
         type:        'Libraries and APIs',
         for:         'PHP',
         name:        'Steam Web PHP API',
@@ -590,9 +648,10 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2014,
+        avocational: false,
         type:        'Website',
         for:         'Andrew McWatters',
-        name:        'andrewmcwatters.com (2015)',
+        name:        'andrewmcwatters.com (2014)',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r208.portfolio.png',
         description: 'Personal website, portfolio, and résumé'
@@ -600,6 +659,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2014,
+        avocational: true,
         type:        'Website',
         for:         'Dota 2',
         name:        'Metrics Hunter',
@@ -611,6 +671,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2013,
+        avocational: false,
         type:        'Website',
         for:         'Microsoft',
         name:        'Binocular',
@@ -620,6 +681,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2013,
+        avocational: false,
         type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2013)',
@@ -630,6 +692,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2013,
+        avocational: false,
         type:        'Website',
         for:         'Adam & Eve’s Alter',
         name:        'Let the Koran Speak',
@@ -640,6 +703,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2013,
+        avocational: false,
         type:        'Website',
         for:         'boo1ean GmbH',
         name:        'Individual Executive Layer',
@@ -651,6 +715,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2013,
+        avocational: false,
         type:        'Website',
         for:         'boo1ean GmbH',
         name:        'boo1ean.de',
@@ -660,6 +725,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2012,
+        avocational: true,
         type:        'Website',
         for:         'Northside church of Christ',
         name:        'northsidechurchofchrist.org',
@@ -671,6 +737,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2012,
+        avocational: false,
         type:        'Website',
         for:         'Elpis Host',
         name:        'elpishost.com',
@@ -681,6 +748,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2012,
+        avocational: false,
         type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2012)',
@@ -691,6 +759,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2012,
+        avocational: false,
         type:        'Website',
         for:         'Phoenix Faction Studios',
         name:        'phxfaction.com',
@@ -701,6 +770,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2011,
+        avocational: false,
         type:        'Website',
         for:         'Phoenixerve',
         name:        'phoenixerve.com',
@@ -711,6 +781,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2011,
+        avocational: false,
         type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2011)',
@@ -721,6 +792,7 @@ angular.module('publicApp')
       {
         category:    'Development & Design',
         when:        2011,
+        avocational: false,
         type:        'Website',
         for:         'Brohoster',
         name:        'brohoster.com',
@@ -728,10 +800,35 @@ angular.module('publicApp')
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/brohoster.com.r11.portfolio.png',
         description: 'Game server provider website'
       },
+      // Webapps
+      {
+        category:    'Development & Design',
+        when:        2014,
+        avocational: false,
+        type:        'Webapp',
+        for:         'NPL Construction Co.',
+        name:        'NPL Time',
+        language:    'CSS',
+        concept:     'https://www.pixelapse.com/andrewmcwatters/projects/NPL%20Time',
+        description: 'Mobile payroll iOS application'
+      },
+      // APIs
+      {
+        category:    'Development',
+        when:        2014,
+        avocational: false,
+        type:        'Libraries and APIs',
+        for:         'NPL Construction Co.',
+        name:        'NPL API',
+        language:    'JavaScript',
+        description: 'Payroll, telemetrics, auditing, and internal file ' +
+                     'sharing API'
+      },
       // Minecraft
       {
         category:    'Development',
         when:        2013,
+        avocational: true,
         type:        'Addon',
         for:         'Minecraft',
         name:        'PluginSync',
@@ -743,6 +840,7 @@ angular.module('publicApp')
       {
         category:    'Development',
         when:        2013,
+        avocational: true,
         type:        'Application',
         for:         'Windows',
         name:        'scrnshot',
@@ -788,6 +886,18 @@ angular.module('publicApp')
       .toArray();
 
     /**
+     * Options.
+     */
+
+    $scope.options = {
+      hideAvocational: true
+    };
+
+    $scope.$watch('options.hideAvocational', function() {
+      $scope.filter($scope.activeFilter);
+    });
+
+    /**
      * Functional "when" helper.
      */
 
@@ -800,23 +910,52 @@ angular.module('publicApp')
      */
 
     $scope.filter = function(type) {
+      if (type === $scope.activeFilter) {
+        $scope.activeFilter = null;
+        $scope.filter();
+        return;
+      }
+
+      // set active filter
       $scope.activeFilter = type;
       $scope.results      = Lazy($scope.projects);
 
+      // filter by type
       if (type) {
         $scope.results =
         $scope.results
           .where({type: type});
       }
 
+      // hide avocational projects
+      if ($scope.options.hideAvocational) {
+        $scope.results =
+        $scope.results
+          .where({avocational: false});
+      }
+
+      // list years of results
       $scope.years = Lazy($scope.results.toArray())
         .sortBy(when, descending)
         .pluck('when')
         .uniq()
         .toArray();
 
+      // list results
       $scope.results = $scope.results
         .groupBy(when)
         .toObject();
     }; $scope.filter();
+
+    /**
+     * Result count.
+     */
+
+    $scope.resultCount = function() {
+      var size = 0;
+      function count(year) {size += year.length;}
+      Lazy($scope.results)
+        .each(count);
+      return size;
+    };
   });

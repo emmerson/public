@@ -42,18 +42,18 @@
   // Projects
   // -------------------------
 
-  .lead {
-    font-size: 18px;
+  .label-form {
+    color: $gold;
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: $line-height-computed;
+    margin-top: 0;
+    text-transform: uppercase;
 
-    > .eyebrow {
-      color: $gold;
-      display: block;
-      font-size: 10px;
-      font-weight: 400;
-      letter-spacing: 1px;
+    + * {
       margin-bottom: 24px;
-      margin-top: 0;
-      text-transform: uppercase;
     }
   }
 
