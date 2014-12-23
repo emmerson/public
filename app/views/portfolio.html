@@ -41,6 +41,8 @@
           </h2>
           <div class="project" data-ng-repeat="project in results[year]">
             <div class="links hidden-print hidden-xs pull-right text-right">
+              <!-- Language -->
+              <span class="language text-primary">{{project.language}}</span>
               <!-- View Concept -->
               <a href="{{project.concept}}"
                  data-ng-if="project.concept"
@@ -60,7 +62,16 @@
                 <span class="glyphicon glyphicon-cloud-download" aria-hidden="true">
                 </span>
               </a>
-            </div>
+              <!-- View Repository -->
+              <a href="/downloads/{{project.download}}"
+                 data-ng-if="project.repository"
+                 data-toggle="tooltip"
+                 data-placement="left"
+                 title="View Repository">
+                <span class="glyphicon glyphicon-book" aria-hidden="true">
+                </span>
+              </a>
+          </div>
             <h3>
               {{project.name}}
               <small data-ng-if="project.small"><em>{{project.small}}</em></small>

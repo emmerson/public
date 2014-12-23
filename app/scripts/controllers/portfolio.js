@@ -28,6 +28,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'VGUI2 Skin',
+        language:    'Lua',
         description: 'A recreation of Valve’s VGUI2 theme.'
       },
       {
@@ -36,6 +37,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Counter-Strike: Source Weapons',
+        language:    'Lua',
         description: 'CS:S Weapons!'
       },
       {
@@ -60,6 +62,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'An AK47 That Shoots Babies',
+        language:    'Lua',
         description: 'Based on an inside joke from Facepunch Studios Forums,' +
                      'this addon adds an AK47 to Garry’s Mod that shoots ' +
                      'babies.'
@@ -70,6 +73,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Melonnade',
+        language:    'Lua',
         description: 'A grenade with an explosive fruity blast.'
       },
       {
@@ -78,6 +82,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'The Manhattan Grenade',
+        language:    'Lua',
         description: 'Places the power of Dr. Manhattan into a compact ' +
                      'explosive device.'
       },
@@ -87,6 +92,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'The Time Grenade',
+        language:    'Lua',
         description: 'Adds a time manipulator grenade to Garry’s Mod.'
       },
       {
@@ -95,6 +101,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Altimeter HUD Element',
+        language:    'Lua',
         description: 'Adds an altimeter HUD element.'
       },
       {
@@ -103,6 +110,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Christmas Lights',
+        language:    'Lua',
         description: 'Adds explosive holiday cheer in pistol form.'
       },
       {
@@ -111,6 +119,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Fall Damage',
+        language:    'Lua',
         description: 'Adds the Source SDK calculations for fall damage.'
       },
       {
@@ -119,6 +128,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'HEV Extensions',
+        language:    'Lua',
         description: 'Extends the functionality of the HEV suit.'
       },
       {
@@ -127,6 +137,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Boomstick',
+        language:    'Lua',
         description: 'Adds a stick with an explosive temper.'
       },
       {
@@ -135,6 +146,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Overwatch Military Issue Dark Energy Rifle',
+        language:    'Lua',
         description: 'Adds an automatic dark energy assault rifle.'
       },
       {
@@ -143,6 +155,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Your Head A Splode',
+        language:    'Lua',
         description: 'It’s what it does.'
       },
       {
@@ -151,6 +164,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Vortex Weaponry',
+        language:    'Lua',
         description: 'Adds a dimension defying weaponry.'
       },
       {
@@ -159,6 +173,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Half-Life 2 Orange Box Weapons',
+        language:    'Lua',
         description: 'Adds a new set of HL2 weapons which use the OB ' +
                      'particle system.'
       },
@@ -168,6 +183,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Grenadegun',
+        language:    'Lua',
         description: 'Adds a grenade lobbing shotgun.'
       },
       {
@@ -176,6 +192,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Boxnade',
+        language:    'Lua',
         description: 'Adds an explosive enlarging box.'
       },
       {
@@ -184,6 +201,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Pulse-Shotgun',
+        language:    'Lua',
         description: 'Adds a dark-energy powered shotgun.'
       },
       {
@@ -192,6 +210,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Water Explosive',
+        language:    'Lua',
         description: 'Adds an explosive barrel charge.'
       },
       {
@@ -200,6 +219,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Assault SMG',
+        language:    'Lua',
         description: 'Adds a rapid fire machine gun.'
       },
       {
@@ -208,6 +228,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Armed Attachments',
+        language:    'Lua',
         description: 'Adds a base SWEP which utilizes a Crysis-styled ' +
                      'attachment system.'
       },
@@ -217,6 +238,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Quick Menu',
+        language:    'Lua',
         description: 'Adds a Crysis-esque STool/Weapons menu.'
       },
       {
@@ -225,6 +247,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'NanoHEV',
+        language:    'Lua',
         description: 'Adds nanosuit features to your HEV suit.'
       },
       {
@@ -233,6 +256,7 @@ angular.module('publicApp')
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Language Fixes',
+        language:    'Lua',
         description: 'Adds natural language to undefined values.'
       },
       {
@@ -241,6 +265,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Essential STools',
+        language:    'Lua',
         description: 'Adds frequently used scripted tools.'
       },
       {
@@ -249,6 +274,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Sandbox Gravity Gun',
+        language:    'Lua',
         description: 'Adds an option to give players a gravity gun, ' +
                      'regardless of starting with weapons or not.'
       },
@@ -258,6 +284,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Drop Primary',
+        language:    'Lua',
         description: 'Adds the "drop" command from CS:S.'
       },
       {
@@ -266,6 +293,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Ownership HUD for Simple Prop Protection',
+        language:    'Lua',
         description: 'Replaces Simple Prop Protection’s HUD with a HL2 variant.'
       },
       {
@@ -274,6 +302,7 @@ angular.module('publicApp')
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Ghosting Fade System',
+        language:    'Lua',
         description: 'Fades out all ghosts after time, to prevent dormant ' +
                      'ghosts from collecting.'
       },
@@ -283,6 +312,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Death Ragdolls',
+        language:    'Lua',
         description: 'Adds server-side death ragdolls for players and NPCs.'
       },
       {
@@ -292,6 +322,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'PLGL',
         small:       '(“Present Launching Grenade Launcher”)',
+        language:    'Lua',
         description: 'Adds a grenade launcher with holiday cheer as its ' +
                      'primary ammunition!'
       },
@@ -301,6 +332,7 @@ angular.module('publicApp')
         type:        'Engines and SDKs',
         for:         'Garry’s Mod',
         name:        'Scripted Weapon Bases',
+        language:    'Lua',
         description: 'Adds HL2 scripted weapon bases.'
       },
       {
@@ -309,6 +341,7 @@ angular.module('publicApp')
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Sandbox Setting Defaults',
+        language:    'Lua',
         description: 'Resets sandbox limits and ConVars to their defaults on ' +
                      'server initialization.'
       },
@@ -318,6 +351,7 @@ angular.module('publicApp')
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Insurgency Spawn Points',
+        language:    'Lua',
         description: 'Adds working spawn points to Insurgency maps.'
       },
       {
@@ -326,6 +360,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Ion Cannon',
+        language:    'Lua',
         description: 'Adds the dark energy-powered cannon from EP2.'
       },
       {
@@ -334,6 +369,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Mounted Pulse-Rifle',
+        language:    'Lua',
         description: 'Adds a handheld mounted Pulse-Rifle.'
       },
       {
@@ -342,6 +378,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Watermelon',
+        language:    'Lua',
         description: 'Adds a tossable fruit.'
       },
       {
@@ -350,6 +387,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Thruster',
+        language:    'Lua',
         description: 'Adds a shoulder mounted thruster.'
       },
       {
@@ -358,6 +396,7 @@ angular.module('publicApp')
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Ragdoll Fade System',
+        language:    'Lua',
         description: 'Fades out all client-side ragdolls after time, to ' +
                      'prevent dormant corpses from collecting.'
       },
@@ -367,6 +406,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Airboat Gun',
+        language:    'Lua',
         description: 'Adds a detached chopper gun.'
       },
       {
@@ -375,6 +415,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Player Clothing',
+        language:    'Lua',
         description: 'Adds selectable clothing to player models.'
       },
       {
@@ -383,6 +424,7 @@ angular.module('publicApp')
         type:        'Reverse Engineering',
         for:         'Garry’s Mod',
         name:        'SteamID to IP',
+        language:    'Lua',
         description: 'Converts Garry’s Mod API to use fake SteamIDs (used ' +
                      'for authentication and player uniqueness) based on IP ' +
                      'addresses, thus allowing players to play for free.'
@@ -393,6 +435,7 @@ angular.module('publicApp')
         type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Light IgnoreZ Fix',
+        language:    'Lua',
         description: 'Fixes lights from showing up through the world.'
       },
       {
@@ -402,6 +445,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        '-',
         small:       '(“Dash”)',
+        language:    'Lua',
         download:    '-.zip',
         description: 'Adds real-time scripting to Garry’s Mod.'
       },
@@ -411,6 +455,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Trouble in Terrorist Town: Connection',
+        language:    'Lua',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/Trouble%20In%20Terrorist%20Town%20Connection.r32.portfolio.png',
         description: 'Trouble in Terrorist Town: Connection is a ' +
                      'beautifully flat and modern redesign of TTT’s head-up ' +
@@ -423,6 +468,7 @@ angular.module('publicApp')
         type:        'Game',
         for:         'Source Engine',
         name:        'Half-Life 2: Sandbox',
+        language:    'C++',
         description: 'Half-Life 2: Sandbox is an open-source sandbox ' +
                      'modification of the Source Engine which provides Lua ' +
                      'as a scripting platform for developers to quickly ' +
@@ -435,6 +481,7 @@ angular.module('publicApp')
         type:        'Game',
         for:         'LÖVE',
         name:        'Knight Game II',
+        language:    'Lua',
         description: 'A pixel-perfect recreation of Knight Game II from ' +
                      'Antics comic strip #203.'
       },
@@ -445,6 +492,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lbass',
+        language:    'C',
         download:    'lbass.zip',
         description: 'BASS Audio Library bindings for Lua 5.1'
       },
@@ -454,6 +502,8 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lclass',
+        language:    'Lua',
+        repository:  'https://github.com/andrewmcwatters/lclass',
         description: 'lclass is a class implementation for Lua 5.1. It has ' +
                      'been designed to be the simplest, most ' +
                      'comprehensive, and smallest class implementation for ' +
@@ -465,6 +515,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lopensteamworks',
+        language:    'C',
         download:    'lopensteamworks.zip',
         description: 'Open Steamworks bindings for Lua 5.1'
       },
@@ -474,6 +525,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lsapi',
+        language:    'C',
         download:    'lsapi.zip',
         description: 'Microsoft Speech API bindings for Lua 5.1'
       },
@@ -483,6 +535,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lwinapi',
+        language:    'C',
         download:    'lwinapi.zip',
         description: 'Windows API bindings for Lua 5.1'
       },
@@ -492,6 +545,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lwolframalpha',
+        language:    'Lua',
         download:    'lwolframalpha.zip',
         description: 'Wolfram|Alpha Webservice API bindings for Lua 5.1'
       },
@@ -501,6 +555,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'steamcommunity-utils',
+        language:    'Lua',
         download:    'steamcommunity-utils.zip',
         description: 'A toolkit in Lua for interacting with Steam Community'
       },
@@ -510,6 +565,7 @@ angular.module('publicApp')
         type:        'Reverse Engineering',
         for:         'Steam’s Web API',
         name:        'Steam Web Lua API',
+        language:    'Lua',
         download:    'steamweb-lua-api.zip',
         description: 'The Steam Web Lua API is a small library originally ' +
                      'designed to provide the web interfaces utilized in ' +
@@ -523,6 +579,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'PHP',
         name:        'Steam Web PHP API',
+        language:    'PHP',
         download:    'steamweb-php-api.zip',
         description: 'An API wrapper for interfacing with Steam’s Web API ' +
                      'using PHP'
@@ -534,6 +591,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2015)',
+        language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r208.portfolio.png',
         description: 'Personal website, portfolio, and résumé'
       },
@@ -543,6 +601,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Dota 2',
         name:        'Metrics Hunter',
+        language:    'PHP',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/metrics-hunter.r34.portfolio.r2.png',
         description: 'The First Open-Source Decentralized Dota 2 ' +
                      'Statistics Tracker'
@@ -562,6 +621,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2013)',
+        language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r159.portfolio.png',
         description: 'Personal website, portfolio, and résumé'
       },
@@ -571,6 +631,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Adam & Eve’s Alter',
         name:        'Let the Koran Speak',
+        language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/letthekoranspeak.com.r39.portfolio.png',
         description: 'Religious educational program'
       },
@@ -580,6 +641,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'boo1ean GmbH',
         name:        'Individual Executive Layer',
+        language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/I.E.L.r47.portfolio.png',
         description: 'Product website for boo1ean’s digital rights ' +
                      'management software'
@@ -590,6 +652,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'boo1ean GmbH',
         name:        'boo1ean.de',
+        language:    'CSS',
         description: 'Company website'
       },
       {
@@ -598,6 +661,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Northside church of Christ',
         name:        'northsidechurchofchrist.org',
+        language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/northsidechurchofchrist.org.r35.portfolio.png',
         small:       'Redesign Proposal',
         description: 'Church website'
@@ -608,6 +672,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Elpis Host',
         name:        'elpishost.com',
+        language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/northsidechurchofchrist.org.r35.portfolio.png',
         description: 'Game server provider website'
       },
@@ -617,6 +682,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2012)',
+        language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r85.portfolio.png',
         description: 'Personal website, portfolio, and résumé'
       },
@@ -626,6 +692,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Phoenix Faction Studios',
         name:        'phxfaction.com',
+        language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/phoenixfaction.com.r60.portfolio.png',
         description: 'Game journalism blog'
       },
@@ -635,6 +702,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Phoenixerve',
         name:        'phoenixerve.com',
+        language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/phoenixerve.com.r19.portfolio.png',
         description: 'Game server provider website'
       },
@@ -644,6 +712,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2011)',
+        language:    'CSS',
         concept:     'https://github.com/andrewmcwatters/portfolio/blob/master/andrewmcwatters.com.r6.portfolio.png',
         description: 'Personal website, portfolio, and résumé'
       },
@@ -653,6 +722,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Brohoster',
         name:        'brohoster.com',
+        language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/brohoster.com.r11.portfolio.png',
         description: 'Game server provider website'
       },
@@ -663,6 +733,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Minecraft',
         name:        'PluginSync',
+        language:    'Java',
         download:    'PluginSync.zip',
         description: 'A Bukkit plugin to sync your server to a plugin depot.'
       },
@@ -673,6 +744,7 @@ angular.module('publicApp')
         type:        'Application',
         for:         'Windows',
         name:        'scrnshot',
+        language:    'C#',
         download:    'scrnshot.zip',
         description: 'A simple screenshot tool'
       }
