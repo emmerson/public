@@ -31,7 +31,7 @@ angular.module('publicApp')
             // wait for main to stagger in
             .delay(0.15)
             // bring forth header and intro
-            .staggerFromTo([h1, intro], 0.4, {
+            .staggerFromTo([h1, intro], 0.6, {
                 opacity: 0,
                 z: -260,
               }, {
@@ -47,7 +47,7 @@ angular.module('publicApp')
                 opacity: 1,
                 z: 0,
                 rotationY: 0
-              }, 0.6, '-=0.4');
+              }, 0.6, '-=0.6');
         }
 
         /**
