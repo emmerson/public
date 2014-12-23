@@ -9,6 +9,10 @@
  */
 angular.module('publicApp')
   .controller('WiwoCtrl', function ($scope) {
+    /**
+     * What I’m Working On.
+     */
+
     $scope.projects = [
       {
         id:   'planimeter',
