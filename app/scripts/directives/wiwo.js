@@ -33,7 +33,7 @@ angular.module('publicApp')
             // bring forth header and intro
             .staggerFromTo([h1, intro], 0.4, {
                 opacity: 0,
-                z: -141,
+                z: -260,
               }, {
                 opacity: 1,
                 z: 0
@@ -41,11 +41,11 @@ angular.module('publicApp')
             // rotate in project tiles
             .staggerFromTo(tiles, 6, {
                 opacity: 0,
-                // z: -141,
+                z: -260,
                 rotationY: 90
               }, {
                 opacity: 1,
-                // z: 0,
+                z: 0,
                 rotationY: 0
               }, 0.6, '-=0.4');
         }
