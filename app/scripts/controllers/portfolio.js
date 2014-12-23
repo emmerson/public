@@ -443,6 +443,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lbass',
+        download:    'lbass.zip',
         description: 'BASS Audio Library bindings for Lua 5.1'
       },
       {
@@ -462,6 +463,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lopensteamworks',
+        download:    'lopensteamworks.zip',
         description: 'Open Steamworks bindings for Lua 5.1'
       },
       {
@@ -470,6 +472,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lsapi',
+        download:    'lsapi.zip',
         description: 'Microsoft Speech API bindings for Lua 5.1'
       },
       {
@@ -478,6 +481,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lwinapi',
+        download:    'lwinapi.zip',
         description: 'Windows API bindings for Lua 5.1'
       },
       {
@@ -486,6 +490,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'lwolframalpha',
+        download:    'lwolframalpha.zip',
         description: 'Wolfram|Alpha Webservice API bindings for Lua 5.1'
       },
       {
@@ -494,6 +499,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
         name:        'steamcommunity-utils',
+        download:    'steamcommunity-utils.zip',
         description: 'A toolkit in Lua for interacting with Steam Community'
       },
       {
@@ -502,6 +508,7 @@ angular.module('publicApp')
         type:        'Reverse Engineering',
         for:         'Steam’s Web API',
         name:        'Steam Web Lua API',
+        download:    'steamweb-lua-api.zip',
         description: 'The Steam Web Lua API is a small library originally ' +
                      'designed to provide the web interfaces utilized in ' +
                      'Steam Mobile. These interfaces were reverse ' +
@@ -514,6 +521,7 @@ angular.module('publicApp')
         type:        'Libraries and APIs',
         for:         'PHP',
         name:        'Steam Web PHP API',
+        download:    'steamweb-php-api.zip',
         description: 'An API wrapper for interfacing with Steam’s Web API ' +
                      'using PHP'
       },
