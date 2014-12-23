@@ -171,7 +171,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Your Head A Splode',
         language:    'Lua',
-        description: 'It’s what it does.'
+        description: 'Adds the ability to blow up your head.'
       },
       {
         category:    'Development',
