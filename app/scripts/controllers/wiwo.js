@@ -21,7 +21,8 @@ angular.module('publicApp')
         name: 'Planimeter',
         logo: 'images/logo_planimeter.4ff78814.svg',
         since: 2014,
-        what: 'International Development Team'
+        what: 'International Development Team',
+        href: '/planimeter'
       },
       {
         id:   'vadventure',
@@ -29,7 +30,8 @@ angular.module('publicApp')
         name: 'Vertex Adventure',
         logo: 'images/logo_vadventure.dd082bfe.svg',
         since: 2013,
-        what: '2D Fantasy MMORPG'
+        what: '2D Fantasy MMORPG',
+        href: '/vadventure'
       },
       {
         id:   'grid',
@@ -37,7 +39,8 @@ angular.module('publicApp')
         name: 'Grid',
         logo: 'images/logo_grid.19de7e30.svg',
         since: 2013,
-        what: '2D Game Engine'
+        what: '2D Game Engine',
+        href: '/grid'
       },
       {
         id:   'axis',
@@ -45,7 +48,8 @@ angular.module('publicApp')
         name: 'Axis',
         logo: 'images/logo_axis.08eef562.svg',
         since: 2013,
-        what: 'Game Account Management System'
+        what: 'Game Account Management System',
+        href: '/axis'
       }
     ];
   });

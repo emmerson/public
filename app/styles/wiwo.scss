@@ -71,6 +71,7 @@
   .project-tile {
     border: 1px solid rgba($white, .07);
     border-bottom-width: 0;
+    color: $white;
     display: inline-flex;
     flex-direction: column;
     min-height: 260px;
@@ -84,6 +85,11 @@
     &:hover {
       background-color: rgba($black, .97);
       color: $white;
+      text-decoration: none;
+
+      .text-primary {
+        text-decoration: $link-hover-decoration;
+      }
     }
 
     &:last-of-type {
@@ -93,7 +99,7 @@
     @media (min-width: $screen-sm-min) {
       border-right-width: 0;
 
-      &:nth-of-type(odd) {
+      &:nth-of-type(even) {
         border-right-width: 1px;
       }
 
@@ -103,18 +109,16 @@
     }
 
     @media (min-width: $screen-md-min) {
-      &:nth-of-type(odd) {
+      &:nth-of-type(even) {
         border-right-width: 0;
       }
 
-      &:nth-last-of-type(1),
-      &:nth-last-of-type(2),
       &:nth-last-of-type(3),
       &:nth-last-of-type(4), {
         border-bottom-width: 1px;
       }
 
-      &:nth-of-type(3n+5) {
+      &:nth-of-type(4n) {
         border-right-width: 1px;
       }
     }
@@ -202,8 +206,9 @@
   }
 
   .callout-copy {
-    margin-bottom: 0;
+    margin-bottom: $line-height-computed;
     margin-top: 36px;
+    min-height: 51px;
   }
 
   .when,
