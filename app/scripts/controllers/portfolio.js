@@ -23,369 +23,337 @@ angular.module('publicApp')
     $scope.projects = [
       // Garry's Mod
       {
-        category:    'Development',
-        when:        2013,
         avocational: true,
-        type:        'Addon',
-        for:         'Garry’s Mod',
         name:        '-',
         small:       '(“Dash”)',
         language:    'Lua',
         download:    '-.zip',
-        description: 'Adds real-time scripting to Garry’s Mod.'
-      },
-      {
-        category:    'Development',
-        when:        2013,
-        avocational: true,
         type:        'Addon',
         for:         'Garry’s Mod',
+        description: 'Adds real-time scripting to Garry’s Mod.',
+        when:        2013,
+      },
+      {
+        avocational: true,
         name:        'Trouble in Terrorist Town: Connection',
         language:    'Lua',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/Trouble%20In%20Terrorist%20Town%20Connection.r32.portfolio.png',
+        type:        'Addon',
+        for:         'Garry’s Mod',
         description: 'Trouble in Terrorist Town: Connection is a ' +
                      'beautifully flat and modern redesign of TTT’s head-up ' +
-                     'display and core UI.'
+                     'display and core UI.',
+        when:        2013
       },
       // Half-Life 2: Sandbox
       {
-        category:    'Development',
-        when:        2011,
         avocational: true,
-        type:        'Game',
-        for:         'Source Engine',
         name:        'Half-Life 2: Sandbox',
         language:    'C++',
         repository:  'https://code.google.com/p/hl2sb-src/',
+        type:        'Game',
+        for:         'Source Engine',
         description: 'Half-Life 2: Sandbox is an open-source sandbox ' +
                      'modification of the Source Engine which provides Lua ' +
                      'as a scripting platform for developers to quickly ' +
-                     'prototype game ideas.'
+                     'prototype game ideas.',
+        when:        2011
       },
       // Knight Game II
       {
-        category:    'Development',
-        when:        2011,
         avocational: true,
-        type:        'Game',
-        for:         'LÖVE',
         name:        'Knight Game II',
         language:    'Lua',
+        type:        'Game',
+        for:         'LÖVE',
         description: 'A pixel-perfect recreation of Knight Game II from ' +
-                     'Antics comic strip #203.'
+                     'Antics comic strip #203.',
+        when:        2011
       },
       // Lua Libraries
       {
-        category:    'Development',
-        when:        2012,
         avocational: true,
-        type:        'Libraries and APIs',
-        for:         'Lua 5.1',
         name:        'lbass',
         language:    'C',
         download:    'lbass.zip',
-        description: 'BASS Audio Library bindings for Lua 5.1'
-      },
-      {
-        category:    'Development',
-        when:        2012,
-        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
+        description: 'BASS Audio Library bindings for Lua 5.1',
+        when:        2012
+      },
+      {
+        avocational: true,
         name:        'lclass',
         language:    'Lua',
         repository:  'https://github.com/andrewmcwatters/lclass',
+        type:        'Libraries and APIs',
+        for:         'Lua 5.1',
         description: 'lclass is a class implementation for Lua 5.1. It has ' +
                      'been designed to be the simplest, most ' +
                      'comprehensive, and smallest class implementation for ' +
-                     'Lua.'
+                     'Lua.',
+        when:        2012
       },
       {
-        category:    'Development',
-        when:        2011,
         avocational: true,
-        type:        'Libraries and APIs',
-        for:         'Lua 5.1',
         name:        'lopensteamworks',
         language:    'C',
         download:    'lopensteamworks.zip',
-        description: 'Open Steamworks bindings for Lua 5.1'
-      },
-      {
-        category:    'Development',
-        when:        2012,
-        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
+        description: 'Open Steamworks bindings for Lua 5.1',
+        when:        2011
+      },
+      {
+        avocational: true,
         name:        'lsapi',
         language:    'C',
         download:    'lsapi.zip',
-        description: 'Microsoft Speech API bindings for Lua 5.1'
-      },
-      {
-        category:    'Development',
-        when:        2012,
-        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
+        description: 'Microsoft Speech API bindings for Lua 5.1',
+        when:        2012
+      },
+      {
+        avocational: true,
         name:        'lwinapi',
         language:    'C',
         download:    'lwinapi.zip',
-        description: 'Windows API bindings for Lua 5.1'
-      },
-      {
-        category:    'Development',
-        when:        2012,
-        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
+        description: 'Windows API bindings for Lua 5.1',
+        when:        2012
+      },
+      {
+        avocational: true,
         name:        'lwolframalpha',
         language:    'Lua',
         download:    'lwolframalpha.zip',
-        description: 'Wolfram|Alpha Webservice API bindings for Lua 5.1'
-      },
-      {
-        category:    'Development',
-        when:        2011,
-        avocational: true,
         type:        'Libraries and APIs',
         for:         'Lua 5.1',
+        description: 'Wolfram|Alpha Webservice API bindings for Lua 5.1',
+        when:        2012
+      },
+      {
+        avocational: true,
         name:        'steamcommunity-utils',
         language:    'Lua',
         download:    'steamcommunity-utils.zip',
-        description: 'A toolkit in Lua for interacting with Steam Community'
+        type:        'Libraries and APIs',
+        for:         'Lua 5.1',
+        description: 'A toolkit in Lua for interacting with Steam Community',
+        when:        2011
       },
       {
-        category:    'Development',
-        when:        2012,
         avocational: true,
-        type:        'Reverse Engineering',
-        for:         'Steam’s Web API',
         name:        'Steam Web Lua API',
         language:    'Lua',
         download:    'steamweb-lua-api.zip',
+        type:        'Reverse Engineering',
+        for:         'Steam’s Web API',
         description: 'The Steam Web Lua API is a small library originally ' +
                      'designed to provide the web interfaces utilized in ' +
                      'Steam Mobile. These interfaces were reverse ' +
                      'engineered before Steam Mobile had been officially ' +
-                     'released, during the application’s beta.'
+                     'released, during the application’s beta.',
+        when:        2012
       },
       {
-        category:    'Development',
-        when:        2014,
         avocational: true,
-        type:        'Libraries and APIs',
-        for:         'PHP',
         name:        'Steam Web PHP API',
         language:    'PHP',
         download:    'steamweb-php-api.zip',
+        type:        'Libraries and APIs',
+        for:         'PHP',
         description: 'An API wrapper for interfacing with Steam’s Web API ' +
-                     'using PHP'
+                     'using PHP',
+        when:        2014
       },
       // Websites
       {
-        category:    'Development & Design',
-        when:        2014,
         avocational: false,
-        type:        'Website',
-        for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2014)',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r208.portfolio.png',
         repository:  'https://github.com/andrewmcwatters/public',
-        description: 'Personal website, portfolio, and résumé'
+        type:        'Website',
+        for:         'Andrew McWatters',
+        description: 'Personal website, portfolio, and résumé',
+        when:        2014
       },
       {
-        category:    'Development & Design',
-        when:        2014,
         avocational: true,
-        type:        'Website',
-        for:         'Dota 2',
         name:        'Metrics Hunter',
         language:    'PHP',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/metrics-hunter.r34.portfolio.r2.png',
+        type:        'Website',
+        for:         'Dota 2',
         description: 'The First Open-Source Decentralized Dota 2 ' +
-                     'Statistics Tracker'
+                     'Statistics Tracker',
+        when:        2014
       },
       {
-        category:    'Development & Design',
-        when:        2013,
         avocational: false,
-        type:        'Website',
-        for:         '[Private Client]',
         name:        'Binocular',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/binocular.r61.portfolio.png',
-        description: 'Internal project tracker for small teams'
+        type:        'Website',
+        description: 'Internal project tracker for small teams',
+        when:        2013
       },
       {
-        category:    'Development & Design',
-        when:        2013,
         avocational: false,
-        type:        'Website',
-        for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2013)',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r159.portfolio.png',
-        description: 'Personal website, portfolio, and résumé'
+        type:        'Website',
+        for:         'Andrew McWatters',
+        description: 'Personal website, portfolio, and résumé',
+        when:        2013
       },
       {
-        category:    'Development & Design',
-        when:        2013,
         avocational: false,
-        type:        'Website',
-        for:         'Adam & Eve’s Alter',
         name:        'Let the Koran Speak',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/letthekoranspeak.com.r39.portfolio.png',
-        description: 'Religious educational program'
+        type:        'Website',
+        for:         'Adam & Eve’s Alter',
+        description: 'Religious educational program',
+        when:        2013
       },
       {
-        category:    'Development & Design',
-        when:        2013,
         avocational: false,
-        type:        'Website',
-        for:         'boo1ean GmbH',
         name:        'Individual Executive Layer',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/I.E.L.r47.portfolio.png',
-        description: 'Product website for boo1ean’s digital rights ' +
-                     'management software'
-      },
-      {
-        category:    'Development & Design',
-        when:        2013,
-        avocational: false,
         type:        'Website',
         for:         'boo1ean GmbH',
-        name:        'boo1ean.de',
-        language:    'CSS',
-        description: 'Company website'
+        description: 'Product website for boo1ean’s digital rights ' +
+                     'management software',
+        when:        2013
       },
       {
-        category:    'Development & Design',
-        when:        2012,
-        avocational: true,
+        avocational: false,
+        name:        'boo1ean.de',
+        language:    'CSS',
         type:        'Website',
-        for:         'Northside church of Christ',
+        for:         'boo1ean GmbH',
+        description: 'Company website',
+        when:        2013
+      },
+      {
+        avocational: true,
         name:        'northsidechurchofchrist.org',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/northsidechurchofchrist.org.r35.portfolio.png',
         small:       'Redesign Proposal',
-        description: 'Church website'
+        type:        'Website',
+        for:         'Northside church of Christ',
+        description: 'Church website',
+        when:        2012
       },
       {
-        category:    'Development & Design',
-        when:        2012,
         avocational: false,
-        type:        'Website',
-        for:         'Elpis Host',
         name:        'elpishost.com',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/northsidechurchofchrist.org.r35.portfolio.png',
-        description: 'Game server provider website'
+        type:        'Website',
+        for:         'Elpis Host',
+        description: 'Game server provider website',
+        when:        2012
       },
       {
-        category:    'Development & Design',
-        when:        2012,
         avocational: false,
-        type:        'Website',
-        for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2012)',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r85.portfolio.png',
-        description: 'Personal website, portfolio, and résumé'
+        type:        'Website',
+        for:         'Andrew McWatters',
+        description: 'Personal website, portfolio, and résumé',
+        when:        2012
       },
       {
-        category:    'Development & Design',
-        when:        2012,
         avocational: false,
-        type:        'Website',
-        for:         'Phoenix Faction Studios',
         name:        'phxfaction.com',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/phoenixfaction.com.r60.portfolio.png',
-        description: 'Game journalism blog'
+        type:        'Website',
+        for:         'Phoenix Faction Studios',
+        description: 'Game journalism blog',
+        when:        2012
       },
       {
-        category:    'Development & Design',
-        when:        2011,
         avocational: false,
-        type:        'Website',
-        for:         'Phoenixerve',
         name:        'phoenixerve.com',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/phoenixerve.com.r19.portfolio.png',
-        description: 'Game server provider website'
+        type:        'Website',
+        for:         'Phoenixerve',
+        description: 'Game server provider website',
+        when:        2011
       },
       {
-        category:    'Development & Design',
-        when:        2011,
         avocational: false,
-        type:        'Website',
-        for:         'Andrew McWatters',
         name:        'andrewmcwatters.com (2011)',
         language:    'CSS',
         concept:     'https://github.com/andrewmcwatters/portfolio/blob/master/andrewmcwatters.com.r6.portfolio.png',
-        description: 'Personal website, portfolio, and résumé'
+        type:        'Website',
+        for:         'Andrew McWatters',
+        description: 'Personal website, portfolio, and résumé',
+        when:        2011
       },
       {
-        category:    'Development & Design',
-        when:        2011,
         avocational: false,
-        type:        'Website',
-        for:         'Brohoster',
         name:        'brohoster.com',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/brohoster.com.r11.portfolio.png',
-        description: 'Game server provider website'
+        type:        'Website',
+        for:         'Brohoster',
+        description: 'Game server provider website',
+        when:        2011,
       },
       // Webapps
       {
-        category:    'Development & Design',
-        when:        2014,
         avocational: false,
-        type:        'Webapp',
-        for:         'NPL Construction Co.',
         name:        'NPL Time',
         language:    'CSS',
         concept:     'https://www.pixelapse.com/andrewmcwatters/projects/NPL%20Time',
-        description: 'Mobile payroll iOS application'
+        type:        'Webapp',
+        for:         'NPL Construction Co.',
+        description: 'Mobile payroll iOS application',
+        when:        2014
       },
       // APIs
       {
-        category:    'Development',
-        when:        2014,
         avocational: false,
-        type:        'Libraries and APIs',
-        for:         'NPL Construction Co.',
         name:        'NPL API',
         language:    'JavaScript',
+        type:        'Libraries and APIs',
+        for:         'NPL Construction Co.',
         description: 'Payroll, telemetrics, auditing, and internal file ' +
-                     'sharing API'
+                     'sharing API',
+        when:        2014
       },
       // Minecraft
       {
-        category:    'Development',
-        when:        2013,
         avocational: true,
-        type:        'Addon',
-        for:         'Minecraft',
         name:        'PluginSync',
         language:    'Java',
         download:    'PluginSync.zip',
-        description: 'A Bukkit plugin to sync your server to a plugin depot.'
+        type:        'Addon',
+        for:         'Minecraft',
+        description: 'A Bukkit plugin to sync your server to a plugin depot.',
+        when:        2013
       },
       // Desktop Services
       {
-        category:    'Development',
-        when:        2013,
         avocational: true,
-        type:        'Application',
-        for:         'Windows',
         name:        'scrnshot',
         language:    'C#',
         download:    'scrnshot.zip',
-        description: 'A simple screenshot tool'
+        type:        'Application',
+        for:         'Windows',
+        description: 'A simple screenshot tool',
+        when:        2013
       }
     ];
 

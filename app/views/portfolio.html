@@ -87,8 +87,8 @@
               <small data-ng-if="project.small"><em>{{project.small}}</em></small>
             </h3>
             <span class="label label-default">{{project.type}}</span>
-            <h4 class="text-muted" data-ng-if="project.for">
-              for {{project.for}}
+            <h4 class="text-muted">
+              <span data-ng-if="project.for">for {{project.for}}</span>
             </h4>
             <p>
               {{project.description}}
