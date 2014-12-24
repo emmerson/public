@@ -71,6 +71,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         name:        'Motivational Orange',
+        language:    'Lua',
         download:    'motivational_orange.zip',
         description: 'Adds a talking orange that follows you around and ' +
                      'motivates you to greatness lest ye eat it.'
