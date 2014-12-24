@@ -48,7 +48,11 @@ angular.module('publicApp')
          * Distort an element.
          */
 
+        var isShuttingDown = false;
+
         function distort(element) {
+          if (isShuttingDown) { return; }
+
           // 25% chance this will happen, if it doesn't normalize the elements
           if (Math.random() > 0.25) {
             TweenMax.to(rootElement, 0, {opacity: 1});
@@ -89,6 +93,14 @@ angular.module('publicApp')
           if (element.hasClass('distort')) {
             initializeDistortion();
           }
+        });
+
+        /**
+        * Handle "$destroy" events.
+        */
+
+        scope.$on('$destroy', function() {
+          isShuttingDown = true;
         });
       }
     };
