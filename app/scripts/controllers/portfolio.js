@@ -30,6 +30,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'VGUI2 Skin',
         language:    'Lua',
+        download:    'vgui2_skin.zip',
         description: 'A recreation of Valve’s VGUI2 theme.'
       },
       {
@@ -40,6 +41,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Counter-Strike: Source Weapons',
         language:    'Lua',
+        download:    'counter-strike_source_weapons.zip',
         description: 'CS:S Weapons!'
       },
       {
@@ -49,6 +51,7 @@ angular.module('publicApp')
         type:        'Level',
         for:         'Garry’s Mod',
         name:        'gm_construct_night',
+        download:    'gm_construct_night.zip',
         description: 'A nighttime variant of gm_construct.'
       },
       {
@@ -58,7 +61,19 @@ angular.module('publicApp')
         type:        'Level',
         for:         'Garry’s Mod',
         name:        'gm_flatgrass_night',
+        download:    'gm_flatgrass_night.zip',
         description: 'A nighttime variant of gm_flatgrass.'
+      },
+      {
+        category:    'Development',
+        when:        2009,
+        avocational: true,
+        type:        'Addon',
+        for:         'Garry’s Mod',
+        name:        'Motivational Orange',
+        download:    'motivational_orange.zip',
+        description: 'Adds a talking orange that follows you around and ' +
+                     'motivates you to greatness lest ye eat it.'
       },
       {
         category:    'Development',
@@ -68,6 +83,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'An AK47 That Shoots Babies',
         language:    'Lua',
+        download:    'an_ak47_that_shoots_babies.zip',
         description: 'Based on an inside joke from Facepunch Studios Forums,' +
                      'this addon adds an AK47 to Garry’s Mod that shoots ' +
                      'babies.'
@@ -80,6 +96,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Melonnade',
         language:    'Lua',
+        download:    'melonnade.zip',
         description: 'A grenade with an explosive fruity blast.'
       },
       {
@@ -90,6 +107,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'The Manhattan Grenade',
         language:    'Lua',
+        download:    'the_manhattan_grenade.zip',
         description: 'Places the power of Dr. Manhattan into a compact ' +
                      'explosive device.'
       },
@@ -101,6 +119,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'The Time Grenade',
         language:    'Lua',
+        download:    'the_time_grenade.zip',
         description: 'Adds a time manipulator grenade to Garry’s Mod.'
       },
       {
@@ -111,6 +130,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Altimeter HUD Element',
         language:    'Lua',
+        download:    'altimeter_hud_element.zip',
         description: 'Adds an altimeter HUD element.'
       },
       {
@@ -121,16 +141,18 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Christmas Lights',
         language:    'Lua',
+        download:    'christmas_lights.zip',
         description: 'Adds explosive holiday cheer in pistol form.'
       },
       {
         category:    'Development',
         when:        2009,
         avocational: true,
-        type:        'Addon',
+        type:        'Patch',
         for:         'Garry’s Mod',
         name:        'Fall Damage',
         language:    'Lua',
+        download:    'fall_damage.zip',
         description: 'Adds the Source SDK calculations for fall damage.'
       },
       {
@@ -141,6 +163,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'HEV Extensions',
         language:    'Lua',
+        download:    'hev_extensions.zip',
         description: 'Extends the functionality of the HEV suit.'
       },
       {
@@ -151,6 +174,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Boomstick',
         language:    'Lua',
+        download:    'boomstick.zip',
         description: 'Adds a stick with an explosive temper.'
       },
       {
@@ -161,6 +185,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Overwatch Military Issue Dark Energy Rifle',
         language:    'Lua',
+        download:    'overwatch_military_issue_dark_energy_rifle.zip',
         description: 'Adds an automatic dark energy assault rifle.'
       },
       {
@@ -171,6 +196,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Your Head A Splode',
         language:    'Lua',
+        download:    'your_head_a_splode.zip',
         description: 'Adds the ability to blow up your head.'
       },
       {
@@ -181,6 +207,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Vortex Weaponry',
         language:    'Lua',
+        download:    'vortex_weaponry.zip',
         description: 'Adds a dimension defying weaponry.'
       },
       {
@@ -191,6 +218,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Half-Life 2 Orange Box Weapons',
         language:    'Lua',
+        download:    'hl2_orangebox.zip',
         description: 'Adds a new set of HL2 weapons which use the OB ' +
                      'particle system.'
       },
@@ -202,6 +230,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Grenadegun',
         language:    'Lua',
+        download:    'grenadegun.zip',
         description: 'Adds a grenade lobbing shotgun.'
       },
       {
@@ -212,6 +241,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Boxnade',
         language:    'Lua',
+        download:    'boxnade.zip',
         description: 'Adds an explosive enlarging box.'
       },
       {
@@ -222,6 +252,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Pulse-Shotgun',
         language:    'Lua',
+        download:    'pulse-shotgun.zip',
         description: 'Adds a dark-energy powered shotgun.'
       },
       {
@@ -232,6 +263,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Water Explosive',
         language:    'Lua',
+        download:    'water_explosive.zip',
         description: 'Adds an explosive barrel charge.'
       },
       {
@@ -242,6 +274,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Assault SMG',
         language:    'Lua',
+        download:    'assault_smg.zip',
         description: 'Adds a rapid fire machine gun.'
       },
       {
@@ -252,6 +285,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Armed Attachments',
         language:    'Lua',
+        download:    'armed_attachments.zip',
         description: 'Adds a base SWEP which utilizes a Crysis-styled ' +
                      'attachment system.'
       },
@@ -263,6 +297,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Quick Menu',
         language:    'Lua',
+        download:    'quick_menu.zip',
         description: 'Adds a Crysis-esque STool/Weapons menu.'
       },
       {
@@ -273,6 +308,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'NanoHEV',
         language:    'Lua',
+        download:    'nanohev.zip',
         description: 'Adds nanosuit features to your HEV suit.'
       },
       {
@@ -283,6 +319,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Language Fixes',
         language:    'Lua',
+        download:    'language_fixes.zip',
         description: 'Adds natural language to undefined values.'
       },
       {
@@ -293,6 +330,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Essential STools',
         language:    'Lua',
+        download:    'essential_stools.zip',
         description: 'Adds frequently used scripted tools.'
       },
       {
@@ -303,6 +341,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Sandbox Gravity Gun',
         language:    'Lua',
+        download:    'sbox_gravgun.zip',
         description: 'Adds an option to give players a gravity gun, ' +
                      'regardless of starting with weapons or not.'
       },
@@ -314,6 +353,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Drop Primary',
         language:    'Lua',
+        download:    'drop_primary.zip',
         description: 'Adds the "drop" command from CS:S.'
       },
       {
@@ -324,6 +364,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Ownership HUD for Simple Prop Protection',
         language:    'Lua',
+        download:    'ownership_hud_for_simple_prop_protection.zip',
         description: 'Replaces Simple Prop Protection’s HUD with a HL2 variant.'
       },
       {
@@ -334,6 +375,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Ghosting Fade System',
         language:    'Lua',
+        download:    'ghosting_fade_system.zip',
         description: 'Fades out all ghosts after time, to prevent dormant ' +
                      'ghosts from collecting.'
       },
@@ -345,6 +387,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Death Ragdolls',
         language:    'Lua',
+        download:    'death_ragdolls.zip',
         description: 'Adds server-side death ragdolls for players and NPCs.'
       },
       {
@@ -356,6 +399,7 @@ angular.module('publicApp')
         name:        'PLGL',
         small:       '(“Present Launching Grenade Launcher”)',
         language:    'Lua',
+        download:    'plgl_(present_launching_grenade_launcher).zip',
         description: 'Adds a grenade launcher with holiday cheer as its ' +
                      'primary ammunition!'
       },
@@ -378,6 +422,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Sandbox Setting Defaults',
         language:    'Lua',
+        download:    'sandbox_setting_defaults.zip',
         description: 'Resets sandbox limits and ConVars to their defaults on ' +
                      'server initialization.'
       },
@@ -389,6 +434,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Insurgency Spawn Points',
         language:    'Lua',
+        download:    'insurgency_spawn_points.zip',
         description: 'Adds working spawn points to Insurgency maps.'
       },
       {
@@ -399,6 +445,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Ion Cannon',
         language:    'Lua',
+        download:    'ion_cannon.zip',
         description: 'Adds the dark energy-powered cannon from EP2.'
       },
       {
@@ -409,6 +456,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Mounted Pulse-Rifle',
         language:    'Lua',
+        download:    'mounted_pulse-rifle.zip',
         description: 'Adds a handheld mounted Pulse-Rifle.'
       },
       {
@@ -419,6 +467,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Watermelon',
         language:    'Lua',
+        download:    'watermelon.zip',
         description: 'Adds a tossable fruit.'
       },
       {
@@ -429,7 +478,19 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Thruster',
         language:    'Lua',
+        download:    'thruster.zip',
         description: 'Adds a shoulder mounted thruster.'
+      },
+      {
+        category:    'Development',
+        when:        2010,
+        avocational: true,
+        type:        'Patch',
+        for:         'Garry’s Mod',
+        name:        'Interpolate Animation',
+        language:    'Lua',
+        download:    'interpolate_animation.zip',
+        description: 'Fixes third-person player animation stuttering.'
       },
       {
         category:    'Development',
@@ -439,6 +500,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Ragdoll Fade System',
         language:    'Lua',
+        download:    'ragdoll_fade_system.zip',
         description: 'Fades out all client-side ragdolls after time, to ' +
                      'prevent dormant corpses from collecting.'
       },
@@ -460,6 +522,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Player Clothing',
         language:    'Lua',
+        download:    'Player Clothing.zip',
         description: 'Adds selectable clothing to player models.'
       },
       {
@@ -470,6 +533,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'SteamID to IP',
         language:    'Lua',
+        download:    'steamidtoip.zip',
         description: 'Converts Garry’s Mod API to use fake SteamIDs (used ' +
                      'for authentication and player uniqueness) based on IP ' +
                      'addresses.'
@@ -482,6 +546,7 @@ angular.module('publicApp')
         for:         'Garry’s Mod',
         name:        'Light IgnoreZ Fix',
         language:    'Lua',
+        download:    'Light IgnoreZ Fix.zip',
         description: 'Fixes lights from showing up through the world.'
       },
       {
