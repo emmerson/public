@@ -30,13 +30,13 @@
   .affix {
     padding-top: 64px;
     top: 0;
-    width: 185px;
+    // width: 185px;
 
-    @media (min-width: $screen-lg-min) {
+    // @media (min-width: $screen-lg-min) {
       // width: 235px;
       // HACKHACK: What the fuck?
-      width: calc(25% - 3 * 18px - 5px);
-    }
+    width: calc(25% - 3 * 18px - 5px);
+    // }
   }
 
   // Projects

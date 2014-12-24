@@ -197,6 +197,7 @@ angular.module('publicApp')
         name:        'Binocular',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/binocular.r61.portfolio.png',
         type:        'Website',
+        for:         '(Private Client)',
         description: 'Internal project tracker for small teams',
         when:        2013
       },
