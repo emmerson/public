@@ -192,6 +192,7 @@ angular.module('publicApp')
         name:        'andrewmcwatters.com (2014)',
         language:    'CSS',
         concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r208.portfolio.png',
+        repository:  'https://github.com/andrewmcwatters/public',
         description: 'Personal website, portfolio, and résumé'
       },
       {
