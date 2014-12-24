@@ -7,7 +7,7 @@
  * # chromaticAberration
  */
 angular.module('publicApp')
-  .directive('chromaticAberration', function ($window) {
+  .directive('chromaticAberration', function ($window, $document) {
     /**
     * Module dependencies.
     */
@@ -51,6 +51,7 @@ angular.module('publicApp')
         var isShuttingDown = false;
 
         function distort(element) {
+          if ($document[0].hidden) { return; }
           if (isShuttingDown) { return; }
 
           // 25% chance this will happen, if it doesn't normalize the elements
