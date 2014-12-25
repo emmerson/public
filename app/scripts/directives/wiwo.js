@@ -7,7 +7,7 @@
  * # wiwo
  */
 angular.module('publicApp')
-  .directive('wiwo', function ($window, $document, $rootScope) {
+  .directive('wiwo', function ($window, $rootScope) {
     /**
      * Module dependencies.
      */
@@ -25,22 +25,19 @@ angular.module('publicApp')
           // initialize timeline and retrieve elements to animate
           var tl    = new TimelineMax();
           var h1    = element[0].getElementsByTagName('h1');
+          var intro = element[0].getElementsByTagName('p');
           var tiles = element[0].getElementsByClassName('project-tile');
           tl
             // wait for main to stagger in
             .delay(0.15)
             // bring forth header and intro
-            .staggerFromTo(h1, 0.6, {
+            .staggerFromTo([h1, intro], 0.6, {
                 opacity: 0,
                 z: -260,
               }, {
                 opacity: 1,
                 z: 0
-              }, 0.06, '+=0', function() {
-                angular.element($document[0].querySelector('.chromatic-aberration'))
-                  .addClass('distort');
-                scope.$apply();
-              })
+              }, 0.06)
             // rotate in project tiles
             .fromTo(tiles, 6, {
                 opacity: 0,

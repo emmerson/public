@@ -68,9 +68,7 @@ angular.module('publicApp')
           var opacity = getRandomArbitrary(0.66, 1);
 
           // decrease root opacity
-          TweenMax.to(rootElement, 0.16, {
-            opacity: Math.max(0.33, 1 - opacity)
-          });
+          TweenMax.to(rootElement, 0.16, { opacity: Math.max(0.33, 1 - opacity) });
 
           // increase chromatic channel opacity and displace channel
           TweenMax.to(element, 0.16, {
