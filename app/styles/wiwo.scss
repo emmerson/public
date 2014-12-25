@@ -13,17 +13,6 @@
 #wiwo {
   align-items: center;
 
-  // Main Container
-  // -------------------------
-
-  .main.container {
-    padding-bottom: 0 !important;
-
-    @media (min-width: $screen-sm-min) {
-      margin-bottom: 32px !important;
-    }
-  }
-
   // Section
   // -------------------------
 
@@ -39,21 +28,13 @@
   // -------------------------
 
   .intro-heading {
-    margin-bottom: 64px;
+    margin-bottom: 36px;
     padding-left: 0;
     padding-right: 0;
     perspective: 1000px;
 
-    @media (min-width: $screen-sm-min) {
-      margin-bottom: 96px;
-    }
-
     @media (min-width: $screen-lg-min) {
       perspective: 1920px;
-    }
-
-    small {
-      // display: block;
     }
   }
 
@@ -77,8 +58,6 @@
     min-height: 260px;
     opacity: 0;
     padding: 32px;
-    position: relative;
-    top: calc(-32px - 1px);
     transition: all 600ms cubic-bezier(.23, 1, .32, 1);
     transition-property: background-color, width;
 
