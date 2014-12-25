@@ -85,10 +85,12 @@
     &:hover {
       background-color: rgba($black, .97);
       color: $white;
+      cursor: not-allowed;
       text-decoration: none;
 
       .text-primary {
-        text-decoration: $link-hover-decoration;
+        // text-decoration: $link-hover-decoration;
+        text-decoration: line-through;
       }
     }
 
