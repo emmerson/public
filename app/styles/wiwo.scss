@@ -89,8 +89,7 @@
       text-decoration: none;
 
       .text-primary {
-        // text-decoration: $link-hover-decoration;
-        text-decoration: line-through;
+        text-decoration: $link-hover-decoration;
       }
     }
 
@@ -131,10 +130,6 @@
 
     img {
       transition: all 600ms cubic-bezier(.23, 1, .32, 1);
-    }
-
-    .text-primary {
-      text-decoration: line-through;
     }
   }
 
