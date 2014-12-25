@@ -831,17 +831,17 @@ $pre-scrollable-max-height:   340px;
 //** Horizontal offset for forms and lists.
 $component-offset-horizontal: 180px;
 //** Text muted color
-$text-muted:                  $gray-light;
+$text-muted:                  rgba($white, .42);
 //** Abbreviations and acronyms border color
-$abbr-border-color:           $gray-light;
+$abbr-border-color:           rgba($white, .42);
 //** Headings small color
-$headings-small-color:        $gray-light;
+$headings-small-color:        rgba($white, .42);
 //** Blockquote small color
-$blockquote-small-color:      $gray-light;
+$blockquote-small-color:      rgba($white, .42);
 //** Blockquote font size
 $blockquote-font-size:        ($font-size-base * 1.25);
 //** Blockquote border color
-$blockquote-border-color:     $gray-lighter;
+$blockquote-border-color:     rgba($white, .07);
 //** Page header border color
 $page-header-border-color:    rgba($white, .07);
 //** Width of horizontal description list titles
