@@ -398,7 +398,7 @@ angular.module('publicApp')
      */
 
     $scope.options = {
-      hideAvocational: true
+      hideAvocational: false
     };
 
     $scope.$watch('options.hideAvocational', function() {
