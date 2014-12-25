@@ -7,7 +7,7 @@
  * # chromaticAberration
  */
 angular.module('publicApp')
-  .directive('chromaticAberration', function ($window, $document) {
+  .directive('chromaticAberration', function ($window) {
     /**
     * Module dependencies.
     */
@@ -18,25 +18,22 @@ angular.module('publicApp')
       restrict: 'C',
       link: function postLink(scope, element) {
         /**
-         * Root element.
-         */
-
-        var rootElement = element;
-
-        /**
-         * Initialize distortion elements.
+         * Initialize distortion channels.
          */
 
         function initializeDistortion() {
           // create red and blue channels
+          var channels = [];
           for (var i = 0; i < 2; i++) {
             var channel = element.clone();
-            channel.addClass(i === 0 ? 'blue' : 'red');
-            channel.addClass('channel');
-            channel.css('opacity', '');
+            channel
+              .addClass(i === 0 ? 'red' : 'blue')
+              .addClass('channel')
+              .css('opacity', '');
+            channels.push(channel);
             element.append(channel);
-            distort(channel);
           }
+          distort(channels);
         }
 
         // Returns a random number between min (inclusive) and max (exclusive)
@@ -45,21 +42,21 @@ angular.module('publicApp')
         }
 
         /**
-         * Distort an element.
+         * Distort channels.
          */
 
         var isShuttingDown = false;
 
-        function distort(element) {
-          if ($document[0].hidden) { return; }
+        function distort(channels) {
+          // stop animating on $destroy
           if (isShuttingDown) { return; }
 
-          // 25% chance this will happen, if it doesn't normalize the elements
-          if (Math.random() > 0.25) {
-            TweenMax.to(rootElement, 0, {opacity: 1});
-            TweenMax.to(element,     0, {opacity: 0});
+          // ~8% chance this will happen, if it doesn't normalize the elements
+          if (Math.random() > 0.0825) {
+            TweenMax.to(element,  0.16, {opacity: 1});
+            TweenMax.to(channels, 0.16, {opacity: 0});
             requestAnimationFrame(function() {
-              distort(element);
+              distort(channels);
             });
             return;
           }
@@ -68,19 +65,31 @@ angular.module('publicApp')
           var opacity = getRandomArbitrary(0.66, 1);
 
           // decrease root opacity
-          TweenMax.to(rootElement, 0.16, { opacity: Math.max(0.33, 1 - opacity) });
+          TweenMax.to(element, 0.16, { opacity: Math.max(0.33, 1 - opacity) });
 
           // increase chromatic channel opacity and displace channel
-          TweenMax.to(element, 0.16, {
-            opacity: opacity,
-            x: getRandomArbitrary(-18, 18),
-            y: getRandomArbitrary(-9, 9),
-            skewX: getRandomArbitrary(-5.625, 5.625)
-          });
+          var fontSize = +element.css('font-size').replace('px', '');
+          var variance = fontSize * 0.375;
+          var x        = getRandomArbitrary(-variance, variance);
+          var skewX    = getRandomArbitrary(-5.625, 5.625);
+          // red channel
+          TweenMax
+            .to(channels[0], 0.16, {
+              opacity: opacity,
+              x:       -x,
+              skewX:   skewX
+            });
+          // blue channel
+          TweenMax
+            .to(channels[1], 0.16, {
+              opacity: opacity,
+              x:       x,
+              skewX:   skewX
+            });
 
           // animate
           requestAnimationFrame(function() {
-            distort(element);
+            distort(channels);
           });
         }
 
