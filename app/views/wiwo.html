@@ -15,7 +15,7 @@
           </small>
         </h1>
       </div>
-      <a href="{{project.href}}"
+      <a data-ng-attr-href="{{project.href}}"
          target="{{project.target}}"
          class="project-tile col-xs-12 col-sm-6 col-md-3"
          data-ng-repeat="project in projects">
@@ -29,8 +29,8 @@
             <span class="when">{{project.since}}–Present</span>
             <span class="what">{{project.what}}</span>
           </div>
-          <!-- <span class="text-primary">Learn More</span> -->
-          Coming soon.
+          <span class="text-primary" data-ng-if="project.href">Learn More</span>
+          <span data-ng-if="!project.href">Coming soon.</span>
         </div>
       </a>
     </section>

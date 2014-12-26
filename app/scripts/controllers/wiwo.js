@@ -32,7 +32,7 @@ angular.module('publicApp')
         logo:   'images/logo_vadventure.dd082bfe.svg',
         since:  2013,
         what:   '2D Fantasy MMORPG',
-        href:   '/vadventure',
+     // href:   '/vadventure',
         target: '_self'
       },
       {
@@ -42,7 +42,7 @@ angular.module('publicApp')
         logo:   'images/logo_grid.19de7e30.svg',
         since:  2013,
         what:   '2D Game Engine',
-        href:   '/grid'
+     // href:   '/grid'
       },
       {
         id:     'axis',
@@ -51,7 +51,7 @@ angular.module('publicApp')
         logo:   'images/logo_axis.08eef562.svg',
         since:  2013,
         what:   'Game Account Management System',
-        href:   '/axis'
+     // href:   '/axis'
       }
     ];
   });
