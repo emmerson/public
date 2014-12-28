@@ -40,7 +40,7 @@ angular.module('publicApp')
         logo:  'images/logo_grid.19de7e30.svg',
         since: 2013,
         what:  '2D Game Engine',
-     // href:  '/grid'
+        href:  '/grid'
       },
       {
         id:    'axis',
