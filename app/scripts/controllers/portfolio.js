@@ -296,7 +296,7 @@ angular.module('publicApp')
         avocational: false,
         name:        'andrewmcwatters.com (2011)',
         language:    'CSS',
-        concept:     'https://github.com/andrewmcwatters/portfolio/blob/master/andrewmcwatters.com.r6.portfolio.png',
+        concept:     'https://raw.githubusercontent.com/andrewmcwatters/portfolio/master/andrewmcwatters.com.r6.portfolio.png',
         type:        'Website',
         for:         'Andrew McWatters',
         description: 'Personal website, portfolio, and résumé',
