@@ -53,6 +53,10 @@ angular.module('publicApp')
                 rotationX: 0,
                 transformOrigin: '50% 50% -8.5px'
               }, '-=0.4');
+
+            // allow tooltip visibility
+            var navLinkContainers = element.find('li');
+            navLinkContainers.css('overflow', 'visible');
           }); });
         });
 

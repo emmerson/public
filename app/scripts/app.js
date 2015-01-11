@@ -41,6 +41,10 @@ angular
       .when('/404', {
         templateUrl: 'views/404.html'
       })
+      .when('/status', {
+        templateUrl: 'views/status.html',
+        controller: 'StatusCtrl'
+      })
       .otherwise({
         redirectTo: '/404'
       });
