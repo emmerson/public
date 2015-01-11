@@ -12,7 +12,8 @@ angular
   .module('publicApp', [
     'ngRoute',
     'ui.odometer',
-    'scrollto'
+    'scrollto',
+    'btford.socket-io'
   ])
 
   /**
