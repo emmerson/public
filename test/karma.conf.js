@@ -36,6 +36,8 @@ module.exports = function(config) {
 
     // list of files / patterns to exclude
     exclude: [
+      'app/scripts/controllers/status.js',
+      'test/spec/controllers/status.js',
       'app/scripts/services/socket.js',
       'test/spec/services/socket.js'
     ],
