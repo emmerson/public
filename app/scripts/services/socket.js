@@ -15,7 +15,9 @@ angular.module('publicApp')
 
     var io = $window.io;
 
-    var ioSocket = io.connect('http://api.andrewmcwatters.com:80/usage');
+    var ioSocket = io.connect('http://api.andrewmcwatters.com:80/usage', {
+      transports: ['websocket']
+    });
     return socketFactory({
       ioSocket: ioSocket
     });
