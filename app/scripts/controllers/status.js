@@ -8,12 +8,12 @@
  * Controller of the publicApp
  */
 angular.module('publicApp')
-  .controller('StatusCtrl', function ($scope, socket) {
+  .controller('StatusCtrl', function ($scope, statusSocket) {
     /**
      * Handle "status" events.
      */
 
-    socket.forward('status', $scope);
+    statusSocket.forward('status', $scope);
     $scope.$on('socket:status', function (event, status) {
       $scope.status = status;
     });

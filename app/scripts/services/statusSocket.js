@@ -8,7 +8,7 @@
  * Factory in the publicApp.
  */
 angular.module('publicApp')
-  .factory('socket', function ($window, socketFactory) {
+  .factory('statusSocket', function ($window, socketFactory) {
     /**
      * Module dependencies.
      */

@@ -38,8 +38,8 @@ module.exports = function(config) {
     exclude: [
       'app/scripts/controllers/status.js',
       'test/spec/controllers/status.js',
-      'app/scripts/services/socket.js',
-      'test/spec/services/socket.js'
+      'app/scripts/services/StatusSocket.js',
+      'test/spec/services/StatusSocket.js'
     ],
 
     // web server port
