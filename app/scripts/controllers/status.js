@@ -10,11 +10,11 @@
 angular.module('publicApp')
   .controller('StatusCtrl', function ($scope, socket) {
     /**
-     * Handle "usage" events.
+     * Handle "status" events.
      */
 
-    socket.forward('usage', $scope);
-    $scope.$on('socket:usage', function (event, usage) {
-      $scope.usage = usage;
+    socket.forward('status', $scope);
+    $scope.$on('socket:status', function (event, status) {
+      $scope.status = status;
     });
   });
