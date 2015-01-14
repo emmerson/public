@@ -15,6 +15,6 @@ angular.module('publicApp')
 
     statusSocket.forward('status', $scope);
     $scope.$on('socket:status', function (event, status) {
-      $scope.status = status;
+      $scope.status = angular.toJson(status, pretty);
     });
   });
