@@ -31,7 +31,7 @@ angular.module('publicApp')
         type:        'Addon',
         for:         'Garry’s Mod',
         description: 'Adds real-time scripting to Garry’s Mod.',
-        when:        2013,
+        when:        2013
       },
       {
         avocational: true,
@@ -310,7 +310,7 @@ angular.module('publicApp')
         type:        'Website',
         for:         'Brohoster',
         description: 'Game server provider website',
-        when:        2011,
+        when:        2011
       },
       // Webapps
       {
@@ -426,7 +426,7 @@ angular.module('publicApp')
 
       // set active filter
       $scope.activeFilter = type;
-      $scope.results      = Lazy($scope.projects);
+      $scope.results = Lazy($scope.projects);
 
       // filter by type
       if (type) {
