@@ -62,8 +62,8 @@ angular
   })
 
   /**
-  * Decorate controllers with route name.
-  */
+   * Decorate controllers with route name.
+   */
 
   .config(function ($provide) {
     $provide.decorator('$controller', function ($location, $delegate) {
@@ -85,8 +85,8 @@ angular
   })
 
   /**
-  * Instantiate FastClick.
-  */
+   * Instantiate FastClick.
+   */
 
   .run(function($window, $document) {
     var FastClick = $window.FastClick;
@@ -94,8 +94,8 @@ angular
   })
 
   /**
-  * Default ease.
-  */
+   * Default ease.
+   */
 
   .run(function($window) {
     var TweenLite = $window.TweenLite;
