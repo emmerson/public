@@ -31,7 +31,7 @@ angular.module('publicApp')
         logo:  'images/logo_vadventure.dd082bfe.svg',
         since: 2013,
         what:  '2D Fantasy MMORPG',
-     // href:  '/vadventure'
+        href:  '/vadventure'
       },
       {
         id:    'grid',
